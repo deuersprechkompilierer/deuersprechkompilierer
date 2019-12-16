@@ -1,0 +1,57 @@
+\hypertarget{classjava__cup_1_1runtime_1_1token}{}\doxysection{java\+\_\+cup.\+runtime.\+token Klassenreferenz}
+\label{classjava__cup_1_1runtime_1_1token}\index{java\_cup.runtime.token@{java\_cup.runtime.token}}
+Klassendiagramm für java\+\_\+cup.\+runtime.\+token\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.428571cm]{classjava__cup_1_1runtime_1_1token}
+\end{center}
+\end{figure}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1token_abd7a88d834af33cef518e389fd524777}\label{classjava__cup_1_1runtime_1_1token_abd7a88d834af33cef518e389fd524777}} 
+{\bfseries token} (int term\+\_\+num)
+\end{DoxyCompactItemize}
+\doxysubsection*{Öffentliche Attribute}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1runtime_1_1symbol_ae20e6415c2e71ac102042e3c7e62554d}{sym}}
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1runtime_1_1symbol_acf83d21db313b2e797f6ebac04b9ec91}{parse\+\_\+state}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+This subclass of symbol represents (at least) terminal symbols returned by the scanner and placed on the parse stack. At present, this class does nothing more than its super class.
+
+\begin{DoxySeeAlso}{Siehe auch}
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1int__token}{java\+\_\+cup.\+runtime.\+int\+\_\+token}} 
+
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1str__token}{java\+\_\+cup.\+runtime.\+str\+\_\+token}} 
+\end{DoxySeeAlso}
+\begin{DoxyVersion}{Version}
+last updated\+: 11/25/95 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Autor}
+Scott Hudson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1symbol_acf83d21db313b2e797f6ebac04b9ec91}\label{classjava__cup_1_1runtime_1_1symbol_acf83d21db313b2e797f6ebac04b9ec91}} 
+\index{java\_cup.runtime.token@{java\_cup.runtime.token}!parse\_state@{parse\_state}}
+\index{parse\_state@{parse\_state}!java\_cup.runtime.token@{java\_cup.runtime.token}}
+\doxysubsubsection{\texorpdfstring{parse\_state}{parse\_state}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+runtime.\+symbol.\+parse\+\_\+state\hspace{0.3cm}{\ttfamily [inherited]}}
+
+The parse state to be recorded on the parse stack with this symbol. This field is for the convenience of the parser and shouldn\textquotesingle{}t be modified except by the parser. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1symbol_ae20e6415c2e71ac102042e3c7e62554d}\label{classjava__cup_1_1runtime_1_1symbol_ae20e6415c2e71ac102042e3c7e62554d}} 
+\index{java\_cup.runtime.token@{java\_cup.runtime.token}!sym@{sym}}
+\index{sym@{sym}!java\_cup.runtime.token@{java\_cup.runtime.token}}
+\doxysubsubsection{\texorpdfstring{sym}{sym}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+runtime.\+symbol.\+sym\hspace{0.3cm}{\ttfamily [inherited]}}
+
+The symbol number of the terminal or non terminal being represented 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/java\+\_\+cup/runtime/token.\+java\end{DoxyCompactItemize}

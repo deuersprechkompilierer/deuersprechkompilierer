@@ -1,0 +1,7 @@
+ganzzahl funktion(kette k) {
+    druck(k);
+    gebzurueck 0;
+}
+
+ganzzahl i;
+i ISTGLEICH funktion("hallo");

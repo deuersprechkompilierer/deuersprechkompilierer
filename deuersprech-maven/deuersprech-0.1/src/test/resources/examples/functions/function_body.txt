@@ -1,0 +1,7 @@
+ganzzahl randomNumber() { 
+	ganzzahl i; 
+	i ISTGLEICH 42; 
+	gebzurueck i; 
+} 
+
+druckzeile(randomNumber());

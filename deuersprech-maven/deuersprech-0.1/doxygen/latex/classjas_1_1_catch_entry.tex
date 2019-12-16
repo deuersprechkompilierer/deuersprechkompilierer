@@ -1,0 +1,57 @@
+\hypertarget{classjas_1_1_catch_entry}{}\doxysection{jas.\+Catch\+Entry Klassenreferenz}
+\label{classjas_1_1_catch_entry}\index{jas.CatchEntry@{jas.CatchEntry}}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjas_1_1_catch_entry_a8470ef840a91a0fd017d369a0f71c562}{Catch\+Entry}} (\mbox{\hyperlink{classjas_1_1_label}{Label}} start, \mbox{\hyperlink{classjas_1_1_label}{Label}} end, \mbox{\hyperlink{classjas_1_1_label}{Label}} handler, \mbox{\hyperlink{classjas_1_1_c_p}{CP}} cat)
+\item 
+\mbox{\hyperlink{classjas_1_1_catch_entry_acd977541cf470f764287adf4e848dadc}{Catch\+Entry}} (int start, int end, int handler, \mbox{\hyperlink{classjas_1_1_c_p}{CP}} cat)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjas_1_1_catch_entry_a8470ef840a91a0fd017d369a0f71c562}\label{classjas_1_1_catch_entry_a8470ef840a91a0fd017d369a0f71c562}} 
+\index{jas.CatchEntry@{jas.CatchEntry}!CatchEntry@{CatchEntry}}
+\index{CatchEntry@{CatchEntry}!jas.CatchEntry@{jas.CatchEntry}}
+\doxysubsubsection{\texorpdfstring{CatchEntry()}{CatchEntry()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily jas.\+Catch\+Entry.\+Catch\+Entry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjas_1_1_label}{Label}}}]{start,  }\item[{\mbox{\hyperlink{classjas_1_1_label}{Label}}}]{end,  }\item[{\mbox{\hyperlink{classjas_1_1_label}{Label}}}]{handler,  }\item[{\mbox{\hyperlink{classjas_1_1_c_p}{CP}}}]{cat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Catch entries are created and then added to the \mbox{\hyperlink{classjas_1_1_catchtable}{Catchtable}}. 
+\begin{DoxyParams}{Parameter}
+{\em start} & \mbox{\hyperlink{classjas_1_1_label}{Label}} marking the beginning of the area where the catch table is active. \\
+\hline
+{\em end} & \mbox{\hyperlink{classjas_1_1_label}{Label}} marking the end of the area where the table is active. \\
+\hline
+{\em handler} & \mbox{\hyperlink{classjas_1_1_label}{Label}} marking the entrypoint into the exception handling routine. \\
+\hline
+{\em cat} & (usually a class\+CP) informing the VM to direct any exceptions of this (or its subclasses) to the handler. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Siehe auch}
+\mbox{\hyperlink{classjas_1_1_catchtable}{Catchtable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classjas_1_1_catch_entry_acd977541cf470f764287adf4e848dadc}\label{classjas_1_1_catch_entry_acd977541cf470f764287adf4e848dadc}} 
+\index{jas.CatchEntry@{jas.CatchEntry}!CatchEntry@{CatchEntry}}
+\index{CatchEntry@{CatchEntry}!jas.CatchEntry@{jas.CatchEntry}}
+\doxysubsubsection{\texorpdfstring{CatchEntry()}{CatchEntry()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily jas.\+Catch\+Entry.\+Catch\+Entry (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end,  }\item[{int}]{handler,  }\item[{\mbox{\hyperlink{classjas_1_1_c_p}{CP}}}]{cat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Catch entries are created and then added to the \mbox{\hyperlink{classjas_1_1_catchtable}{Catchtable}}. 
+\begin{DoxyParams}{Parameter}
+{\em start} & offset marking the beginning of the area where the catch table is active. \\
+\hline
+{\em end} & offset marking the end of the area where the table is active. \\
+\hline
+{\em handler} & offset marking the entrypoint into the exception handling routine. \\
+\hline
+{\em cat} & (usually a class\+CP) informing the VM to direct any exceptions of this (or its subclasses) to the handler. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Siehe auch}
+\mbox{\hyperlink{classjas_1_1_catchtable}{Catchtable}} 
+\end{DoxySeeAlso}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/jas/Catch\+Entry.\+java\end{DoxyCompactItemize}

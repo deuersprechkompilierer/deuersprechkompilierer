@@ -1,0 +1,29 @@
+ganzzahl eineFunktion() {
+    druckzeile(420);
+    gebzurueck 0;
+}
+
+ganzzahl eineFunktion(ganzzahl i) {
+    druckzeile(666);
+    gebzurueck 0;
+}
+
+ganzzahl i;
+i ISTGLEICH 0;
+druck(i);
+
+druckzeile("iiiyooo leude, deuersprech am start");
+
+waehrend(i KLEINER 10) {
+    ganzzahl j;
+    j ISTGLEICH 0;
+    waehrend(j KLEINER i) {
+        druck(i);
+        j ISTGLEICH j PLUS 1;
+    } 
+    ganzzahl x;
+    x ISTGLEICH eineFunktion();
+    x ISTGLEICH eineFunktion(69);
+    i ISTGLEICH i PLUS 1;
+}
+

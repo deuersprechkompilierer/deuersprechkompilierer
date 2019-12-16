@@ -1,0 +1,5 @@
+wenn(1) { 
+	druckzeile(42); 
+} sonst { 
+	druckzeile(69); 
+}

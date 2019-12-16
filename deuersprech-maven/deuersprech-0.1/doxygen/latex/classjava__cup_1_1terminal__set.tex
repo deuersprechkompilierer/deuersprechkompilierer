@@ -1,0 +1,231 @@
+\hypertarget{classjava__cup_1_1terminal__set}{}\doxysection{java\+\_\+cup.\+terminal\+\_\+set Klassenreferenz}
+\label{classjava__cup_1_1terminal__set}\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1terminal__set_a7ea65a9be768a96f1802cea0018abf74}{terminal\+\_\+set}} ()
+\item 
+\mbox{\hyperlink{classjava__cup_1_1terminal__set_a93f7adc530871716b9d16e2e7b1c1e90}{terminal\+\_\+set}} (\mbox{\hyperlink{classjava__cup_1_1terminal__set}{terminal\+\_\+set}} other)  throws internal\+\_\+error     
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1terminal__set_a1bb6eed2dc30a79c1f9f1ea7c968d061}{empty}} ()
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1terminal__set_a13020cba011e6670290d2946c826db88}{contains}} (\mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}} \mbox{\hyperlink{classjava__cup_1_1sym}{sym}})  throws internal\+\_\+error     
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1terminal__set_a0a030c06ce4a909e66845f5ab7cae5ca}{contains}} (int indx)
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1terminal__set_a9b17fde12ed43c5a5413f235db1566c2}{is\+\_\+subset\+\_\+of}} (\mbox{\hyperlink{classjava__cup_1_1terminal__set}{terminal\+\_\+set}} other)  throws internal\+\_\+error     
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1terminal__set_a44e4747d3e8b2de1ce3e06d83c07a63d}{is\+\_\+superset\+\_\+of}} (\mbox{\hyperlink{classjava__cup_1_1terminal__set}{terminal\+\_\+set}} other)  throws internal\+\_\+error     
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1terminal__set_a073ab4492e122cfa6eb75e729b81db78}{add}} (\mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}} \mbox{\hyperlink{classjava__cup_1_1sym}{sym}})  throws internal\+\_\+error     
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1terminal__set_a2ac5a5e28839f5037219c433c8bafca4}{remove}} (\mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}} \mbox{\hyperlink{classjava__cup_1_1sym}{sym}})  throws internal\+\_\+error     
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1terminal__set_aabc301c6460a7fb9126910dd01531134}{add}} (\mbox{\hyperlink{classjava__cup_1_1terminal__set}{terminal\+\_\+set}} other)  throws internal\+\_\+error     
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1terminal__set_ad777dcf2a312cfbe35858ddb92a56031}{intersects}} (\mbox{\hyperlink{classjava__cup_1_1terminal__set}{terminal\+\_\+set}} other)  throws internal\+\_\+error      
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1terminal__set_ac3018462c9ab81c44b348689f37a7f96}{equals}} (\mbox{\hyperlink{classjava__cup_1_1terminal__set}{terminal\+\_\+set}} other)
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1terminal__set_a88da3b85071e01c9586672d0732cb087}{equals}} (Object other)
+\item 
+String \mbox{\hyperlink{classjava__cup_1_1terminal__set_a864449251e21487dbb40d835c3f7a5bb}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Statische öffentliche Attribute}
+\begin{DoxyCompactItemize}
+\item 
+static final \mbox{\hyperlink{classjava__cup_1_1terminal__set}{terminal\+\_\+set}} \mbox{\hyperlink{classjava__cup_1_1terminal__set_a66564ed2f85bec931bc32dd0ecdf2f0e}{E\+M\+P\+TY}} = new \mbox{\hyperlink{classjava__cup_1_1terminal__set}{terminal\+\_\+set}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte Methoden}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1terminal__set_a91f50fdf98dd01ed059d777c322a75a9}{not\+\_\+null}} (Object obj)  throws internal\+\_\+error     
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+Bit\+Set \mbox{\hyperlink{classjava__cup_1_1terminal__set_a21d473631345a766317802600fdd436b}{\+\_\+elements}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+A set of terminals implemented as a bitset. \begin{DoxyVersion}{Version}
+last updated\+: 11/25/95 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Autor}
+Scott Hudson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjava__cup_1_1terminal__set_a7ea65a9be768a96f1802cea0018abf74}\label{classjava__cup_1_1terminal__set_a7ea65a9be768a96f1802cea0018abf74}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!terminal\_set@{terminal\_set}}
+\index{terminal\_set@{terminal\_set}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{terminal\_set()}{terminal\_set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily java\+\_\+cup.\+terminal\+\_\+set.\+terminal\+\_\+set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for an empty set. \mbox{\Hypertarget{classjava__cup_1_1terminal__set_a93f7adc530871716b9d16e2e7b1c1e90}\label{classjava__cup_1_1terminal__set_a93f7adc530871716b9d16e2e7b1c1e90}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!terminal\_set@{terminal\_set}}
+\index{terminal\_set@{terminal\_set}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{terminal\_set()}{terminal\_set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily java\+\_\+cup.\+terminal\+\_\+set.\+terminal\+\_\+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1terminal__set}{terminal\+\_\+set}}}]{other }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for cloning from another set. 
+\begin{DoxyParams}{Parameter}
+{\em other} & the set we are cloning from. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classjava__cup_1_1terminal__set_a073ab4492e122cfa6eb75e729b81db78}\label{classjava__cup_1_1terminal__set_a073ab4492e122cfa6eb75e729b81db78}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!add@{add}}
+\index{add@{add}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+terminal\+\_\+set.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}}}]{sym }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a single terminal to the set. ~\newline
+ 
+\begin{DoxyParams}{Parameter}
+{\em sym} & the terminal being added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+true if this changes the set. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classjava__cup_1_1terminal__set_aabc301c6460a7fb9126910dd01531134}\label{classjava__cup_1_1terminal__set_aabc301c6460a7fb9126910dd01531134}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!add@{add}}
+\index{add@{add}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+terminal\+\_\+set.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1terminal__set}{terminal\+\_\+set}}}]{other }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add (union) in a complete set. ~\newline
+ 
+\begin{DoxyParams}{Parameter}
+{\em other} & the set being added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+true if this changes the set. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classjava__cup_1_1terminal__set_a0a030c06ce4a909e66845f5ab7cae5ca}\label{classjava__cup_1_1terminal__set_a0a030c06ce4a909e66845f5ab7cae5ca}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!contains@{contains}}
+\index{contains@{contains}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+terminal\+\_\+set.\+contains (\begin{DoxyParamCaption}\item[{int}]{indx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Given its index determine if the set contains a particular terminal. 
+\begin{DoxyParams}{Parameter}
+{\em indx} & the index of the terminal in question. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1terminal__set_a13020cba011e6670290d2946c826db88}\label{classjava__cup_1_1terminal__set_a13020cba011e6670290d2946c826db88}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!contains@{contains}}
+\index{contains@{contains}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+terminal\+\_\+set.\+contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}}}]{sym }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Determine if the set contains a particular terminal. 
+\begin{DoxyParams}{Parameter}
+{\em sym} & the terminal symbol we are looking for. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1terminal__set_a1bb6eed2dc30a79c1f9f1ea7c968d061}\label{classjava__cup_1_1terminal__set_a1bb6eed2dc30a79c1f9f1ea7c968d061}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!empty@{empty}}
+\index{empty@{empty}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+terminal\+\_\+set.\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Determine if the set is empty. \mbox{\Hypertarget{classjava__cup_1_1terminal__set_a88da3b85071e01c9586672d0732cb087}\label{classjava__cup_1_1terminal__set_a88da3b85071e01c9586672d0732cb087}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!equals@{equals}}
+\index{equals@{equals}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+terminal\+\_\+set.\+equals (\begin{DoxyParamCaption}\item[{Object}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generic equality comparison. \mbox{\Hypertarget{classjava__cup_1_1terminal__set_ac3018462c9ab81c44b348689f37a7f96}\label{classjava__cup_1_1terminal__set_ac3018462c9ab81c44b348689f37a7f96}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!equals@{equals}}
+\index{equals@{equals}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+terminal\+\_\+set.\+equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1terminal__set}{terminal\+\_\+set}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Equality comparison. \mbox{\Hypertarget{classjava__cup_1_1terminal__set_ad777dcf2a312cfbe35858ddb92a56031}\label{classjava__cup_1_1terminal__set_ad777dcf2a312cfbe35858ddb92a56031}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!intersects@{intersects}}
+\index{intersects@{intersects}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+terminal\+\_\+set.\+intersects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1terminal__set}{terminal\+\_\+set}}}]{other }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Determine if this set intersects another. 
+\begin{DoxyParams}{Parameter}
+{\em other} & the other set in question. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1terminal__set_a9b17fde12ed43c5a5413f235db1566c2}\label{classjava__cup_1_1terminal__set_a9b17fde12ed43c5a5413f235db1566c2}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!is\_subset\_of@{is\_subset\_of}}
+\index{is\_subset\_of@{is\_subset\_of}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{is\_subset\_of()}{is\_subset\_of()}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+terminal\+\_\+set.\+is\+\_\+subset\+\_\+of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1terminal__set}{terminal\+\_\+set}}}]{other }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Determine if this set is an (improper) subset of another. 
+\begin{DoxyParams}{Parameter}
+{\em other} & the set we are testing against. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1terminal__set_a44e4747d3e8b2de1ce3e06d83c07a63d}\label{classjava__cup_1_1terminal__set_a44e4747d3e8b2de1ce3e06d83c07a63d}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!is\_superset\_of@{is\_superset\_of}}
+\index{is\_superset\_of@{is\_superset\_of}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{is\_superset\_of()}{is\_superset\_of()}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+terminal\+\_\+set.\+is\+\_\+superset\+\_\+of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1terminal__set}{terminal\+\_\+set}}}]{other }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Determine if this set is an (improper) superset of another. 
+\begin{DoxyParams}{Parameter}
+{\em other} & the set we are testing against. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1terminal__set_a91f50fdf98dd01ed059d777c322a75a9}\label{classjava__cup_1_1terminal__set_a91f50fdf98dd01ed059d777c322a75a9}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!not\_null@{not\_null}}
+\index{not\_null@{not\_null}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{not\_null()}{not\_null()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+terminal\+\_\+set.\+not\+\_\+null (\begin{DoxyParamCaption}\item[{Object}]{obj }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Helper function to test for a null object and throw an exception if one is found. 
+\begin{DoxyParams}{Parameter}
+{\em obj} & the object we are testing. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1terminal__set_a2ac5a5e28839f5037219c433c8bafca4}\label{classjava__cup_1_1terminal__set_a2ac5a5e28839f5037219c433c8bafca4}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!remove@{remove}}
+\index{remove@{remove}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+terminal\+\_\+set.\+remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}}}]{sym }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove a terminal if it is in the set. 
+\begin{DoxyParams}{Parameter}
+{\em sym} & the terminal being removed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1terminal__set_a864449251e21487dbb40d835c3f7a5bb}\label{classjava__cup_1_1terminal__set_a864449251e21487dbb40d835c3f7a5bb}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!toString@{toString}}
+\index{toString@{toString}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+terminal\+\_\+set.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert to string. 
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classjava__cup_1_1terminal__set_a21d473631345a766317802600fdd436b}\label{classjava__cup_1_1terminal__set_a21d473631345a766317802600fdd436b}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!\_elements@{\_elements}}
+\index{\_elements@{\_elements}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{\_elements}{\_elements}}
+{\footnotesize\ttfamily Bit\+Set java\+\_\+cup.\+terminal\+\_\+set.\+\_\+elements\hspace{0.3cm}{\ttfamily [protected]}}
+
+Bitset to implement the actual set. \mbox{\Hypertarget{classjava__cup_1_1terminal__set_a66564ed2f85bec931bc32dd0ecdf2f0e}\label{classjava__cup_1_1terminal__set_a66564ed2f85bec931bc32dd0ecdf2f0e}} 
+\index{java\_cup.terminal\_set@{java\_cup.terminal\_set}!EMPTY@{EMPTY}}
+\index{EMPTY@{EMPTY}!java\_cup.terminal\_set@{java\_cup.terminal\_set}}
+\doxysubsubsection{\texorpdfstring{EMPTY}{EMPTY}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classjava__cup_1_1terminal__set}{terminal\+\_\+set}} java\+\_\+cup.\+terminal\+\_\+set.\+E\+M\+P\+TY = new \mbox{\hyperlink{classjava__cup_1_1terminal__set}{terminal\+\_\+set}}()\hspace{0.3cm}{\ttfamily [static]}}
+
+Constant for the empty set. 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/java\+\_\+cup/terminal\+\_\+set.\+java\end{DoxyCompactItemize}

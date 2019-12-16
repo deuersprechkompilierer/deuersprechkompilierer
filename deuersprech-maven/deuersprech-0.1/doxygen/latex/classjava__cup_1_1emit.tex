@@ -1,0 +1,358 @@
+\hypertarget{classjava__cup_1_1emit}{}\doxysection{java\+\_\+cup.\+emit Klassenreferenz}
+\label{classjava__cup_1_1emit}\index{java\_cup.emit@{java\_cup.emit}}
+\doxysubsection*{Öffentliche, statische Methoden}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classjava__cup_1_1emit_a9f595167538173996828b729f672de1a}{symbols}} (Print\+Stream out, boolean emit\+\_\+non\+\_\+terms)
+\item 
+static void \mbox{\hyperlink{classjava__cup_1_1emit_a5959a975f9153a990f0abb2a5ad9ebcc}{parser}} (Print\+Stream out, \mbox{\hyperlink{classjava__cup_1_1parse__action__table}{parse\+\_\+action\+\_\+table}} action\+\_\+table, \mbox{\hyperlink{classjava__cup_1_1parse__reduce__table}{parse\+\_\+reduce\+\_\+table}} reduce\+\_\+table, int start\+\_\+st, \mbox{\hyperlink{classjava__cup_1_1production}{production}} start\+\_\+prod, boolean compact\+\_\+reduces)  throws internal\+\_\+error     
+\end{DoxyCompactItemize}
+\doxysubsection*{Statische öffentliche Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjava__cup_1_1emit_aa86919b9e051c00e9df635c30ebc69aa}\label{classjava__cup_1_1emit_aa86919b9e051c00e9df635c30ebc69aa}} 
+static String {\bfseries input\+\_\+file\+\_\+name}
+\item 
+static String \mbox{\hyperlink{classjava__cup_1_1emit_adbe2c6d9e580ef187d5eda217a870648}{prefix}} = \char`\"{}C\+U\+P\$\char`\"{}
+\item 
+static String \mbox{\hyperlink{classjava__cup_1_1emit_a9083ca1a131771bcc70647d4bbfbaf11}{package\+\_\+name}} = null
+\item 
+static String \mbox{\hyperlink{classjava__cup_1_1emit_a94223a611e016ffb08a5ec539bdf5989}{symbol\+\_\+const\+\_\+class\+\_\+name}} = \char`\"{}sym\char`\"{}
+\item 
+static String \mbox{\hyperlink{classjava__cup_1_1emit_ad9e69e38898838a061dfafe000e1a46b}{parser\+\_\+class\+\_\+name}} = \char`\"{}parser\char`\"{}
+\item 
+static String \mbox{\hyperlink{classjava__cup_1_1emit_a1040aa5dc8dba677c7a11f61686c5c75}{action\+\_\+code}} = null
+\item 
+static String \mbox{\hyperlink{classjava__cup_1_1emit_a3267de4d9d32922d56c81a4ca8bcf8bc}{parser\+\_\+code}} = null
+\item 
+static String \mbox{\hyperlink{classjava__cup_1_1emit_a5d6de17d762585002f33e300ef0815dc}{init\+\_\+code}} = null
+\item 
+static String \mbox{\hyperlink{classjava__cup_1_1emit_a37a99a75a6b1c66033998e8de8608349}{scan\+\_\+code}} = null
+\item 
+static \mbox{\hyperlink{classjava__cup_1_1production}{production}} \mbox{\hyperlink{classjava__cup_1_1emit_aaa011ccd57f3d8c9a761595749bdfc9e}{start\+\_\+production}} = null
+\item 
+static Stack \mbox{\hyperlink{classjava__cup_1_1emit_aee634a0d8f7ec4797923f182c9de87ad}{import\+\_\+list}} = new Stack()
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1emit_a88929d9ab87ed756fc0716416b32e59b}{num\+\_\+conflicts}} = 0
+\item 
+static boolean \mbox{\hyperlink{classjava__cup_1_1emit_a8284f882a59f735de21e7e70b9b47a95}{nowarn}} = false
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1emit_adf9c846ccdad6e57243f18cdf5b2d223}{not\+\_\+reduced}} = 0
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1emit_a128fef3036f5aa3efd48141237f034fc}{unused\+\_\+term}} = 0
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1emit_a2bc6cab8b4ac8fed8a3894d06053525a}{unused\+\_\+non\+\_\+term}} = 0
+\item 
+static long \mbox{\hyperlink{classjava__cup_1_1emit_a21fbc5066a9f5db842dd28287479c864}{symbols\+\_\+time}} = 0
+\item 
+static long \mbox{\hyperlink{classjava__cup_1_1emit_ade42c071e0367c77d2ce7bf2493c7315}{parser\+\_\+time}} = 0
+\item 
+static long \mbox{\hyperlink{classjava__cup_1_1emit_a282807ec7a113ce42ff494c3dcd04633}{action\+\_\+code\+\_\+time}} = 0
+\item 
+static long \mbox{\hyperlink{classjava__cup_1_1emit_ac26d9a07fddc661846d698879448999e}{production\+\_\+table\+\_\+time}} = 0
+\item 
+static long \mbox{\hyperlink{classjava__cup_1_1emit_a71868ff5bfd4ad7438925b246182e3e2}{action\+\_\+table\+\_\+time}} = 0
+\item 
+static long \mbox{\hyperlink{classjava__cup_1_1emit_ae658f6786fd1743b6470689d0cb9e3e8}{goto\+\_\+table\+\_\+time}} = 0
+\item 
+static String \mbox{\hyperlink{classjava__cup_1_1emit_af8028115b0de7ae0bf2a86a019399fe5}{debug\+\_\+grammar}} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte, statische Methoden}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classjava__cup_1_1emit_aeedeafc2d9eec9394ed0c19fa57ca2f4}{pre}} (String str)
+\item 
+static void \mbox{\hyperlink{classjava__cup_1_1emit_a7172aa5c6033183ec3a9707309c7afae}{emit\+\_\+package}} (Print\+Stream out)
+\item 
+static void \mbox{\hyperlink{classjava__cup_1_1emit_a999c55f112f328b9f8fa994f9fd854fb}{emit\+\_\+action\+\_\+code}} (Print\+Stream out, \mbox{\hyperlink{classjava__cup_1_1production}{production}} start\+\_\+prod)  throws internal\+\_\+error     
+\item 
+static void \mbox{\hyperlink{classjava__cup_1_1emit_a8e9be294991c086fd843568ebd163122}{emit\+\_\+production\+\_\+table}} (Print\+Stream out)
+\item 
+static void \mbox{\hyperlink{classjava__cup_1_1emit_a588021f02b1a33f79053d51283a91fe5}{do\+\_\+action\+\_\+table}} (Print\+Stream out, \mbox{\hyperlink{classjava__cup_1_1parse__action__table}{parse\+\_\+action\+\_\+table}} act\+\_\+tab, boolean compact\+\_\+reduces)  throws internal\+\_\+error     
+\item 
+static void \mbox{\hyperlink{classjava__cup_1_1emit_a0ac600033976ca1e4814fced8d8ebad4}{do\+\_\+reduce\+\_\+table}} (Print\+Stream out, \mbox{\hyperlink{classjava__cup_1_1parse__reduce__table}{parse\+\_\+reduce\+\_\+table}} red\+\_\+tab)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+This class handles emitting generated code for the resulting parser. The various parse tables must be constructed, etc. before calling any routines in this class.
+
+Three classes are produced by this code\+: 
+\begin{DoxyDescription}
+\item[symbol constant class ]this contains constant declarations for each terminal (and optionally each non-\/terminal). 
+\item[action class ]this non-\/public class contains code to invoke all the user actions that were embedded in the parser specification. 
+\item[parser class ]the specialized parser class consisting primarily of some user supplied general and initialization code, and the parse tables. 
+\end{DoxyDescription}
+
+Three parse tables are created as part of the parser class\+: 
+\begin{DoxyDescription}
+\item[production table ]lists the L\+HS non terminal number, and the length of the R\+HS of each production. 
+\item[action table ]for each state of the parse machine, gives the action to be taken (shift, reduce, or error) under each lookahead symbol.~\newline
+ 
+\item[reduce-\/goto table ]when a reduce on a given production is taken, the parse stack is popped back a number of elements corresponding to the R\+HS of the production. This reveals a prior state, which we transition out of under the L\+HS non terminal symbol for the production (as if we had seen the L\+HS symbol rather than all the symbols matching the R\+HS). This table is indexed by non terminal numbers and indicates how to make these transitions. 
+\end{DoxyDescription}
+
+In addition to the method interface, this class maintains a series of public global variables and flags indicating how misc. parts of the code and other output is to be produced, and counting things such as number of conflicts detected (see the source code and public variables below for more details).
+
+This class is \char`\"{}static\char`\"{} (contains only static data and methods).
+
+\begin{DoxySeeAlso}{Siehe auch}
+java\+\_\+cup.\+main 
+\end{DoxySeeAlso}
+\begin{DoxyVersion}{Version}
+last update\+: 11/25/95 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Autor}
+Scott Hudson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classjava__cup_1_1emit_a588021f02b1a33f79053d51283a91fe5}\label{classjava__cup_1_1emit_a588021f02b1a33f79053d51283a91fe5}} 
+\index{java\_cup.emit@{java\_cup.emit}!do\_action\_table@{do\_action\_table}}
+\index{do\_action\_table@{do\_action\_table}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{do\_action\_table()}{do\_action\_table()}}
+{\footnotesize\ttfamily static void java\+\_\+cup.\+emit.\+do\+\_\+action\+\_\+table (\begin{DoxyParamCaption}\item[{Print\+Stream}]{out,  }\item[{\mbox{\hyperlink{classjava__cup_1_1parse__action__table}{parse\+\_\+action\+\_\+table}}}]{act\+\_\+tab,  }\item[{boolean}]{compact\+\_\+reduces }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+Emit the action table. 
+\begin{DoxyParams}{Parameter}
+{\em out} & stream to produce output on. \\
+\hline
+{\em act\+\_\+tab} & the internal representation of the action table. \\
+\hline
+{\em compact\+\_\+reduces} & do we use the most frequent reduce as default? \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1emit_a0ac600033976ca1e4814fced8d8ebad4}\label{classjava__cup_1_1emit_a0ac600033976ca1e4814fced8d8ebad4}} 
+\index{java\_cup.emit@{java\_cup.emit}!do\_reduce\_table@{do\_reduce\_table}}
+\index{do\_reduce\_table@{do\_reduce\_table}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{do\_reduce\_table()}{do\_reduce\_table()}}
+{\footnotesize\ttfamily static void java\+\_\+cup.\+emit.\+do\+\_\+reduce\+\_\+table (\begin{DoxyParamCaption}\item[{Print\+Stream}]{out,  }\item[{\mbox{\hyperlink{classjava__cup_1_1parse__reduce__table}{parse\+\_\+reduce\+\_\+table}}}]{red\+\_\+tab }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+Emit the reduce-\/goto table. 
+\begin{DoxyParams}{Parameter}
+{\em out} & stream to produce output on. \\
+\hline
+{\em red\+\_\+tab} & the internal representation of the reduce-\/goto table. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1emit_a999c55f112f328b9f8fa994f9fd854fb}\label{classjava__cup_1_1emit_a999c55f112f328b9f8fa994f9fd854fb}} 
+\index{java\_cup.emit@{java\_cup.emit}!emit\_action\_code@{emit\_action\_code}}
+\index{emit\_action\_code@{emit\_action\_code}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{emit\_action\_code()}{emit\_action\_code()}}
+{\footnotesize\ttfamily static void java\+\_\+cup.\+emit.\+emit\+\_\+action\+\_\+code (\begin{DoxyParamCaption}\item[{Print\+Stream}]{out,  }\item[{\mbox{\hyperlink{classjava__cup_1_1production}{production}}}]{start\+\_\+prod }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+Emit code for the non-\/public class holding the actual action code. 
+\begin{DoxyParams}{Parameter}
+{\em out} & stream to produce output on. \\
+\hline
+{\em start\+\_\+prod} & the start production of the grammar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1emit_a7172aa5c6033183ec3a9707309c7afae}\label{classjava__cup_1_1emit_a7172aa5c6033183ec3a9707309c7afae}} 
+\index{java\_cup.emit@{java\_cup.emit}!emit\_package@{emit\_package}}
+\index{emit\_package@{emit\_package}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{emit\_package()}{emit\_package()}}
+{\footnotesize\ttfamily static void java\+\_\+cup.\+emit.\+emit\+\_\+package (\begin{DoxyParamCaption}\item[{Print\+Stream}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+Emit a package spec if the user wants one. 
+\begin{DoxyParams}{Parameter}
+{\em out} & stream to produce output on. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1emit_a8e9be294991c086fd843568ebd163122}\label{classjava__cup_1_1emit_a8e9be294991c086fd843568ebd163122}} 
+\index{java\_cup.emit@{java\_cup.emit}!emit\_production\_table@{emit\_production\_table}}
+\index{emit\_production\_table@{emit\_production\_table}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{emit\_production\_table()}{emit\_production\_table()}}
+{\footnotesize\ttfamily static void java\+\_\+cup.\+emit.\+emit\+\_\+production\+\_\+table (\begin{DoxyParamCaption}\item[{Print\+Stream}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+Emit the production table. 
+\begin{DoxyParams}{Parameter}
+{\em out} & stream to produce output on. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1emit_a5959a975f9153a990f0abb2a5ad9ebcc}\label{classjava__cup_1_1emit_a5959a975f9153a990f0abb2a5ad9ebcc}} 
+\index{java\_cup.emit@{java\_cup.emit}!parser@{parser}}
+\index{parser@{parser}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{parser()}{parser()}}
+{\footnotesize\ttfamily static void java\+\_\+cup.\+emit.\+parser (\begin{DoxyParamCaption}\item[{Print\+Stream}]{out,  }\item[{\mbox{\hyperlink{classjava__cup_1_1parse__action__table}{parse\+\_\+action\+\_\+table}}}]{action\+\_\+table,  }\item[{\mbox{\hyperlink{classjava__cup_1_1parse__reduce__table}{parse\+\_\+reduce\+\_\+table}}}]{reduce\+\_\+table,  }\item[{int}]{start\+\_\+st,  }\item[{\mbox{\hyperlink{classjava__cup_1_1production}{production}}}]{start\+\_\+prod,  }\item[{boolean}]{compact\+\_\+reduces }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Emit the parser subclass with embedded tables. 
+\begin{DoxyParams}{Parameter}
+{\em out} & stream to produce output on. \\
+\hline
+{\em action\+\_\+table} & internal representation of the action table. \\
+\hline
+{\em reduce\+\_\+table} & internal representation of the reduce-\/goto table. \\
+\hline
+{\em start\+\_\+st} & start state of the parse machine. \\
+\hline
+{\em start\+\_\+prod} & start production of the grammar. \\
+\hline
+{\em compact\+\_\+reduces} & do we use most frequent reduce as default? \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1emit_aeedeafc2d9eec9394ed0c19fa57ca2f4}\label{classjava__cup_1_1emit_aeedeafc2d9eec9394ed0c19fa57ca2f4}} 
+\index{java\_cup.emit@{java\_cup.emit}!pre@{pre}}
+\index{pre@{pre}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{pre()}{pre()}}
+{\footnotesize\ttfamily static String java\+\_\+cup.\+emit.\+pre (\begin{DoxyParamCaption}\item[{String}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+Build a string with the standard prefix. 
+\begin{DoxyParams}{Parameter}
+{\em str} & string to prefix. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1emit_a9f595167538173996828b729f672de1a}\label{classjava__cup_1_1emit_a9f595167538173996828b729f672de1a}} 
+\index{java\_cup.emit@{java\_cup.emit}!symbols@{symbols}}
+\index{symbols@{symbols}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{symbols()}{symbols()}}
+{\footnotesize\ttfamily static void java\+\_\+cup.\+emit.\+symbols (\begin{DoxyParamCaption}\item[{Print\+Stream}]{out,  }\item[{boolean}]{emit\+\_\+non\+\_\+terms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Emit code for the symbol constant class, optionally including non terms, if they have been requested. 
+\begin{DoxyParams}{Parameter}
+{\em out} & stream to produce output on. \\
+\hline
+{\em emit\+\_\+non\+\_\+terms} & do we emit constants for non terminals? \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classjava__cup_1_1emit_a1040aa5dc8dba677c7a11f61686c5c75}\label{classjava__cup_1_1emit_a1040aa5dc8dba677c7a11f61686c5c75}} 
+\index{java\_cup.emit@{java\_cup.emit}!action\_code@{action\_code}}
+\index{action\_code@{action\_code}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{action\_code}{action\_code}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+emit.\+action\+\_\+code = null\hspace{0.3cm}{\ttfamily [static]}}
+
+User declarations for direct inclusion in user action class. \mbox{\Hypertarget{classjava__cup_1_1emit_a282807ec7a113ce42ff494c3dcd04633}\label{classjava__cup_1_1emit_a282807ec7a113ce42ff494c3dcd04633}} 
+\index{java\_cup.emit@{java\_cup.emit}!action\_code\_time@{action\_code\_time}}
+\index{action\_code\_time@{action\_code\_time}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{action\_code\_time}{action\_code\_time}}
+{\footnotesize\ttfamily long java\+\_\+cup.\+emit.\+action\+\_\+code\+\_\+time = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Time to produce action code class. \mbox{\Hypertarget{classjava__cup_1_1emit_a71868ff5bfd4ad7438925b246182e3e2}\label{classjava__cup_1_1emit_a71868ff5bfd4ad7438925b246182e3e2}} 
+\index{java\_cup.emit@{java\_cup.emit}!action\_table\_time@{action\_table\_time}}
+\index{action\_table\_time@{action\_table\_time}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{action\_table\_time}{action\_table\_time}}
+{\footnotesize\ttfamily long java\+\_\+cup.\+emit.\+action\+\_\+table\+\_\+time = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Time to produce the action table. \mbox{\Hypertarget{classjava__cup_1_1emit_af8028115b0de7ae0bf2a86a019399fe5}\label{classjava__cup_1_1emit_af8028115b0de7ae0bf2a86a019399fe5}} 
+\index{java\_cup.emit@{java\_cup.emit}!debug\_grammar@{debug\_grammar}}
+\index{debug\_grammar@{debug\_grammar}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{debug\_grammar}{debug\_grammar}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+emit.\+debug\+\_\+grammar = null\hspace{0.3cm}{\ttfamily [static]}}
+
+Do we produce calls debug\+\_\+gammar in generated parser? \mbox{\Hypertarget{classjava__cup_1_1emit_ae658f6786fd1743b6470689d0cb9e3e8}\label{classjava__cup_1_1emit_ae658f6786fd1743b6470689d0cb9e3e8}} 
+\index{java\_cup.emit@{java\_cup.emit}!goto\_table\_time@{goto\_table\_time}}
+\index{goto\_table\_time@{goto\_table\_time}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{goto\_table\_time}{goto\_table\_time}}
+{\footnotesize\ttfamily long java\+\_\+cup.\+emit.\+goto\+\_\+table\+\_\+time = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Time to produce the reduce-\/goto table. \mbox{\Hypertarget{classjava__cup_1_1emit_aee634a0d8f7ec4797923f182c9de87ad}\label{classjava__cup_1_1emit_aee634a0d8f7ec4797923f182c9de87ad}} 
+\index{java\_cup.emit@{java\_cup.emit}!import\_list@{import\_list}}
+\index{import\_list@{import\_list}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{import\_list}{import\_list}}
+{\footnotesize\ttfamily Stack java\+\_\+cup.\+emit.\+import\+\_\+list = new Stack()\hspace{0.3cm}{\ttfamily [static]}}
+
+List of imports (Strings containing class names) to go with actions. \mbox{\Hypertarget{classjava__cup_1_1emit_a5d6de17d762585002f33e300ef0815dc}\label{classjava__cup_1_1emit_a5d6de17d762585002f33e300ef0815dc}} 
+\index{java\_cup.emit@{java\_cup.emit}!init\_code@{init\_code}}
+\index{init\_code@{init\_code}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{init\_code}{init\_code}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+emit.\+init\+\_\+code = null\hspace{0.3cm}{\ttfamily [static]}}
+
+User code for user\+\_\+init() which is called during parser initialization. \mbox{\Hypertarget{classjava__cup_1_1emit_adf9c846ccdad6e57243f18cdf5b2d223}\label{classjava__cup_1_1emit_adf9c846ccdad6e57243f18cdf5b2d223}} 
+\index{java\_cup.emit@{java\_cup.emit}!not\_reduced@{not\_reduced}}
+\index{not\_reduced@{not\_reduced}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{not\_reduced}{not\_reduced}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+emit.\+not\+\_\+reduced = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Count of the number on non-\/reduced productions found. \mbox{\Hypertarget{classjava__cup_1_1emit_a8284f882a59f735de21e7e70b9b47a95}\label{classjava__cup_1_1emit_a8284f882a59f735de21e7e70b9b47a95}} 
+\index{java\_cup.emit@{java\_cup.emit}!nowarn@{nowarn}}
+\index{nowarn@{nowarn}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{nowarn}{nowarn}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+emit.\+nowarn = false\hspace{0.3cm}{\ttfamily [static]}}
+
+Do we skip warnings? \mbox{\Hypertarget{classjava__cup_1_1emit_a88929d9ab87ed756fc0716416b32e59b}\label{classjava__cup_1_1emit_a88929d9ab87ed756fc0716416b32e59b}} 
+\index{java\_cup.emit@{java\_cup.emit}!num\_conflicts@{num\_conflicts}}
+\index{num\_conflicts@{num\_conflicts}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{num\_conflicts}{num\_conflicts}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+emit.\+num\+\_\+conflicts = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Number of conflict found while building tables. \mbox{\Hypertarget{classjava__cup_1_1emit_a9083ca1a131771bcc70647d4bbfbaf11}\label{classjava__cup_1_1emit_a9083ca1a131771bcc70647d4bbfbaf11}} 
+\index{java\_cup.emit@{java\_cup.emit}!package\_name@{package\_name}}
+\index{package\_name@{package\_name}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{package\_name}{package\_name}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+emit.\+package\+\_\+name = null\hspace{0.3cm}{\ttfamily [static]}}
+
+Package that the resulting code goes into (null is used for unnamed). \mbox{\Hypertarget{classjava__cup_1_1emit_ad9e69e38898838a061dfafe000e1a46b}\label{classjava__cup_1_1emit_ad9e69e38898838a061dfafe000e1a46b}} 
+\index{java\_cup.emit@{java\_cup.emit}!parser\_class\_name@{parser\_class\_name}}
+\index{parser\_class\_name@{parser\_class\_name}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{parser\_class\_name}{parser\_class\_name}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+emit.\+parser\+\_\+class\+\_\+name = \char`\"{}parser\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+Name of the generated parser class. \mbox{\Hypertarget{classjava__cup_1_1emit_a3267de4d9d32922d56c81a4ca8bcf8bc}\label{classjava__cup_1_1emit_a3267de4d9d32922d56c81a4ca8bcf8bc}} 
+\index{java\_cup.emit@{java\_cup.emit}!parser\_code@{parser\_code}}
+\index{parser\_code@{parser\_code}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{parser\_code}{parser\_code}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+emit.\+parser\+\_\+code = null\hspace{0.3cm}{\ttfamily [static]}}
+
+User declarations for direct inclusion in parser class. \mbox{\Hypertarget{classjava__cup_1_1emit_ade42c071e0367c77d2ce7bf2493c7315}\label{classjava__cup_1_1emit_ade42c071e0367c77d2ce7bf2493c7315}} 
+\index{java\_cup.emit@{java\_cup.emit}!parser\_time@{parser\_time}}
+\index{parser\_time@{parser\_time}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{parser\_time}{parser\_time}}
+{\footnotesize\ttfamily long java\+\_\+cup.\+emit.\+parser\+\_\+time = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Time to produce parser class. \mbox{\Hypertarget{classjava__cup_1_1emit_adbe2c6d9e580ef187d5eda217a870648}\label{classjava__cup_1_1emit_adbe2c6d9e580ef187d5eda217a870648}} 
+\index{java\_cup.emit@{java\_cup.emit}!prefix@{prefix}}
+\index{prefix@{prefix}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{prefix}{prefix}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+emit.\+prefix = \char`\"{}C\+U\+P\$\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+The prefix placed on names that pollute someone else\textquotesingle{}s name space. \mbox{\Hypertarget{classjava__cup_1_1emit_ac26d9a07fddc661846d698879448999e}\label{classjava__cup_1_1emit_ac26d9a07fddc661846d698879448999e}} 
+\index{java\_cup.emit@{java\_cup.emit}!production\_table\_time@{production\_table\_time}}
+\index{production\_table\_time@{production\_table\_time}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{production\_table\_time}{production\_table\_time}}
+{\footnotesize\ttfamily long java\+\_\+cup.\+emit.\+production\+\_\+table\+\_\+time = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Time to produce the production table. \mbox{\Hypertarget{classjava__cup_1_1emit_a37a99a75a6b1c66033998e8de8608349}\label{classjava__cup_1_1emit_a37a99a75a6b1c66033998e8de8608349}} 
+\index{java\_cup.emit@{java\_cup.emit}!scan\_code@{scan\_code}}
+\index{scan\_code@{scan\_code}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{scan\_code}{scan\_code}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+emit.\+scan\+\_\+code = null\hspace{0.3cm}{\ttfamily [static]}}
+
+User code for scan() which is called to get the next token. \mbox{\Hypertarget{classjava__cup_1_1emit_aaa011ccd57f3d8c9a761595749bdfc9e}\label{classjava__cup_1_1emit_aaa011ccd57f3d8c9a761595749bdfc9e}} 
+\index{java\_cup.emit@{java\_cup.emit}!start\_production@{start\_production}}
+\index{start\_production@{start\_production}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{start\_production}{start\_production}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1production}{production}} java\+\_\+cup.\+emit.\+start\+\_\+production = null\hspace{0.3cm}{\ttfamily [static]}}
+
+The start production of the grammar. \mbox{\Hypertarget{classjava__cup_1_1emit_a94223a611e016ffb08a5ec539bdf5989}\label{classjava__cup_1_1emit_a94223a611e016ffb08a5ec539bdf5989}} 
+\index{java\_cup.emit@{java\_cup.emit}!symbol\_const\_class\_name@{symbol\_const\_class\_name}}
+\index{symbol\_const\_class\_name@{symbol\_const\_class\_name}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{symbol\_const\_class\_name}{symbol\_const\_class\_name}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+emit.\+symbol\+\_\+const\+\_\+class\+\_\+name = \char`\"{}sym\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+Name of the generated class for symbol constants. \mbox{\Hypertarget{classjava__cup_1_1emit_a21fbc5066a9f5db842dd28287479c864}\label{classjava__cup_1_1emit_a21fbc5066a9f5db842dd28287479c864}} 
+\index{java\_cup.emit@{java\_cup.emit}!symbols\_time@{symbols\_time}}
+\index{symbols\_time@{symbols\_time}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{symbols\_time}{symbols\_time}}
+{\footnotesize\ttfamily long java\+\_\+cup.\+emit.\+symbols\+\_\+time = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Time to produce symbol constant class. \mbox{\Hypertarget{classjava__cup_1_1emit_a2bc6cab8b4ac8fed8a3894d06053525a}\label{classjava__cup_1_1emit_a2bc6cab8b4ac8fed8a3894d06053525a}} 
+\index{java\_cup.emit@{java\_cup.emit}!unused\_non\_term@{unused\_non\_term}}
+\index{unused\_non\_term@{unused\_non\_term}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{unused\_non\_term}{unused\_non\_term}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+emit.\+unused\+\_\+non\+\_\+term = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Count of unused non terminals. \mbox{\Hypertarget{classjava__cup_1_1emit_a128fef3036f5aa3efd48141237f034fc}\label{classjava__cup_1_1emit_a128fef3036f5aa3efd48141237f034fc}} 
+\index{java\_cup.emit@{java\_cup.emit}!unused\_term@{unused\_term}}
+\index{unused\_term@{unused\_term}!java\_cup.emit@{java\_cup.emit}}
+\doxysubsubsection{\texorpdfstring{unused\_term}{unused\_term}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+emit.\+unused\+\_\+term = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Count of unused terminals. 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/java\+\_\+cup/emit.\+java\end{DoxyCompactItemize}

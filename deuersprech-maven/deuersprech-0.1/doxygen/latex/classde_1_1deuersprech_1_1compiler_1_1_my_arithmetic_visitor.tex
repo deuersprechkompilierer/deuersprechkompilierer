@@ -1,0 +1,426 @@
+\hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor}{}\doxysection{de.\+deuersprech.\+compiler.\+My\+Arithmetic\+Visitor Klassenreferenz}
+\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor}\index{de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}}
+
+
+Die Klasse \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor}{My\+Arithmetic\+Visitor}} baut auf A\+N\+T\+L\+R-\/generiertem Code auf und implementiert die Jasmin-\/\+Code-\/\+Erzeugung auf Grundlage des vom Parser erstellen Syntaxbaum.  
+
+
+Klassendiagramm für de.\+deuersprech.\+compiler.\+My\+Arithmetic\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.255814cm]{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor}
+\end{center}
+\end{figure}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_aafede7534b12c1de1e4c1ada03ff0ce6}{My\+Arithmetic\+Visitor}} (\mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_function_list}{Function\+List}} defined\+Functions)
+\item 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a9f7eccbd622cce4d679fdd25439960d7}{visit\+Program}} (Program\+Context ctx)
+\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_ae5882affef3e27e762283a806432b1a8}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_ae5882affef3e27e762283a806432b1a8}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_ae5882affef3e27e762283a806432b1a8}{visit\+Println}} (Println\+Context ctx)
+\begin{DoxyCompactList}\small\item\em vearbeitet den Aufruf der println-\/\+Funktion \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a96f4f385a10c97e2a07fa675f23d9cab}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a96f4f385a10c97e2a07fa675f23d9cab}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a96f4f385a10c97e2a07fa675f23d9cab}{visit\+Print}} (Print\+Context ctx)
+\begin{DoxyCompactList}\small\item\em vearbeitet den Aufruf der print-\/\+Funktion \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a8ac308768a8f5695f829d6137bb9f775}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a8ac308768a8f5695f829d6137bb9f775}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a8ac308768a8f5695f829d6137bb9f775}{visit\+Number}} (Number\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet ganze Zahlen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a8a00e3f7abd0b380de01e1d65eb351b4}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a8a00e3f7abd0b380de01e1d65eb351b4}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a8a00e3f7abd0b380de01e1d65eb351b4}{visit\+String}} (String\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet strings \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a76893746855dea0bb0372f6a92e9efa3}{visit\+Assignment}} (Assignment\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet negative ganze Zahlen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a1ba7d663e820780383d75ae683fc17a0}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a1ba7d663e820780383d75ae683fc17a0}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a1ba7d663e820780383d75ae683fc17a0}{visit\+Var\+Declaration}} (Var\+Declaration\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet Variablen-\/\+Deklarationen. Der Name der Variable wird in der Hashmap variables mit dem zugehoerigen Index in der Variablentabelle gespeichert \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_aebf8810e676cd724a3bf4b5dc57db0c3}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_aebf8810e676cd724a3bf4b5dc57db0c3}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_aebf8810e676cd724a3bf4b5dc57db0c3}{visit\+Variable}} (Variable\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet den Aufruf von Variablen Es erfolgt ein Zugriff auf die Variablen-\/\+Map, um den Index der lokalen Variablentabelle zu erhalten. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_aca0daadf439d137d630065393b41a7d4}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_aca0daadf439d137d630065393b41a7d4}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_aca0daadf439d137d630065393b41a7d4}{visit\+Const\+Declaration}} (Const\+Declaration\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet Konstanten-\/\+Deklarationen. Der Name der Konstante wird in der Hashmap constants mit dem zugehoerigen Index in der Konstantentabelle gespeichert \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a44cd52de35d7e9bc950e1ae340415be0}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a44cd52de35d7e9bc950e1ae340415be0}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a44cd52de35d7e9bc950e1ae340415be0}{visit\+Constant}} (Constant\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet den Aufruf von Konstanten Es erfolgt ein Zugriff auf die Konstanten-\/\+Map, um den Index der lokalen Konstantentabelle zu erhalten. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a03216627cd850b0015e84f93329cfcbc}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a03216627cd850b0015e84f93329cfcbc}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a03216627cd850b0015e84f93329cfcbc}{visit\+Function\+Call}} (Function\+Call\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet funktions-\/aufrufe \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_af04d0e1f8fbf2cb314c62c8ea94a98a6}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_af04d0e1f8fbf2cb314c62c8ea94a98a6}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_af04d0e1f8fbf2cb314c62c8ea94a98a6}{visit\+Function\+Definition}} (Function\+Definition\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet funktions-\/deklarationen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a650d31f67f7156fc1dfe1edf6c4447a0}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a650d31f67f7156fc1dfe1edf6c4447a0}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a650d31f67f7156fc1dfe1edf6c4447a0}{visit\+Branch}} (Branch\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet if-\/else-\/statements (im moment {\itshape nur} if-\/else!) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a3bed5d1c6404284dfbcd1d886ec3f63a}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a3bed5d1c6404284dfbcd1d886ec3f63a}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a3bed5d1c6404284dfbcd1d886ec3f63a}{visit\+Loop}} (Loop\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet den Aufruf von while-\/\+Schleifen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_ab6553b4c50a802b886d2dddd84f0bed3}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_ab6553b4c50a802b886d2dddd84f0bed3}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_ab6553b4c50a802b886d2dddd84f0bed3}{visit\+Division}} (Division\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet Divisionen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a3e27c2880c5547b45e0605463b71d767}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a3e27c2880c5547b45e0605463b71d767}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a3e27c2880c5547b45e0605463b71d767}{visit\+Multiplication}} (Multiplication\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet Multiplikationen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_aaf765bf4f30a6b89ad7d31b0495c8265}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_aaf765bf4f30a6b89ad7d31b0495c8265}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_aaf765bf4f30a6b89ad7d31b0495c8265}{visit\+Subtraction}} (Subtraction\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet Subtraktionen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a73f0d3b0fe9ee5b3aec8348e5a66a31c}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a73f0d3b0fe9ee5b3aec8348e5a66a31c}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a73f0d3b0fe9ee5b3aec8348e5a66a31c}{visit\+Addition}} (Addition\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet Additionen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a64fb0d376f7fabf9e2ebcb2139bad8f0}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a64fb0d376f7fabf9e2ebcb2139bad8f0}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a64fb0d376f7fabf9e2ebcb2139bad8f0}{visit\+Comparison}} (Comparison\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet aufrufe von vergleichsoperatoren \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a7a514410f354b72090527d11c6af68c1}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a7a514410f354b72090527d11c6af68c1}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a7a514410f354b72090527d11c6af68c1}{visit\+And\+Gate}} (And\+Gate\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet aufrufe des logischen und (\&\&) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a31ccb897f13209c9a6b02c634daf8020}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a31ccb897f13209c9a6b02c634daf8020}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a31ccb897f13209c9a6b02c634daf8020}{visit\+Or\+Gate}} (Or\+Gate\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet aurufe des logischen oder ($\vert$$\vert$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a6d691ed06ee67fb118062c0f6383d4bd}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a6d691ed06ee67fb118062c0f6383d4bd}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a6d691ed06ee67fb118062c0f6383d4bd}{visit\+Inverse\+Gate}} (Inverse\+Gate\+Context ctx)
+\begin{DoxyCompactList}\small\item\em verarbeitet aufrufe des logischen nicht (!) \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a28f02e4fba66ab2c9bde64d519fff479}{visit\+Main\+Statement}} (Arithmetic\+Parser.\+Main\+Statement\+Context ctx)
+\item 
+T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a09cd9a2d825c794a85b959118691bb48}{visit\+Prog\+Part\+Function\+Def}} (Arithmetic\+Parser.\+Prog\+Part\+Function\+Def\+Context ctx)
+\item 
+T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_aea2ac7ab60552b657986c346c840a3af}{visit\+Statement}} (Arithmetic\+Parser.\+Statement\+Context ctx)
+\item 
+T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a421498fa623da683532a4c8b598b4199}{visit\+Statement\+List}} (Arithmetic\+Parser.\+Statement\+List\+Context ctx)
+\item 
+T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a56f027d4052785f291eeb86db76f0fb9}{visit\+Parameter\+Declaration}} (Arithmetic\+Parser.\+Parameter\+Declaration\+Context ctx)
+\item 
+T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a51bd160376b8d696bac0e7dd11cb4f7f}{visit\+Expression\+List}} (Arithmetic\+Parser.\+Expression\+List\+Context ctx)
+\item 
+T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a2cd13ccd955e3c8083fb1e8066685bf6}{visit\+Block}} (Arithmetic\+Parser.\+Block\+Context ctx)
+\item 
+T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a16a580908ed777666e6aea274cbb0f1e}{visit\+Parenthesis}} (Arithmetic\+Parser.\+Parenthesis\+Context ctx)
+\item 
+T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_aba6aad80059fdc7dac0d75f1783a13ea}{visit\+Function\+Call\+Expression}} (Arithmetic\+Parser.\+Function\+Call\+Expression\+Context ctx)
+\end{DoxyCompactItemize}
+\doxysubsection*{Öffentliche, statische Methoden}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{enumde_1_1deuersprech_1_1compiler_1_1_data_type}{Data\+Type}} \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_affda506841579df4e519c959fbbbf599}{to\+Data\+Type}} (String type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_aeef95627adb3db358b5c163d7c9595d2}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_aeef95627adb3db358b5c163d7c9595d2}} 
+String \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_aeef95627adb3db358b5c163d7c9595d2}{aggregate\+Result}} (String aggregate, String next\+Result)
+\begin{DoxyCompactList}\small\item\em spezifiziert, wie zwei Strings konkateniert werden \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+Die Klasse \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor}{My\+Arithmetic\+Visitor}} baut auf A\+N\+T\+L\+R-\/generiertem Code auf und implementiert die Jasmin-\/\+Code-\/\+Erzeugung auf Grundlage des vom Parser erstellen Syntaxbaum. 
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_aafede7534b12c1de1e4c1ada03ff0ce6}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_aafede7534b12c1de1e4c1ada03ff0ce6}} 
+\index{de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}!MyArithmeticVisitor@{MyArithmeticVisitor}}
+\index{MyArithmeticVisitor@{MyArithmeticVisitor}!de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}}
+\doxysubsubsection{\texorpdfstring{MyArithmeticVisitor()}{MyArithmeticVisitor()}}
+{\footnotesize\ttfamily de.\+deuersprech.\+compiler.\+My\+Arithmetic\+Visitor.\+My\+Arithmetic\+Visitor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_function_list}{Function\+List}}}]{defined\+Functions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor der Klasse \mbox{\hyperlink{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor}{My\+Arithmetic\+Visitor}} 
+\begin{DoxyParams}{Parameter}
+{\em defined\+Functions} & Liste mit definierten Funktionen \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_affda506841579df4e519c959fbbbf599}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_affda506841579df4e519c959fbbbf599}} 
+\index{de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}!toDataType@{toDataType}}
+\index{toDataType@{toDataType}!de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}}
+\doxysubsubsection{\texorpdfstring{toDataType()}{toDataType()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{enumde_1_1deuersprech_1_1compiler_1_1_data_type}{Data\+Type}} de.\+deuersprech.\+compiler.\+My\+Arithmetic\+Visitor.\+to\+Data\+Type (\begin{DoxyParamCaption}\item[{String}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+löst einen String (reserviertes Schlüsselwort für Typbezeichnung) zu einem \mbox{\hyperlink{enumde_1_1deuersprech_1_1compiler_1_1_data_type}{Data\+Type}} auf 
+\begin{DoxyParams}{Parameter}
+{\em type} & reserviertes Schlüsselwort für Typ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+zugehöriges Data\+Type-\/\+Objekt 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a76893746855dea0bb0372f6a92e9efa3}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a76893746855dea0bb0372f6a92e9efa3}} 
+\index{de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}!visitAssignment@{visitAssignment}}
+\index{visitAssignment@{visitAssignment}!de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}}
+\doxysubsubsection{\texorpdfstring{visitAssignment()}{visitAssignment()}}
+{\footnotesize\ttfamily String de.\+deuersprech.\+compiler.\+My\+Arithmetic\+Visitor.\+visit\+Assignment (\begin{DoxyParamCaption}\item[{Assignment\+Context}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+verarbeitet negative ganze Zahlen 
+
+verarbeitet Zuweisungen. Es erfolgt ein Zugriff auf die Variablen-\/\+Map, um den Index der lokalen Variablentabelle zu erhalten. 
+
+Erneute Implementation von \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_aaba1d987429cfc26b80149435e9a08b5}{de.\+deuersprech.\+parser.\+Arithmetic\+Base\+Visitor$<$ T $>$}}.
+
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a2cd13ccd955e3c8083fb1e8066685bf6}\label{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a2cd13ccd955e3c8083fb1e8066685bf6}} 
+\index{de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}!visitBlock@{visitBlock}}
+\index{visitBlock@{visitBlock}!de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}}
+\doxysubsubsection{\texorpdfstring{visitBlock()}{visitBlock()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor}{de.\+deuersprech.\+parser.\+Arithmetic\+Base\+Visitor}}$<$ T $>$.visit\+Block (\begin{DoxyParamCaption}\item[{Arithmetic\+Parser.\+Block\+Context}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Visit a parse tree produced by \mbox{\hyperlink{}{Arithmetic\+Parser\#block}}. 
+\begin{DoxyParams}{Parameter}
+{\em ctx} & the parse tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+the visitor result
+\end{DoxyReturn}
+
+
+The default implementation returns the result of calling \mbox{\hyperlink{}{visit\+Children}} on
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctx }
+\end{DoxyCode}
+ .
+
+Implementiert \mbox{\hyperlink{interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor_a62d8102702134bbab69df9869d946227}{de.\+deuersprech.\+parser.\+Arithmetic\+Visitor$<$ T $>$}}.
+
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a51bd160376b8d696bac0e7dd11cb4f7f}\label{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a51bd160376b8d696bac0e7dd11cb4f7f}} 
+\index{de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}!visitExpressionList@{visitExpressionList}}
+\index{visitExpressionList@{visitExpressionList}!de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}}
+\doxysubsubsection{\texorpdfstring{visitExpressionList()}{visitExpressionList()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor}{de.\+deuersprech.\+parser.\+Arithmetic\+Base\+Visitor}}$<$ T $>$.visit\+Expression\+List (\begin{DoxyParamCaption}\item[{Arithmetic\+Parser.\+Expression\+List\+Context}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Visit a parse tree produced by \mbox{\hyperlink{}{Arithmetic\+Parser\#expression\+List}}. 
+\begin{DoxyParams}{Parameter}
+{\em ctx} & the parse tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+the visitor result
+\end{DoxyReturn}
+
+
+The default implementation returns the result of calling \mbox{\hyperlink{}{visit\+Children}} on
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctx }
+\end{DoxyCode}
+ .
+
+Implementiert \mbox{\hyperlink{interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor_a8203843078c18cbeedfd349ba0a83fdd}{de.\+deuersprech.\+parser.\+Arithmetic\+Visitor$<$ T $>$}}.
+
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_aba6aad80059fdc7dac0d75f1783a13ea}\label{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_aba6aad80059fdc7dac0d75f1783a13ea}} 
+\index{de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}!visitFunctionCallExpression@{visitFunctionCallExpression}}
+\index{visitFunctionCallExpression@{visitFunctionCallExpression}!de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}}
+\doxysubsubsection{\texorpdfstring{visitFunctionCallExpression()}{visitFunctionCallExpression()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor}{de.\+deuersprech.\+parser.\+Arithmetic\+Base\+Visitor}}$<$ T $>$.visit\+Function\+Call\+Expression (\begin{DoxyParamCaption}\item[{Arithmetic\+Parser.\+Function\+Call\+Expression\+Context}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Visit a parse tree produced by the
+\begin{DoxyCode}{0}
+\DoxyCodeLine{functionCallExpression }
+\end{DoxyCode}
+ labeled alternative in \mbox{\hyperlink{}{Arithmetic\+Parser\#expression}}. 
+\begin{DoxyParams}{Parameter}
+{\em ctx} & the parse tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+the visitor result
+\end{DoxyReturn}
+
+
+The default implementation returns the result of calling \mbox{\hyperlink{}{visit\+Children}} on
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctx }
+\end{DoxyCode}
+ .
+
+Implementiert \mbox{\hyperlink{interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor_ae9cee16a9e727c4b57739deb850058af}{de.\+deuersprech.\+parser.\+Arithmetic\+Visitor$<$ T $>$}}.
+
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a28f02e4fba66ab2c9bde64d519fff479}\label{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a28f02e4fba66ab2c9bde64d519fff479}} 
+\index{de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}!visitMainStatement@{visitMainStatement}}
+\index{visitMainStatement@{visitMainStatement}!de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}}
+\doxysubsubsection{\texorpdfstring{visitMainStatement()}{visitMainStatement()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor}{de.\+deuersprech.\+parser.\+Arithmetic\+Base\+Visitor}}$<$ T $>$.visit\+Main\+Statement (\begin{DoxyParamCaption}\item[{Arithmetic\+Parser.\+Main\+Statement\+Context}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Visit a parse tree produced by the
+\begin{DoxyCode}{0}
+\DoxyCodeLine{MainStatement }
+\end{DoxyCode}
+ labeled alternative in \mbox{\hyperlink{}{Arithmetic\+Parser\#prog\+Part}}. 
+\begin{DoxyParams}{Parameter}
+{\em ctx} & the parse tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+the visitor result
+\end{DoxyReturn}
+
+
+The default implementation returns the result of calling \mbox{\hyperlink{}{visit\+Children}} on
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctx }
+\end{DoxyCode}
+ .
+
+Implementiert \mbox{\hyperlink{interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor_a418924dd0047bd9d4844219bac7d5356}{de.\+deuersprech.\+parser.\+Arithmetic\+Visitor$<$ T $>$}}.
+
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a56f027d4052785f291eeb86db76f0fb9}\label{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a56f027d4052785f291eeb86db76f0fb9}} 
+\index{de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}!visitParameterDeclaration@{visitParameterDeclaration}}
+\index{visitParameterDeclaration@{visitParameterDeclaration}!de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}}
+\doxysubsubsection{\texorpdfstring{visitParameterDeclaration()}{visitParameterDeclaration()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor}{de.\+deuersprech.\+parser.\+Arithmetic\+Base\+Visitor}}$<$ T $>$.visit\+Parameter\+Declaration (\begin{DoxyParamCaption}\item[{Arithmetic\+Parser.\+Parameter\+Declaration\+Context}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Visit a parse tree produced by \mbox{\hyperlink{}{Arithmetic\+Parser\#parameter\+Declaration}}. 
+\begin{DoxyParams}{Parameter}
+{\em ctx} & the parse tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+the visitor result
+\end{DoxyReturn}
+
+
+The default implementation returns the result of calling \mbox{\hyperlink{}{visit\+Children}} on
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctx }
+\end{DoxyCode}
+ .
+
+Implementiert \mbox{\hyperlink{interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor_a7e45e98d72770fe171b012d974480c9b}{de.\+deuersprech.\+parser.\+Arithmetic\+Visitor$<$ T $>$}}.
+
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a16a580908ed777666e6aea274cbb0f1e}\label{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a16a580908ed777666e6aea274cbb0f1e}} 
+\index{de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}!visitParenthesis@{visitParenthesis}}
+\index{visitParenthesis@{visitParenthesis}!de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}}
+\doxysubsubsection{\texorpdfstring{visitParenthesis()}{visitParenthesis()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor}{de.\+deuersprech.\+parser.\+Arithmetic\+Base\+Visitor}}$<$ T $>$.visit\+Parenthesis (\begin{DoxyParamCaption}\item[{Arithmetic\+Parser.\+Parenthesis\+Context}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Visit a parse tree produced by the
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Parenthesis }
+\end{DoxyCode}
+ labeled alternative in \mbox{\hyperlink{}{Arithmetic\+Parser\#expression}}. 
+\begin{DoxyParams}{Parameter}
+{\em ctx} & the parse tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+the visitor result
+\end{DoxyReturn}
+
+
+The default implementation returns the result of calling \mbox{\hyperlink{}{visit\+Children}} on
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctx }
+\end{DoxyCode}
+ .
+
+Implementiert \mbox{\hyperlink{interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor_aa9bd7b286d4ff5065364aa6103da8a8d}{de.\+deuersprech.\+parser.\+Arithmetic\+Visitor$<$ T $>$}}.
+
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a09cd9a2d825c794a85b959118691bb48}\label{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a09cd9a2d825c794a85b959118691bb48}} 
+\index{de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}!visitProgPartFunctionDef@{visitProgPartFunctionDef}}
+\index{visitProgPartFunctionDef@{visitProgPartFunctionDef}!de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}}
+\doxysubsubsection{\texorpdfstring{visitProgPartFunctionDef()}{visitProgPartFunctionDef()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor}{de.\+deuersprech.\+parser.\+Arithmetic\+Base\+Visitor}}$<$ T $>$.visit\+Prog\+Part\+Function\+Def (\begin{DoxyParamCaption}\item[{Arithmetic\+Parser.\+Prog\+Part\+Function\+Def\+Context}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Visit a parse tree produced by the
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ProgPartFunctionDef }
+\end{DoxyCode}
+ labeled alternative in \mbox{\hyperlink{}{Arithmetic\+Parser\#prog\+Part}}. 
+\begin{DoxyParams}{Parameter}
+{\em ctx} & the parse tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+the visitor result
+\end{DoxyReturn}
+
+
+The default implementation returns the result of calling \mbox{\hyperlink{}{visit\+Children}} on
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctx }
+\end{DoxyCode}
+ .
+
+Implementiert \mbox{\hyperlink{interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor_a91b19205c95f6c822889bc4d916776da}{de.\+deuersprech.\+parser.\+Arithmetic\+Visitor$<$ T $>$}}.
+
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a9f7eccbd622cce4d679fdd25439960d7}\label{classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor_a9f7eccbd622cce4d679fdd25439960d7}} 
+\index{de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}!visitProgram@{visitProgram}}
+\index{visitProgram@{visitProgram}!de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}}
+\doxysubsubsection{\texorpdfstring{visitProgram()}{visitProgram()}}
+{\footnotesize\ttfamily String de.\+deuersprech.\+compiler.\+My\+Arithmetic\+Visitor.\+visit\+Program (\begin{DoxyParamCaption}\item[{Program\+Context}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Visit a parse tree produced by \mbox{\hyperlink{}{Arithmetic\+Parser\#program}}. 
+\begin{DoxyParams}{Parameter}
+{\em ctx} & the parse tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+the visitor result
+\end{DoxyReturn}
+
+
+The default implementation returns the result of calling \mbox{\hyperlink{}{visit\+Children}} on
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctx }
+\end{DoxyCode}
+ .
+
+The default implementation returns the result of calling \mbox{\hyperlink{}{visit\+Children}} on
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctx }
+\end{DoxyCode}
+ .
+
+Erneute Implementation von \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a0f9f530260f15fe38a41801955648697}{de.\+deuersprech.\+parser.\+Arithmetic\+Base\+Visitor$<$ T $>$}}.
+
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_aea2ac7ab60552b657986c346c840a3af}\label{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_aea2ac7ab60552b657986c346c840a3af}} 
+\index{de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}!visitStatement@{visitStatement}}
+\index{visitStatement@{visitStatement}!de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}}
+\doxysubsubsection{\texorpdfstring{visitStatement()}{visitStatement()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor}{de.\+deuersprech.\+parser.\+Arithmetic\+Base\+Visitor}}$<$ T $>$.visit\+Statement (\begin{DoxyParamCaption}\item[{Arithmetic\+Parser.\+Statement\+Context}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Visit a parse tree produced by \mbox{\hyperlink{}{Arithmetic\+Parser\#statement}}. 
+\begin{DoxyParams}{Parameter}
+{\em ctx} & the parse tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+the visitor result
+\end{DoxyReturn}
+
+
+The default implementation returns the result of calling \mbox{\hyperlink{}{visit\+Children}} on
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctx }
+\end{DoxyCode}
+ .
+
+Implementiert \mbox{\hyperlink{interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor_a0c5abf9146f0f76acaec881f4e89088d}{de.\+deuersprech.\+parser.\+Arithmetic\+Visitor$<$ T $>$}}.
+
+\mbox{\Hypertarget{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a421498fa623da683532a4c8b598b4199}\label{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor_a421498fa623da683532a4c8b598b4199}} 
+\index{de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}!visitStatementList@{visitStatementList}}
+\index{visitStatementList@{visitStatementList}!de.deuersprech.compiler.MyArithmeticVisitor@{de.deuersprech.compiler.MyArithmeticVisitor}}
+\doxysubsubsection{\texorpdfstring{visitStatementList()}{visitStatementList()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor}{de.\+deuersprech.\+parser.\+Arithmetic\+Base\+Visitor}}$<$ T $>$.visit\+Statement\+List (\begin{DoxyParamCaption}\item[{Arithmetic\+Parser.\+Statement\+List\+Context}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Visit a parse tree produced by \mbox{\hyperlink{}{Arithmetic\+Parser\#statement\+List}}. 
+\begin{DoxyParams}{Parameter}
+{\em ctx} & the parse tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+the visitor result
+\end{DoxyReturn}
+
+
+The default implementation returns the result of calling \mbox{\hyperlink{}{visit\+Children}} on
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctx }
+\end{DoxyCode}
+ .
+
+Implementiert \mbox{\hyperlink{interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor_ae91bc55ca7997743db4f77bd4dfbbf26}{de.\+deuersprech.\+parser.\+Arithmetic\+Visitor$<$ T $>$}}.
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/de/deuersprech/compiler/\mbox{\hyperlink{_my_arithmetic_visitor_8java}{My\+Arithmetic\+Visitor.\+java}}\end{DoxyCompactItemize}

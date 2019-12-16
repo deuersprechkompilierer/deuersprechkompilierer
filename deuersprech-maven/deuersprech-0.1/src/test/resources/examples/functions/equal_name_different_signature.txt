@@ -1,0 +1,12 @@
+ganzzahl testFunc() { 
+	gebzurueck 42; 
+} 
+
+
+ganzzahl testFunc(ganzzahl a) { 
+	gebzurueck a; 
+} 
+
+
+druckzeile(testFunc()); 
+druckzeile(testFunc(23));

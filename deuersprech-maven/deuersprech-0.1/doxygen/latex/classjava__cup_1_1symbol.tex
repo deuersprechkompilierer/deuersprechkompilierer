@@ -1,0 +1,169 @@
+\hypertarget{classjava__cup_1_1symbol}{}\doxysection{java\+\_\+cup.\+symbol Klassenreferenz}
+\label{classjava__cup_1_1symbol}\index{java\_cup.symbol@{java\_cup.symbol}}
+Klassendiagramm für java\+\_\+cup.\+symbol\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classjava__cup_1_1symbol}
+\end{center}
+\end{figure}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1symbol_acfde0fd7bc55be0ff73532ed6fd89a40}{symbol}} (String nm, String tp)
+\item 
+\mbox{\hyperlink{classjava__cup_1_1symbol_aff7a383fc2757a6936e0abf75d1114a9}{symbol}} (String nm)
+\item 
+String \mbox{\hyperlink{classjava__cup_1_1symbol_a2886f199df09de270d6ee498f7044793}{name}} ()
+\item 
+String \mbox{\hyperlink{classjava__cup_1_1symbol_a3567efd7889a79d8dbd17cebf45f1f59}{stack\+\_\+type}} ()
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1symbol_a91374a6a948f40a04e97db65a7c04b20}{use\+\_\+count}} ()
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1symbol_a1961d83ec63cfb95d1d2d936b4fec273}{note\+\_\+use}} ()
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1symbol_a427ae231940ae6b99d6b8983a16e18f8}{index}} ()
+\item 
+abstract boolean \mbox{\hyperlink{classjava__cup_1_1symbol_af17ee2183b92a3fa0946ad0fd75eb0f8}{is\+\_\+non\+\_\+term}} ()
+\item 
+String \mbox{\hyperlink{classjava__cup_1_1symbol_a638dab8431bd185305f58622837f5754}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classjava__cup_1_1symbol_a33234ea29c328b506046d0b98db218fb}{\+\_\+name}}
+\item 
+String \mbox{\hyperlink{classjava__cup_1_1symbol_a9490f7b2cc20d0f9c345b04fc3d7c6a7}{\+\_\+stack\+\_\+type}}
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1symbol_a0df6b9afa6395db8fd2898692ef438cb}{\+\_\+use\+\_\+count}} = 0
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1symbol_ab477c2302b291e47016c029d7fd089fc}{\+\_\+index}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+This abstract class serves as the base class for grammar symbols (i.\+e., both terminals and non-\/terminals). Each symbol has a name string, and a string giving the type of object that the symbol will be represented by on the runtime parse stack. In addition, each symbol maintains a use count in order to detect symbols that are declared but never used, and an index number that indicates where it appears in parse tables (index numbers are unique within terminals or non terminals, but not across both).
+
+\begin{DoxySeeAlso}{Siehe auch}
+\mbox{\hyperlink{classjava__cup_1_1terminal}{java\+\_\+cup.\+terminal}} 
+
+\mbox{\hyperlink{classjava__cup_1_1non__terminal}{java\+\_\+cup.\+non\+\_\+terminal}} 
+\end{DoxySeeAlso}
+\begin{DoxyVersion}{Version}
+last updated\+: 11/25/95 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Autor}
+Scott Hudson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjava__cup_1_1symbol_acfde0fd7bc55be0ff73532ed6fd89a40}\label{classjava__cup_1_1symbol_acfde0fd7bc55be0ff73532ed6fd89a40}} 
+\index{java\_cup.symbol@{java\_cup.symbol}!symbol@{symbol}}
+\index{symbol@{symbol}!java\_cup.symbol@{java\_cup.symbol}}
+\doxysubsubsection{\texorpdfstring{symbol()}{symbol()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily java\+\_\+cup.\+symbol.\+symbol (\begin{DoxyParamCaption}\item[{String}]{nm,  }\item[{String}]{tp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Full constructor. 
+\begin{DoxyParams}{Parameter}
+{\em nm} & the name of the symbol. \\
+\hline
+{\em tp} & a string with the type name. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1symbol_aff7a383fc2757a6936e0abf75d1114a9}\label{classjava__cup_1_1symbol_aff7a383fc2757a6936e0abf75d1114a9}} 
+\index{java\_cup.symbol@{java\_cup.symbol}!symbol@{symbol}}
+\index{symbol@{symbol}!java\_cup.symbol@{java\_cup.symbol}}
+\doxysubsubsection{\texorpdfstring{symbol()}{symbol()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily java\+\_\+cup.\+symbol.\+symbol (\begin{DoxyParamCaption}\item[{String}]{nm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor with default type. 
+\begin{DoxyParams}{Parameter}
+{\em nm} & the name of the symbol. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classjava__cup_1_1symbol_a427ae231940ae6b99d6b8983a16e18f8}\label{classjava__cup_1_1symbol_a427ae231940ae6b99d6b8983a16e18f8}} 
+\index{java\_cup.symbol@{java\_cup.symbol}!index@{index}}
+\index{index@{index}!java\_cup.symbol@{java\_cup.symbol}}
+\doxysubsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+symbol.\+index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Index of this symbol (terminal or non terminal) in the parse tables. Note\+: indexes are unique among terminals and unique among non terminals, however, a terminal may have the same index as a non-\/terminal, etc. \mbox{\Hypertarget{classjava__cup_1_1symbol_af17ee2183b92a3fa0946ad0fd75eb0f8}\label{classjava__cup_1_1symbol_af17ee2183b92a3fa0946ad0fd75eb0f8}} 
+\index{java\_cup.symbol@{java\_cup.symbol}!is\_non\_term@{is\_non\_term}}
+\index{is\_non\_term@{is\_non\_term}!java\_cup.symbol@{java\_cup.symbol}}
+\doxysubsubsection{\texorpdfstring{is\_non\_term()}{is\_non\_term()}}
+{\footnotesize\ttfamily abstract boolean java\+\_\+cup.\+symbol.\+is\+\_\+non\+\_\+term (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Indicate if this is a non-\/terminal. Here in the base class we don\textquotesingle{}t know, so this is abstract. ~\newline
+ 
+
+Erneute Implementation in \mbox{\hyperlink{classjava__cup_1_1non__terminal_a996e3aff111703d013cb98863b7717ff}{java\+\_\+cup.\+non\+\_\+terminal}} und \mbox{\hyperlink{classjava__cup_1_1terminal_a41600143257e51ae0eef5eece3522e68}{java\+\_\+cup.\+terminal}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1symbol_a2886f199df09de270d6ee498f7044793}\label{classjava__cup_1_1symbol_a2886f199df09de270d6ee498f7044793}} 
+\index{java\_cup.symbol@{java\_cup.symbol}!name@{name}}
+\index{name@{name}!java\_cup.symbol@{java\_cup.symbol}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+symbol.\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+String for the human readable name of the symbol. \mbox{\Hypertarget{classjava__cup_1_1symbol_a1961d83ec63cfb95d1d2d936b4fec273}\label{classjava__cup_1_1symbol_a1961d83ec63cfb95d1d2d936b4fec273}} 
+\index{java\_cup.symbol@{java\_cup.symbol}!note\_use@{note\_use}}
+\index{note\_use@{note\_use}!java\_cup.symbol@{java\_cup.symbol}}
+\doxysubsubsection{\texorpdfstring{note\_use()}{note\_use()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+symbol.\+note\+\_\+use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Increment the use count. \mbox{\Hypertarget{classjava__cup_1_1symbol_a3567efd7889a79d8dbd17cebf45f1f59}\label{classjava__cup_1_1symbol_a3567efd7889a79d8dbd17cebf45f1f59}} 
+\index{java\_cup.symbol@{java\_cup.symbol}!stack\_type@{stack\_type}}
+\index{stack\_type@{stack\_type}!java\_cup.symbol@{java\_cup.symbol}}
+\doxysubsubsection{\texorpdfstring{stack\_type()}{stack\_type()}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+symbol.\+stack\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+String for the type of object used for the symbol on the parse stack. \mbox{\Hypertarget{classjava__cup_1_1symbol_a638dab8431bd185305f58622837f5754}\label{classjava__cup_1_1symbol_a638dab8431bd185305f58622837f5754}} 
+\index{java\_cup.symbol@{java\_cup.symbol}!toString@{toString}}
+\index{toString@{toString}!java\_cup.symbol@{java\_cup.symbol}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+symbol.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert to a string. 
+
+Erneute Implementation in \mbox{\hyperlink{classjava__cup_1_1non__terminal_a1e5b41922541b176cc8e6302f5710ea8}{java\+\_\+cup.\+non\+\_\+terminal}} und \mbox{\hyperlink{classjava__cup_1_1terminal_adf7d5d8a50d7fb4fef2502298c1ac0e0}{java\+\_\+cup.\+terminal}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1symbol_a91374a6a948f40a04e97db65a7c04b20}\label{classjava__cup_1_1symbol_a91374a6a948f40a04e97db65a7c04b20}} 
+\index{java\_cup.symbol@{java\_cup.symbol}!use\_count@{use\_count}}
+\index{use\_count@{use\_count}!java\_cup.symbol@{java\_cup.symbol}}
+\doxysubsubsection{\texorpdfstring{use\_count()}{use\_count()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+symbol.\+use\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Count of how many times the symbol appears in productions. 
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classjava__cup_1_1symbol_ab477c2302b291e47016c029d7fd089fc}\label{classjava__cup_1_1symbol_ab477c2302b291e47016c029d7fd089fc}} 
+\index{java\_cup.symbol@{java\_cup.symbol}!\_index@{\_index}}
+\index{\_index@{\_index}!java\_cup.symbol@{java\_cup.symbol}}
+\doxysubsubsection{\texorpdfstring{\_index}{\_index}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+symbol.\+\_\+index\hspace{0.3cm}{\ttfamily [protected]}}
+
+Index of this symbol (terminal or non terminal) in the parse tables. Note\+: indexes are unique among terminals and unique among non terminals, however, a terminal may have the same index as a non-\/terminal, etc. \mbox{\Hypertarget{classjava__cup_1_1symbol_a33234ea29c328b506046d0b98db218fb}\label{classjava__cup_1_1symbol_a33234ea29c328b506046d0b98db218fb}} 
+\index{java\_cup.symbol@{java\_cup.symbol}!\_name@{\_name}}
+\index{\_name@{\_name}!java\_cup.symbol@{java\_cup.symbol}}
+\doxysubsubsection{\texorpdfstring{\_name}{\_name}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+symbol.\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}}
+
+String for the human readable name of the symbol. \mbox{\Hypertarget{classjava__cup_1_1symbol_a9490f7b2cc20d0f9c345b04fc3d7c6a7}\label{classjava__cup_1_1symbol_a9490f7b2cc20d0f9c345b04fc3d7c6a7}} 
+\index{java\_cup.symbol@{java\_cup.symbol}!\_stack\_type@{\_stack\_type}}
+\index{\_stack\_type@{\_stack\_type}!java\_cup.symbol@{java\_cup.symbol}}
+\doxysubsubsection{\texorpdfstring{\_stack\_type}{\_stack\_type}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+symbol.\+\_\+stack\+\_\+type\hspace{0.3cm}{\ttfamily [protected]}}
+
+String for the type of object used for the symbol on the parse stack. \mbox{\Hypertarget{classjava__cup_1_1symbol_a0df6b9afa6395db8fd2898692ef438cb}\label{classjava__cup_1_1symbol_a0df6b9afa6395db8fd2898692ef438cb}} 
+\index{java\_cup.symbol@{java\_cup.symbol}!\_use\_count@{\_use\_count}}
+\index{\_use\_count@{\_use\_count}!java\_cup.symbol@{java\_cup.symbol}}
+\doxysubsubsection{\texorpdfstring{\_use\_count}{\_use\_count}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+symbol.\+\_\+use\+\_\+count = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+Count of how many times the symbol appears in productions. 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/java\+\_\+cup/symbol.\+java\end{DoxyCompactItemize}

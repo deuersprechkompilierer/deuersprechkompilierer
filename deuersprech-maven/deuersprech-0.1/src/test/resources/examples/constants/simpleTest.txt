@@ -1,0 +1,5 @@
+konstante ganzzahl TEST;
+TEST ISTGLEICH 42;
+
+druckzeile(TEST);
+

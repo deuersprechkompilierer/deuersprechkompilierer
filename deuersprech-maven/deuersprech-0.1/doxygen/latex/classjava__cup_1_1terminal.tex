@@ -1,0 +1,244 @@
+\hypertarget{classjava__cup_1_1terminal}{}\doxysection{java\+\_\+cup.\+terminal Klassenreferenz}
+\label{classjava__cup_1_1terminal}\index{java\_cup.terminal@{java\_cup.terminal}}
+Klassendiagramm für java\+\_\+cup.\+terminal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classjava__cup_1_1terminal}
+\end{center}
+\end{figure}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1terminal_a24a94212d3d8b7897d6ebdde2e19873a}{terminal}} (String nm, String tp)
+\item 
+\mbox{\hyperlink{classjava__cup_1_1terminal_acdd5f2f6331b27f3f14244c73a885b82}{terminal}} (String nm)
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1terminal_a41600143257e51ae0eef5eece3522e68}{is\+\_\+non\+\_\+term}} ()
+\item 
+String \mbox{\hyperlink{classjava__cup_1_1terminal_adf7d5d8a50d7fb4fef2502298c1ac0e0}{to\+String}} ()
+\item 
+String \mbox{\hyperlink{classjava__cup_1_1symbol_a2886f199df09de270d6ee498f7044793}{name}} ()
+\item 
+String \mbox{\hyperlink{classjava__cup_1_1symbol_a3567efd7889a79d8dbd17cebf45f1f59}{stack\+\_\+type}} ()
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1symbol_a91374a6a948f40a04e97db65a7c04b20}{use\+\_\+count}} ()
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1symbol_a1961d83ec63cfb95d1d2d936b4fec273}{note\+\_\+use}} ()
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1symbol_a427ae231940ae6b99d6b8983a16e18f8}{index}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Öffentliche, statische Methoden}
+\begin{DoxyCompactItemize}
+\item 
+static Enumeration \mbox{\hyperlink{classjava__cup_1_1terminal_af3a3c269968506a700628c072c0da658}{all}} ()
+\item 
+static \mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}} \mbox{\hyperlink{classjava__cup_1_1terminal_a22386de6f7027943b8bb5cacdabd9749}{find}} (String with\+\_\+name)
+\item 
+static \mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}} \mbox{\hyperlink{classjava__cup_1_1terminal_a24f11e8e33f3752d3184561fc722c932}{find}} (int indx)
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1terminal_a01a022956c88b37b14e1dcb444693ab2}{number}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Statische öffentliche Attribute}
+\begin{DoxyCompactItemize}
+\item 
+static final \mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}} \mbox{\hyperlink{classjava__cup_1_1terminal_a3123653719e82c16531d18a1ff4e423f}{E\+OF}} = new \mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}}(\char`\"{}E\+OF\char`\"{})
+\item 
+static final \mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}} \mbox{\hyperlink{classjava__cup_1_1terminal_a04870544bfc7d50de257da5b3912e47d}{error}} = new \mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}}(\char`\"{}error\char`\"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classjava__cup_1_1symbol_a33234ea29c328b506046d0b98db218fb}{\+\_\+name}}
+\item 
+String \mbox{\hyperlink{classjava__cup_1_1symbol_a9490f7b2cc20d0f9c345b04fc3d7c6a7}{\+\_\+stack\+\_\+type}}
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1symbol_a0df6b9afa6395db8fd2898692ef438cb}{\+\_\+use\+\_\+count}} = 0
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1symbol_ab477c2302b291e47016c029d7fd089fc}{\+\_\+index}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Statische, geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+static Hashtable \mbox{\hyperlink{classjava__cup_1_1terminal_a2a1c8a1a58e483877b285e4564aa1006}{\+\_\+all}} = new Hashtable()
+\item 
+static Hashtable \mbox{\hyperlink{classjava__cup_1_1terminal_afc890ac1b951fdefa9ae473cd76a43da}{\+\_\+all\+\_\+by\+\_\+index}} = new Hashtable()
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1terminal_a2dc0e01e4259be7605fa63001ceb58af}{next\+\_\+index}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+This class represents a terminal symbol in the grammar. Each terminal has a textual name, an index, and a string which indicates the type of object it will be implemented with at runtime (i.\+e. the class of object that will be returned by the scanner and pushed on the parse stack to represent it).
+
+\begin{DoxyVersion}{Version}
+last updated\+: 11/25/95 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Autor}
+Scott Hudson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjava__cup_1_1terminal_a24a94212d3d8b7897d6ebdde2e19873a}\label{classjava__cup_1_1terminal_a24a94212d3d8b7897d6ebdde2e19873a}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!terminal@{terminal}}
+\index{terminal@{terminal}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{terminal()}{terminal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily java\+\_\+cup.\+terminal.\+terminal (\begin{DoxyParamCaption}\item[{String}]{nm,  }\item[{String}]{tp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Full constructor. 
+\begin{DoxyParams}{Parameter}
+{\em nm} & the name of the terminal. \\
+\hline
+{\em tp} & the type of the terminal. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1terminal_acdd5f2f6331b27f3f14244c73a885b82}\label{classjava__cup_1_1terminal_acdd5f2f6331b27f3f14244c73a885b82}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!terminal@{terminal}}
+\index{terminal@{terminal}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{terminal()}{terminal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily java\+\_\+cup.\+terminal.\+terminal (\begin{DoxyParamCaption}\item[{String}]{nm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor with default type. 
+\begin{DoxyParams}{Parameter}
+{\em nm} & the name of the terminal. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classjava__cup_1_1terminal_af3a3c269968506a700628c072c0da658}\label{classjava__cup_1_1terminal_af3a3c269968506a700628c072c0da658}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!all@{all}}
+\index{all@{all}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily static Enumeration java\+\_\+cup.\+terminal.\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Access to all terminals. \mbox{\Hypertarget{classjava__cup_1_1terminal_a24f11e8e33f3752d3184561fc722c932}\label{classjava__cup_1_1terminal_a24f11e8e33f3752d3184561fc722c932}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!find@{find}}
+\index{find@{find}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}} java\+\_\+cup.\+terminal.\+find (\begin{DoxyParamCaption}\item[{int}]{indx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Lookup a terminal by index. \mbox{\Hypertarget{classjava__cup_1_1terminal_a22386de6f7027943b8bb5cacdabd9749}\label{classjava__cup_1_1terminal_a22386de6f7027943b8bb5cacdabd9749}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!find@{find}}
+\index{find@{find}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}} java\+\_\+cup.\+terminal.\+find (\begin{DoxyParamCaption}\item[{String}]{with\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Lookup a terminal by name string. \mbox{\Hypertarget{classjava__cup_1_1symbol_a427ae231940ae6b99d6b8983a16e18f8}\label{classjava__cup_1_1symbol_a427ae231940ae6b99d6b8983a16e18f8}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!index@{index}}
+\index{index@{index}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+symbol.\+index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Index of this symbol (terminal or non terminal) in the parse tables. Note\+: indexes are unique among terminals and unique among non terminals, however, a terminal may have the same index as a non-\/terminal, etc. \mbox{\Hypertarget{classjava__cup_1_1terminal_a41600143257e51ae0eef5eece3522e68}\label{classjava__cup_1_1terminal_a41600143257e51ae0eef5eece3522e68}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!is\_non\_term@{is\_non\_term}}
+\index{is\_non\_term@{is\_non\_term}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{is\_non\_term()}{is\_non\_term()}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+terminal.\+is\+\_\+non\+\_\+term (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Report this symbol as not being a non-\/terminal. 
+
+Erneute Implementation von \mbox{\hyperlink{classjava__cup_1_1symbol_af17ee2183b92a3fa0946ad0fd75eb0f8}{java\+\_\+cup.\+symbol}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1symbol_a2886f199df09de270d6ee498f7044793}\label{classjava__cup_1_1symbol_a2886f199df09de270d6ee498f7044793}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!name@{name}}
+\index{name@{name}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+symbol.\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+String for the human readable name of the symbol. \mbox{\Hypertarget{classjava__cup_1_1symbol_a1961d83ec63cfb95d1d2d936b4fec273}\label{classjava__cup_1_1symbol_a1961d83ec63cfb95d1d2d936b4fec273}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!note\_use@{note\_use}}
+\index{note\_use@{note\_use}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{note\_use()}{note\_use()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+symbol.\+note\+\_\+use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Increment the use count. \mbox{\Hypertarget{classjava__cup_1_1terminal_a01a022956c88b37b14e1dcb444693ab2}\label{classjava__cup_1_1terminal_a01a022956c88b37b14e1dcb444693ab2}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!number@{number}}
+\index{number@{number}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{number()}{number()}}
+{\footnotesize\ttfamily static int java\+\_\+cup.\+terminal.\+number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Total number of terminals. \mbox{\Hypertarget{classjava__cup_1_1symbol_a3567efd7889a79d8dbd17cebf45f1f59}\label{classjava__cup_1_1symbol_a3567efd7889a79d8dbd17cebf45f1f59}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!stack\_type@{stack\_type}}
+\index{stack\_type@{stack\_type}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{stack\_type()}{stack\_type()}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+symbol.\+stack\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+String for the type of object used for the symbol on the parse stack. \mbox{\Hypertarget{classjava__cup_1_1terminal_adf7d5d8a50d7fb4fef2502298c1ac0e0}\label{classjava__cup_1_1terminal_adf7d5d8a50d7fb4fef2502298c1ac0e0}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!toString@{toString}}
+\index{toString@{toString}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+terminal.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert to a string. 
+
+Erneute Implementation von \mbox{\hyperlink{classjava__cup_1_1symbol_a638dab8431bd185305f58622837f5754}{java\+\_\+cup.\+symbol}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1symbol_a91374a6a948f40a04e97db65a7c04b20}\label{classjava__cup_1_1symbol_a91374a6a948f40a04e97db65a7c04b20}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!use\_count@{use\_count}}
+\index{use\_count@{use\_count}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{use\_count()}{use\_count()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+symbol.\+use\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Count of how many times the symbol appears in productions. 
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classjava__cup_1_1terminal_a2a1c8a1a58e483877b285e4564aa1006}\label{classjava__cup_1_1terminal_a2a1c8a1a58e483877b285e4564aa1006}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!\_all@{\_all}}
+\index{\_all@{\_all}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{\_all}{\_all}}
+{\footnotesize\ttfamily Hashtable java\+\_\+cup.\+terminal.\+\_\+all = new Hashtable()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Table of all terminals. Elements are stored using name strings as the key \mbox{\Hypertarget{classjava__cup_1_1terminal_afc890ac1b951fdefa9ae473cd76a43da}\label{classjava__cup_1_1terminal_afc890ac1b951fdefa9ae473cd76a43da}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!\_all\_by\_index@{\_all\_by\_index}}
+\index{\_all\_by\_index@{\_all\_by\_index}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{\_all\_by\_index}{\_all\_by\_index}}
+{\footnotesize\ttfamily Hashtable java\+\_\+cup.\+terminal.\+\_\+all\+\_\+by\+\_\+index = new Hashtable()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Table of all terminals indexed by their index number. \mbox{\Hypertarget{classjava__cup_1_1symbol_ab477c2302b291e47016c029d7fd089fc}\label{classjava__cup_1_1symbol_ab477c2302b291e47016c029d7fd089fc}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!\_index@{\_index}}
+\index{\_index@{\_index}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{\_index}{\_index}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+symbol.\+\_\+index\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Index of this symbol (terminal or non terminal) in the parse tables. Note\+: indexes are unique among terminals and unique among non terminals, however, a terminal may have the same index as a non-\/terminal, etc. \mbox{\Hypertarget{classjava__cup_1_1symbol_a33234ea29c328b506046d0b98db218fb}\label{classjava__cup_1_1symbol_a33234ea29c328b506046d0b98db218fb}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!\_name@{\_name}}
+\index{\_name@{\_name}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{\_name}{\_name}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+symbol.\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+String for the human readable name of the symbol. \mbox{\Hypertarget{classjava__cup_1_1symbol_a9490f7b2cc20d0f9c345b04fc3d7c6a7}\label{classjava__cup_1_1symbol_a9490f7b2cc20d0f9c345b04fc3d7c6a7}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!\_stack\_type@{\_stack\_type}}
+\index{\_stack\_type@{\_stack\_type}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{\_stack\_type}{\_stack\_type}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+symbol.\+\_\+stack\+\_\+type\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+String for the type of object used for the symbol on the parse stack. \mbox{\Hypertarget{classjava__cup_1_1symbol_a0df6b9afa6395db8fd2898692ef438cb}\label{classjava__cup_1_1symbol_a0df6b9afa6395db8fd2898692ef438cb}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!\_use\_count@{\_use\_count}}
+\index{\_use\_count@{\_use\_count}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{\_use\_count}{\_use\_count}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+symbol.\+\_\+use\+\_\+count = 0\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Count of how many times the symbol appears in productions. \mbox{\Hypertarget{classjava__cup_1_1terminal_a3123653719e82c16531d18a1ff4e423f}\label{classjava__cup_1_1terminal_a3123653719e82c16531d18a1ff4e423f}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!EOF@{EOF}}
+\index{EOF@{EOF}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{EOF}{EOF}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}} java\+\_\+cup.\+terminal.\+E\+OF = new \mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}}(\char`\"{}E\+OF\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+Special terminal for end of input. \mbox{\Hypertarget{classjava__cup_1_1terminal_a04870544bfc7d50de257da5b3912e47d}\label{classjava__cup_1_1terminal_a04870544bfc7d50de257da5b3912e47d}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!error@{error}}
+\index{error@{error}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}} java\+\_\+cup.\+terminal.\+error = new \mbox{\hyperlink{classjava__cup_1_1terminal}{terminal}}(\char`\"{}error\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+special terminal used for error recovery \mbox{\Hypertarget{classjava__cup_1_1terminal_a2dc0e01e4259be7605fa63001ceb58af}\label{classjava__cup_1_1terminal_a2dc0e01e4259be7605fa63001ceb58af}} 
+\index{java\_cup.terminal@{java\_cup.terminal}!next\_index@{next\_index}}
+\index{next\_index@{next\_index}!java\_cup.terminal@{java\_cup.terminal}}
+\doxysubsubsection{\texorpdfstring{next\_index}{next\_index}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+terminal.\+next\+\_\+index = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Static counter to assign unique index. 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/java\+\_\+cup/terminal.\+java\end{DoxyCompactItemize}

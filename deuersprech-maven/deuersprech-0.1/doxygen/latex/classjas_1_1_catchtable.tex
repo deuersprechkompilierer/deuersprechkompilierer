@@ -1,0 +1,43 @@
+\hypertarget{classjas_1_1_catchtable}{}\doxysection{jas.\+Catchtable Klassenreferenz}
+\label{classjas_1_1_catchtable}\index{jas.Catchtable@{jas.Catchtable}}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classjas_1_1_catchtable_a9e4835c026694de6ed3cd1e6d6cb3a6e}{add\+Entry}} (\mbox{\hyperlink{classjas_1_1_catch_entry}{Catch\+Entry}} entry)
+\item 
+void \mbox{\hyperlink{classjas_1_1_catchtable_a541a18bc01da0604f6ff697054ff11f0}{add\+Entry}} (\mbox{\hyperlink{classjas_1_1_label}{Label}} start, \mbox{\hyperlink{classjas_1_1_label}{Label}} end, \mbox{\hyperlink{classjas_1_1_label}{Label}} handler, \mbox{\hyperlink{classjas_1_1_c_p}{CP}} cat)
+\item 
+\mbox{\Hypertarget{classjas_1_1_catchtable_a023e738a515480b16dec919e4c32dc61}\label{classjas_1_1_catchtable_a023e738a515480b16dec919e4c32dc61}} 
+void {\bfseries add\+Entry} (int start, int end, int handler, \mbox{\hyperlink{classjas_1_1_c_p}{CP}} cat)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classjas_1_1_catchtable_a9e4835c026694de6ed3cd1e6d6cb3a6e}\label{classjas_1_1_catchtable_a9e4835c026694de6ed3cd1e6d6cb3a6e}} 
+\index{jas.Catchtable@{jas.Catchtable}!addEntry@{addEntry}}
+\index{addEntry@{addEntry}!jas.Catchtable@{jas.Catchtable}}
+\doxysubsubsection{\texorpdfstring{addEntry()}{addEntry()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void jas.\+Catchtable.\+add\+Entry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjas_1_1_catch_entry}{Catch\+Entry}}}]{entry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+add an entry to the catch table \mbox{\Hypertarget{classjas_1_1_catchtable_a541a18bc01da0604f6ff697054ff11f0}\label{classjas_1_1_catchtable_a541a18bc01da0604f6ff697054ff11f0}} 
+\index{jas.Catchtable@{jas.Catchtable}!addEntry@{addEntry}}
+\index{addEntry@{addEntry}!jas.Catchtable@{jas.Catchtable}}
+\doxysubsubsection{\texorpdfstring{addEntry()}{addEntry()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void jas.\+Catchtable.\+add\+Entry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjas_1_1_label}{Label}}}]{start,  }\item[{\mbox{\hyperlink{classjas_1_1_label}{Label}}}]{end,  }\item[{\mbox{\hyperlink{classjas_1_1_label}{Label}}}]{handler,  }\item[{\mbox{\hyperlink{classjas_1_1_c_p}{CP}}}]{cat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+add an entry to the catch table 
+\begin{DoxyParams}{Parameter}
+{\em start} & \mbox{\hyperlink{classjas_1_1_label}{Label}} marking the beginning of the area where the catch table is active. \\
+\hline
+{\em end} & \mbox{\hyperlink{classjas_1_1_label}{Label}} marking the end of the area where the table is active. \\
+\hline
+{\em handler} & \mbox{\hyperlink{classjas_1_1_label}{Label}} marking the entrypoint into the exception handling routine. \\
+\hline
+{\em cat} & (usually a class\+CP) informing the VM to direct any exceptions of this (or its subclasses) to the handler. \\
+\hline
+\end{DoxyParams}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/jas/Catchtable.\+java\end{DoxyCompactItemize}

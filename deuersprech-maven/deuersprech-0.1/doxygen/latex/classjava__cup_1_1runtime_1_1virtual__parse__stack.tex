@@ -1,0 +1,112 @@
+\hypertarget{classjava__cup_1_1runtime_1_1virtual__parse__stack}{}\doxysection{java\+\_\+cup.\+runtime.\+virtual\+\_\+parse\+\_\+stack Klassenreferenz}
+\label{classjava__cup_1_1runtime_1_1virtual__parse__stack}\index{java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1virtual__parse__stack_ae3b53f847225eb3b9ba43d2d0f3a8764}{virtual\+\_\+parse\+\_\+stack}} (Stack shadowing\+\_\+stack)  throws java.\+lang.\+Exception     
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1runtime_1_1virtual__parse__stack_a2fc41cf34bc48231881979030a9b934b}{empty}} ()
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1runtime_1_1virtual__parse__stack_a423def915dd9f50f0dc54f7a60a93d4c}{top}} ()  throws java.\+lang.\+Exception     
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1runtime_1_1virtual__parse__stack_a43c2a526045acb42e689fa338ad879f7}{pop}} ()  throws java.\+lang.\+Exception     
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1runtime_1_1virtual__parse__stack_a64700a192180beb4db1e0c0e09b6c928}{push}} (int state\+\_\+num)
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte Methoden}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1runtime_1_1virtual__parse__stack_ab314ca11f3bcfede89a6fc5829a401be}{get\+\_\+from\+\_\+real}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+Stack \mbox{\hyperlink{classjava__cup_1_1runtime_1_1virtual__parse__stack_a3a504c83e55a0713a75975ff3f7ea5ee}{real\+\_\+stack}}
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1runtime_1_1virtual__parse__stack_a7dbd6c5e90709a6cf761517be7cdbfb4}{real\+\_\+next}}
+\item 
+Stack \mbox{\hyperlink{classjava__cup_1_1runtime_1_1virtual__parse__stack_a2ed00e1b244dec7df9a547936fd9b4c9}{vstack}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+This class implements a temporary or \char`\"{}virtual\char`\"{} parse stack that replaces the top portion of the actual parse stack (the part that has been changed by some set of operations) while maintaining its original contents. This data structure is used when the parse needs to \char`\"{}parse ahead\char`\"{} to determine if a given error recovery attempt will allow the parse to continue far enough to consider it successful. Once success or failure of parse ahead is determined the system then reverts to the original parse stack (which has not actually been modified). Since parse ahead does not execute actions, only parse state is maintained on the virtual stack, not full symbol objects.
+
+\begin{DoxySeeAlso}{Siehe auch}
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser}{java\+\_\+cup.\+runtime.\+lr\+\_\+parser}} 
+\end{DoxySeeAlso}
+\begin{DoxyVersion}{Version}
+last updated\+: 11/25/95 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Autor}
+Scott Hudson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1virtual__parse__stack_ae3b53f847225eb3b9ba43d2d0f3a8764}\label{classjava__cup_1_1runtime_1_1virtual__parse__stack_ae3b53f847225eb3b9ba43d2d0f3a8764}} 
+\index{java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}!virtual\_parse\_stack@{virtual\_parse\_stack}}
+\index{virtual\_parse\_stack@{virtual\_parse\_stack}!java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}}
+\doxysubsubsection{\texorpdfstring{virtual\_parse\_stack()}{virtual\_parse\_stack()}}
+{\footnotesize\ttfamily java\+\_\+cup.\+runtime.\+virtual\+\_\+parse\+\_\+stack.\+virtual\+\_\+parse\+\_\+stack (\begin{DoxyParamCaption}\item[{Stack}]{shadowing\+\_\+stack }\end{DoxyParamCaption}) throws java.\+lang.\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor to build a virtual stack out of a real stack. 
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1virtual__parse__stack_a2fc41cf34bc48231881979030a9b934b}\label{classjava__cup_1_1runtime_1_1virtual__parse__stack_a2fc41cf34bc48231881979030a9b934b}} 
+\index{java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}!empty@{empty}}
+\index{empty@{empty}!java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+runtime.\+virtual\+\_\+parse\+\_\+stack.\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Indicate whether the stack is empty. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1virtual__parse__stack_ab314ca11f3bcfede89a6fc5829a401be}\label{classjava__cup_1_1runtime_1_1virtual__parse__stack_ab314ca11f3bcfede89a6fc5829a401be}} 
+\index{java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}!get\_from\_real@{get\_from\_real}}
+\index{get\_from\_real@{get\_from\_real}!java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}}
+\doxysubsubsection{\texorpdfstring{get\_from\_real()}{get\_from\_real()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+runtime.\+virtual\+\_\+parse\+\_\+stack.\+get\+\_\+from\+\_\+real (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Transfer an element from the real to the virtual stack. This assumes that the virtual stack is currently empty. ~\newline
+ \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1virtual__parse__stack_a43c2a526045acb42e689fa338ad879f7}\label{classjava__cup_1_1runtime_1_1virtual__parse__stack_a43c2a526045acb42e689fa338ad879f7}} 
+\index{java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}!pop@{pop}}
+\index{pop@{pop}!java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+runtime.\+virtual\+\_\+parse\+\_\+stack.\+pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+lang.\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Pop the stack. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1virtual__parse__stack_a64700a192180beb4db1e0c0e09b6c928}\label{classjava__cup_1_1runtime_1_1virtual__parse__stack_a64700a192180beb4db1e0c0e09b6c928}} 
+\index{java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}!push@{push}}
+\index{push@{push}!java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+runtime.\+virtual\+\_\+parse\+\_\+stack.\+push (\begin{DoxyParamCaption}\item[{int}]{state\+\_\+num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Push a state number onto the stack. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1virtual__parse__stack_a423def915dd9f50f0dc54f7a60a93d4c}\label{classjava__cup_1_1runtime_1_1virtual__parse__stack_a423def915dd9f50f0dc54f7a60a93d4c}} 
+\index{java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}!top@{top}}
+\index{top@{top}!java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+runtime.\+virtual\+\_\+parse\+\_\+stack.\+top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+lang.\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return value on the top of the stack (without popping it). 
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1virtual__parse__stack_a7dbd6c5e90709a6cf761517be7cdbfb4}\label{classjava__cup_1_1runtime_1_1virtual__parse__stack_a7dbd6c5e90709a6cf761517be7cdbfb4}} 
+\index{java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}!real\_next@{real\_next}}
+\index{real\_next@{real\_next}!java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}}
+\doxysubsubsection{\texorpdfstring{real\_next}{real\_next}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+runtime.\+virtual\+\_\+parse\+\_\+stack.\+real\+\_\+next\hspace{0.3cm}{\ttfamily [protected]}}
+
+Top of stack indicator for where we leave off in the real stack. This is measured from top of stack, so 0 would indicate that no elements have been \char`\"{}moved\char`\"{} from the real to virtual stack. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1virtual__parse__stack_a3a504c83e55a0713a75975ff3f7ea5ee}\label{classjava__cup_1_1runtime_1_1virtual__parse__stack_a3a504c83e55a0713a75975ff3f7ea5ee}} 
+\index{java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}!real\_stack@{real\_stack}}
+\index{real\_stack@{real\_stack}!java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}}
+\doxysubsubsection{\texorpdfstring{real\_stack}{real\_stack}}
+{\footnotesize\ttfamily Stack java\+\_\+cup.\+runtime.\+virtual\+\_\+parse\+\_\+stack.\+real\+\_\+stack\hspace{0.3cm}{\ttfamily [protected]}}
+
+The real stack that we shadow. This is accessed when we move off the bottom of the virtual portion of the stack, but is always left unmodified. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1virtual__parse__stack_a2ed00e1b244dec7df9a547936fd9b4c9}\label{classjava__cup_1_1runtime_1_1virtual__parse__stack_a2ed00e1b244dec7df9a547936fd9b4c9}} 
+\index{java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}!vstack@{vstack}}
+\index{vstack@{vstack}!java\_cup.runtime.virtual\_parse\_stack@{java\_cup.runtime.virtual\_parse\_stack}}
+\doxysubsubsection{\texorpdfstring{vstack}{vstack}}
+{\footnotesize\ttfamily Stack java\+\_\+cup.\+runtime.\+virtual\+\_\+parse\+\_\+stack.\+vstack\hspace{0.3cm}{\ttfamily [protected]}}
+
+The virtual top portion of the stack. This stack contains Integer objects with state numbers. This stack shadows the top portion of the real stack within the area that has been modified (via operations on the virtual stack). When this portion of the stack becomes empty we transfer elements from the underlying stack onto this stack. 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/java\+\_\+cup/runtime/virtual\+\_\+parse\+\_\+stack.\+java\end{DoxyCompactItemize}

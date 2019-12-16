@@ -1,0 +1,96 @@
+\hypertarget{classjas_1_1_code_attr}{}\doxysection{jas.\+Code\+Attr Klassenreferenz}
+\label{classjas_1_1_code_attr}\index{jas.CodeAttr@{jas.CodeAttr}}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjas_1_1_code_attr_acc6b4b6a0b3c1b0b6f32f42e86e86b7e}{Code\+Attr}} ()
+\item 
+void \mbox{\hyperlink{classjas_1_1_code_attr_a9a9aa97e33f3b619d5632aa8efcd6c41}{set\+Catchtable}} (\mbox{\hyperlink{classjas_1_1_catchtable}{Catchtable}} ctb)
+\item 
+void \mbox{\hyperlink{classjas_1_1_code_attr_a58d416436acc48ffc54d024c017d1030}{set\+Line\+Table}} (\mbox{\hyperlink{classjas_1_1_line_table_attr}{Line\+Table\+Attr}} ltab)
+\item 
+void \mbox{\hyperlink{classjas_1_1_code_attr_adcf2538fdf610b539fa89116e1824d6b}{set\+Local\+Var\+Table}} (\mbox{\hyperlink{classjas_1_1_local_var_table_attr}{Local\+Var\+Table\+Attr}} lvar)
+\item 
+void \mbox{\hyperlink{classjas_1_1_code_attr_ac616a91cc8b456a2d5415e3620390915}{set\+Local\+Var\+Type\+Table}} (\mbox{\hyperlink{classjas_1_1_local_var_type_table_attr}{Local\+Var\+Type\+Table\+Attr}} lvtyp)
+\item 
+void \mbox{\hyperlink{classjas_1_1_code_attr_a92c8a9b338ff0ca1b044b1120b3469d2}{set\+Stack\+Map}} (\mbox{\hyperlink{classjas_1_1_stack_map}{Stack\+Map}} s)
+\item 
+void \mbox{\hyperlink{classjas_1_1_code_attr_afede7389cf2612abd4a4fb8865574b64}{add\+Generic\+Attr}} (\mbox{\hyperlink{classjas_1_1_generic_attr}{Generic\+Attr}} g)
+\item 
+void \mbox{\hyperlink{classjas_1_1_code_attr_af78700f3d43dbe8e3c1fbafe98ae11b1}{add\+Insn}} (\mbox{\hyperlink{classjas_1_1_insn}{Insn}} insn)
+\item 
+\mbox{\Hypertarget{classjas_1_1_code_attr_a656f73623fdc7871bb8fec3a27f5d42e}\label{classjas_1_1_code_attr_a656f73623fdc7871bb8fec3a27f5d42e}} 
+void {\bfseries set\+Stack\+Size} (short stack\+\_\+size)
+\item 
+\mbox{\Hypertarget{classjas_1_1_code_attr_a551c6506ba6eed4591911b47061cfe3a}\label{classjas_1_1_code_attr_a551c6506ba6eed4591911b47061cfe3a}} 
+void {\bfseries set\+Var\+Size} (short num\+\_\+vars)
+\item 
+\mbox{\Hypertarget{classjas_1_1_code_attr_a6f3ab5c807a6609ce0bcb073de392a1a}\label{classjas_1_1_code_attr_a6f3ab5c807a6609ce0bcb073de392a1a}} 
+String {\bfseries to\+String} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjas_1_1_code_attr_acc6b4b6a0b3c1b0b6f32f42e86e86b7e}\label{classjas_1_1_code_attr_acc6b4b6a0b3c1b0b6f32f42e86e86b7e}} 
+\index{jas.CodeAttr@{jas.CodeAttr}!CodeAttr@{CodeAttr}}
+\index{CodeAttr@{CodeAttr}!jas.CodeAttr@{jas.CodeAttr}}
+\doxysubsubsection{\texorpdfstring{CodeAttr()}{CodeAttr()}}
+{\footnotesize\ttfamily jas.\+Code\+Attr.\+Code\+Attr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new bag. Add instructions with the \mbox{\hyperlink{classjas_1_1_code_attr_af78700f3d43dbe8e3c1fbafe98ae11b1}{add\+Insn()}} method, set the catch table with the set\+Catch\+Table() method. \begin{DoxySeeAlso}{Siehe auch}
+\mbox{\hyperlink{classjas_1_1_insn}{Insn}} 
+
+\mbox{\hyperlink{classjas_1_1_catchtable}{Catchtable}} 
+
+\mbox{\hyperlink{classjas_1_1_class_env_ac4d1db692d2d76387b5aa3104e7fcda5}{Class\+Env\+::add\+Method}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classjas_1_1_code_attr_afede7389cf2612abd4a4fb8865574b64}\label{classjas_1_1_code_attr_afede7389cf2612abd4a4fb8865574b64}} 
+\index{jas.CodeAttr@{jas.CodeAttr}!addGenericAttr@{addGenericAttr}}
+\index{addGenericAttr@{addGenericAttr}!jas.CodeAttr@{jas.CodeAttr}}
+\doxysubsubsection{\texorpdfstring{addGenericAttr()}{addGenericAttr()}}
+{\footnotesize\ttfamily void jas.\+Code\+Attr.\+add\+Generic\+Attr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjas_1_1_generic_attr}{Generic\+Attr}}}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a generic attribute to the method. A generic attribute contains a stream of uninterpreted bytes which is ignored by the VM (as long as its name doesn\textquotesingle{}t conflict with other names for attributes that are understood by the VM) \mbox{\Hypertarget{classjas_1_1_code_attr_af78700f3d43dbe8e3c1fbafe98ae11b1}\label{classjas_1_1_code_attr_af78700f3d43dbe8e3c1fbafe98ae11b1}} 
+\index{jas.CodeAttr@{jas.CodeAttr}!addInsn@{addInsn}}
+\index{addInsn@{addInsn}!jas.CodeAttr@{jas.CodeAttr}}
+\doxysubsubsection{\texorpdfstring{addInsn()}{addInsn()}}
+{\footnotesize\ttfamily void jas.\+Code\+Attr.\+add\+Insn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjas_1_1_insn}{Insn}}}]{insn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Append a new \mbox{\hyperlink{classjas_1_1_insn}{Insn}} to this code. \mbox{\hyperlink{classjas_1_1_insn}{Insn}}\textquotesingle{}s are sequentially stored, in the order in which this method is called. You can\textquotesingle{}t reorder code fragments after you\textquotesingle{}ve added it here. \mbox{\Hypertarget{classjas_1_1_code_attr_a9a9aa97e33f3b619d5632aa8efcd6c41}\label{classjas_1_1_code_attr_a9a9aa97e33f3b619d5632aa8efcd6c41}} 
+\index{jas.CodeAttr@{jas.CodeAttr}!setCatchtable@{setCatchtable}}
+\index{setCatchtable@{setCatchtable}!jas.CodeAttr@{jas.CodeAttr}}
+\doxysubsubsection{\texorpdfstring{setCatchtable()}{setCatchtable()}}
+{\footnotesize\ttfamily void jas.\+Code\+Attr.\+set\+Catchtable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjas_1_1_catchtable}{Catchtable}}}]{ctb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the catchtable for this code \mbox{\Hypertarget{classjas_1_1_code_attr_a58d416436acc48ffc54d024c017d1030}\label{classjas_1_1_code_attr_a58d416436acc48ffc54d024c017d1030}} 
+\index{jas.CodeAttr@{jas.CodeAttr}!setLineTable@{setLineTable}}
+\index{setLineTable@{setLineTable}!jas.CodeAttr@{jas.CodeAttr}}
+\doxysubsubsection{\texorpdfstring{setLineTable()}{setLineTable()}}
+{\footnotesize\ttfamily void jas.\+Code\+Attr.\+set\+Line\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjas_1_1_line_table_attr}{Line\+Table\+Attr}}}]{ltab }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the line number table for this method \mbox{\Hypertarget{classjas_1_1_code_attr_adcf2538fdf610b539fa89116e1824d6b}\label{classjas_1_1_code_attr_adcf2538fdf610b539fa89116e1824d6b}} 
+\index{jas.CodeAttr@{jas.CodeAttr}!setLocalVarTable@{setLocalVarTable}}
+\index{setLocalVarTable@{setLocalVarTable}!jas.CodeAttr@{jas.CodeAttr}}
+\doxysubsubsection{\texorpdfstring{setLocalVarTable()}{setLocalVarTable()}}
+{\footnotesize\ttfamily void jas.\+Code\+Attr.\+set\+Local\+Var\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjas_1_1_local_var_table_attr}{Local\+Var\+Table\+Attr}}}]{lvar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the local variable information for this method \mbox{\Hypertarget{classjas_1_1_code_attr_ac616a91cc8b456a2d5415e3620390915}\label{classjas_1_1_code_attr_ac616a91cc8b456a2d5415e3620390915}} 
+\index{jas.CodeAttr@{jas.CodeAttr}!setLocalVarTypeTable@{setLocalVarTypeTable}}
+\index{setLocalVarTypeTable@{setLocalVarTypeTable}!jas.CodeAttr@{jas.CodeAttr}}
+\doxysubsubsection{\texorpdfstring{setLocalVarTypeTable()}{setLocalVarTypeTable()}}
+{\footnotesize\ttfamily void jas.\+Code\+Attr.\+set\+Local\+Var\+Type\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjas_1_1_local_var_type_table_attr}{Local\+Var\+Type\+Table\+Attr}}}]{lvtyp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the local variable type information for this method \mbox{\Hypertarget{classjas_1_1_code_attr_a92c8a9b338ff0ca1b044b1120b3469d2}\label{classjas_1_1_code_attr_a92c8a9b338ff0ca1b044b1120b3469d2}} 
+\index{jas.CodeAttr@{jas.CodeAttr}!setStackMap@{setStackMap}}
+\index{setStackMap@{setStackMap}!jas.CodeAttr@{jas.CodeAttr}}
+\doxysubsubsection{\texorpdfstring{setStackMap()}{setStackMap()}}
+{\footnotesize\ttfamily void jas.\+Code\+Attr.\+set\+Stack\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjas_1_1_stack_map}{Stack\+Map}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the \mbox{\hyperlink{classjas_1_1_stack_map}{Stack\+Map}} attribute for this method 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/jas/Code\+Attr.\+java\end{DoxyCompactItemize}

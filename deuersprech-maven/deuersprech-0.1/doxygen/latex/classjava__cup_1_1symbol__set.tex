@@ -1,0 +1,228 @@
+\hypertarget{classjava__cup_1_1symbol__set}{}\doxysection{java\+\_\+cup.\+symbol\+\_\+set Klassenreferenz}
+\label{classjava__cup_1_1symbol__set}\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1symbol__set_a5509788ab7131be392928fd5b3b8c851}{symbol\+\_\+set}} ()
+\item 
+\mbox{\hyperlink{classjava__cup_1_1symbol__set_a99e8acc9bcc31207d61bb2bec9d2dd25}{symbol\+\_\+set}} (\mbox{\hyperlink{classjava__cup_1_1symbol__set}{symbol\+\_\+set}} other)  throws internal\+\_\+error     
+\item 
+Enumeration \mbox{\hyperlink{classjava__cup_1_1symbol__set_a025d87de8a4d8a323303bbbd0168332e}{all}} ()
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1symbol__set_a1aea97a9bde5654bba38c27e563307cb}{size}} ()
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1symbol__set_aaa9af0d57722c7f0d129dc2620d29998}{contains}} (\mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}} \mbox{\hyperlink{classjava__cup_1_1sym}{sym}})
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1symbol__set_ae6f2a196f8023828dcd77ae98f582fda}{is\+\_\+subset\+\_\+of}} (\mbox{\hyperlink{classjava__cup_1_1symbol__set}{symbol\+\_\+set}} other)  throws internal\+\_\+error     
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1symbol__set_ad382d98db54059df8ff47653e6bc9168}{is\+\_\+superset\+\_\+of}} (\mbox{\hyperlink{classjava__cup_1_1symbol__set}{symbol\+\_\+set}} other)  throws internal\+\_\+error     
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1symbol__set_ad90ade42cf131fcedafcafc375873ef9}{add}} (\mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}} \mbox{\hyperlink{classjava__cup_1_1sym}{sym}})  throws internal\+\_\+error     
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1symbol__set_a687b90a6114c55457b08a9b2b7f9e943}{remove}} (\mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}} \mbox{\hyperlink{classjava__cup_1_1sym}{sym}})  throws internal\+\_\+error     
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1symbol__set_afb4236ca2ca6efde4bbd86af41e390af}{add}} (\mbox{\hyperlink{classjava__cup_1_1symbol__set}{symbol\+\_\+set}} other)  throws internal\+\_\+error     
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1symbol__set_a2aa0f88344cb4768d5be011a0cb63651}{remove}} (\mbox{\hyperlink{classjava__cup_1_1symbol__set}{symbol\+\_\+set}} other)  throws internal\+\_\+error     
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1symbol__set_a7e62c6c877e2d121f61dcd305d02c407}{equals}} (\mbox{\hyperlink{classjava__cup_1_1symbol__set}{symbol\+\_\+set}} other)
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1symbol__set_a3ff74c59399662fb00a1389afca8132c}{equals}} (Object other)
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1symbol__set_ac1d391a6c45bb5cf8415a77068207048}{hash\+Code}} ()
+\item 
+String \mbox{\hyperlink{classjava__cup_1_1symbol__set_adf1185ce4f4593b6c0c2c3678cddfdc4}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte Methoden}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1symbol__set_ae0f5b7cf91fe697720920f4f11b92996}{not\+\_\+null}} (Object obj)  throws internal\+\_\+error     
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+Hashtable \mbox{\hyperlink{classjava__cup_1_1symbol__set_a0c93679d30c46261afb73a2538e36fd4}{\+\_\+all}} = new Hashtable(11)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+This class represents a set of symbols and provides a series of set operations to manipulate them.
+
+\begin{DoxySeeAlso}{Siehe auch}
+\mbox{\hyperlink{classjava__cup_1_1symbol}{java\+\_\+cup.\+symbol}} 
+\end{DoxySeeAlso}
+\begin{DoxyVersion}{Version}
+last updated\+: 11/25/95 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Autor}
+Scott Hudson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjava__cup_1_1symbol__set_a5509788ab7131be392928fd5b3b8c851}\label{classjava__cup_1_1symbol__set_a5509788ab7131be392928fd5b3b8c851}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!symbol\_set@{symbol\_set}}
+\index{symbol\_set@{symbol\_set}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{symbol\_set()}{symbol\_set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily java\+\_\+cup.\+symbol\+\_\+set.\+symbol\+\_\+set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for an empty set. \mbox{\Hypertarget{classjava__cup_1_1symbol__set_a99e8acc9bcc31207d61bb2bec9d2dd25}\label{classjava__cup_1_1symbol__set_a99e8acc9bcc31207d61bb2bec9d2dd25}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!symbol\_set@{symbol\_set}}
+\index{symbol\_set@{symbol\_set}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{symbol\_set()}{symbol\_set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily java\+\_\+cup.\+symbol\+\_\+set.\+symbol\+\_\+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1symbol__set}{symbol\+\_\+set}}}]{other }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for cloning from another set. 
+\begin{DoxyParams}{Parameter}
+{\em other} & the set we are cloning from. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classjava__cup_1_1symbol__set_ad90ade42cf131fcedafcafc375873ef9}\label{classjava__cup_1_1symbol__set_ad90ade42cf131fcedafcafc375873ef9}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!add@{add}}
+\index{add@{add}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+symbol\+\_\+set.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}}}]{sym }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a single symbol to the set. ~\newline
+ 
+\begin{DoxyParams}{Parameter}
+{\em sym} & the symbol we are adding. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+true if this changes the set. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classjava__cup_1_1symbol__set_afb4236ca2ca6efde4bbd86af41e390af}\label{classjava__cup_1_1symbol__set_afb4236ca2ca6efde4bbd86af41e390af}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!add@{add}}
+\index{add@{add}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+symbol\+\_\+set.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1symbol__set}{symbol\+\_\+set}}}]{other }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add (union) in a complete set. ~\newline
+ 
+\begin{DoxyParams}{Parameter}
+{\em other} & the set we are adding in. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+true if this changes the set. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classjava__cup_1_1symbol__set_a025d87de8a4d8a323303bbbd0168332e}\label{classjava__cup_1_1symbol__set_a025d87de8a4d8a323303bbbd0168332e}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!all@{all}}
+\index{all@{all}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily Enumeration java\+\_\+cup.\+symbol\+\_\+set.\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Access to all elements of the set. \mbox{\Hypertarget{classjava__cup_1_1symbol__set_aaa9af0d57722c7f0d129dc2620d29998}\label{classjava__cup_1_1symbol__set_aaa9af0d57722c7f0d129dc2620d29998}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!contains@{contains}}
+\index{contains@{contains}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+symbol\+\_\+set.\+contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}}}]{sym }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Determine if the set contains a particular symbol. 
+\begin{DoxyParams}{Parameter}
+{\em sym} & the symbol we are looking for. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1symbol__set_a3ff74c59399662fb00a1389afca8132c}\label{classjava__cup_1_1symbol__set_a3ff74c59399662fb00a1389afca8132c}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!equals@{equals}}
+\index{equals@{equals}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+symbol\+\_\+set.\+equals (\begin{DoxyParamCaption}\item[{Object}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generic equality comparison. \mbox{\Hypertarget{classjava__cup_1_1symbol__set_a7e62c6c877e2d121f61dcd305d02c407}\label{classjava__cup_1_1symbol__set_a7e62c6c877e2d121f61dcd305d02c407}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!equals@{equals}}
+\index{equals@{equals}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+symbol\+\_\+set.\+equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1symbol__set}{symbol\+\_\+set}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Equality comparison. \mbox{\Hypertarget{classjava__cup_1_1symbol__set_ac1d391a6c45bb5cf8415a77068207048}\label{classjava__cup_1_1symbol__set_ac1d391a6c45bb5cf8415a77068207048}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!hashCode@{hashCode}}
+\index{hashCode@{hashCode}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{hashCode()}{hashCode()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+symbol\+\_\+set.\+hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compute a hash code. \mbox{\Hypertarget{classjava__cup_1_1symbol__set_ae6f2a196f8023828dcd77ae98f582fda}\label{classjava__cup_1_1symbol__set_ae6f2a196f8023828dcd77ae98f582fda}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!is\_subset\_of@{is\_subset\_of}}
+\index{is\_subset\_of@{is\_subset\_of}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{is\_subset\_of()}{is\_subset\_of()}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+symbol\+\_\+set.\+is\+\_\+subset\+\_\+of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1symbol__set}{symbol\+\_\+set}}}]{other }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Determine if this set is an (improper) subset of another. 
+\begin{DoxyParams}{Parameter}
+{\em other} & the set we are testing against. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1symbol__set_ad382d98db54059df8ff47653e6bc9168}\label{classjava__cup_1_1symbol__set_ad382d98db54059df8ff47653e6bc9168}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!is\_superset\_of@{is\_superset\_of}}
+\index{is\_superset\_of@{is\_superset\_of}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{is\_superset\_of()}{is\_superset\_of()}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+symbol\+\_\+set.\+is\+\_\+superset\+\_\+of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1symbol__set}{symbol\+\_\+set}}}]{other }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Determine if this set is an (improper) superset of another. 
+\begin{DoxyParams}{Parameter}
+{\em other} & the set we are are testing against. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1symbol__set_ae0f5b7cf91fe697720920f4f11b92996}\label{classjava__cup_1_1symbol__set_ae0f5b7cf91fe697720920f4f11b92996}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!not\_null@{not\_null}}
+\index{not\_null@{not\_null}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{not\_null()}{not\_null()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+symbol\+\_\+set.\+not\+\_\+null (\begin{DoxyParamCaption}\item[{Object}]{obj }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Helper function to test for a null object and throw an exception if one is found. 
+\begin{DoxyParams}{Parameter}
+{\em obj} & the object we are testing. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1symbol__set_a687b90a6114c55457b08a9b2b7f9e943}\label{classjava__cup_1_1symbol__set_a687b90a6114c55457b08a9b2b7f9e943}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!remove@{remove}}
+\index{remove@{remove}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+symbol\+\_\+set.\+remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}}}]{sym }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove a single symbol if it is in the set. 
+\begin{DoxyParams}{Parameter}
+{\em sym} & the symbol we are removing. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1symbol__set_a2aa0f88344cb4768d5be011a0cb63651}\label{classjava__cup_1_1symbol__set_a2aa0f88344cb4768d5be011a0cb63651}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!remove@{remove}}
+\index{remove@{remove}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+symbol\+\_\+set.\+remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1symbol__set}{symbol\+\_\+set}}}]{other }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove (set subtract) a complete set. 
+\begin{DoxyParams}{Parameter}
+{\em other} & the set we are removing. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1symbol__set_a1aea97a9bde5654bba38c27e563307cb}\label{classjava__cup_1_1symbol__set_a1aea97a9bde5654bba38c27e563307cb}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!size@{size}}
+\index{size@{size}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+symbol\+\_\+set.\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+size of the set \mbox{\Hypertarget{classjava__cup_1_1symbol__set_adf1185ce4f4593b6c0c2c3678cddfdc4}\label{classjava__cup_1_1symbol__set_adf1185ce4f4593b6c0c2c3678cddfdc4}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!toString@{toString}}
+\index{toString@{toString}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+symbol\+\_\+set.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert to a string. 
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classjava__cup_1_1symbol__set_a0c93679d30c46261afb73a2538e36fd4}\label{classjava__cup_1_1symbol__set_a0c93679d30c46261afb73a2538e36fd4}} 
+\index{java\_cup.symbol\_set@{java\_cup.symbol\_set}!\_all@{\_all}}
+\index{\_all@{\_all}!java\_cup.symbol\_set@{java\_cup.symbol\_set}}
+\doxysubsubsection{\texorpdfstring{\_all}{\_all}}
+{\footnotesize\ttfamily Hashtable java\+\_\+cup.\+symbol\+\_\+set.\+\_\+all = new Hashtable(11)\hspace{0.3cm}{\ttfamily [protected]}}
+
+A hash table to hold the set. Symbols are keyed using their name string. 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/java\+\_\+cup/symbol\+\_\+set.\+java\end{DoxyCompactItemize}

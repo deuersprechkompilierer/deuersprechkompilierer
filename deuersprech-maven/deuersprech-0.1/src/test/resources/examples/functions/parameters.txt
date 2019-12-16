@@ -1,0 +1,5 @@
+ganzzahl addFunct(ganzzahl a, ganzzahl b) { 
+	gebzurueck a PLUS b; 
+} 
+
+druckzeile(addFunct(3,4));

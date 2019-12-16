@@ -1,0 +1,87 @@
+\hypertarget{classjava__cup_1_1parse__action__row}{}\doxysection{java\+\_\+cup.\+parse\+\_\+action\+\_\+row Klassenreferenz}
+\label{classjava__cup_1_1parse__action__row}\index{java\_cup.parse\_action\_row@{java\_cup.parse\_action\_row}}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1parse__action__row_a464676a815eba4845bd1d726d7527d8c}{parse\+\_\+action\+\_\+row}} ()
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1parse__action__row_a9f52efbd197a9fbade103fa97a57a296}{compute\+\_\+default}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Öffentliche, statische Methoden}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1parse__action__row_aca9e4adc8ca79f83ce813e06f255c2f2}{size}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Öffentliche Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1parse__action}{parse\+\_\+action}} \mbox{\hyperlink{classjava__cup_1_1parse__action__row_aff77eb30bc2be7dea0133812ed665e61}{under\+\_\+term}} \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1parse__action__row_ab8209a5066760da859015e0587c3ce24}{default\+\_\+reduce}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Statische, geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1parse__action__row_aaae51297b159f10882c3059ccfdd9f7c}{\+\_\+size}} = 0
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1parse__action__row_a7ec3e0531ee25d030c8bbd297c9ac512}{reduction\+\_\+count}} \mbox{[}$\,$\mbox{]} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+This class represents one row (corresponding to one machine state) of the parse action table. 
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjava__cup_1_1parse__action__row_a464676a815eba4845bd1d726d7527d8c}\label{classjava__cup_1_1parse__action__row_a464676a815eba4845bd1d726d7527d8c}} 
+\index{java\_cup.parse\_action\_row@{java\_cup.parse\_action\_row}!parse\_action\_row@{parse\_action\_row}}
+\index{parse\_action\_row@{parse\_action\_row}!java\_cup.parse\_action\_row@{java\_cup.parse\_action\_row}}
+\doxysubsubsection{\texorpdfstring{parse\_action\_row()}{parse\_action\_row()}}
+{\footnotesize\ttfamily java\+\_\+cup.\+parse\+\_\+action\+\_\+row.\+parse\+\_\+action\+\_\+row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Simple constructor. Note\+: this should not be used until the number of terminals in the grammar has been established. 
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classjava__cup_1_1parse__action__row_a9f52efbd197a9fbade103fa97a57a296}\label{classjava__cup_1_1parse__action__row_a9f52efbd197a9fbade103fa97a57a296}} 
+\index{java\_cup.parse\_action\_row@{java\_cup.parse\_action\_row}!compute\_default@{compute\_default}}
+\index{compute\_default@{compute\_default}!java\_cup.parse\_action\_row@{java\_cup.parse\_action\_row}}
+\doxysubsubsection{\texorpdfstring{compute\_default()}{compute\_default()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+parse\+\_\+action\+\_\+row.\+compute\+\_\+default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compute the default (reduce) action for this row and store it in default\+\_\+reduce. In the case of non-\/zero default we will have the effect of replacing all errors by that reduction. This may cause us to do erroneous reduces, but will never cause us to shift past the point of the error and never cause an incorrect parse. -\/1 will be used to encode the fact that no reduction can be used as a default (in which case error will be used). \mbox{\Hypertarget{classjava__cup_1_1parse__action__row_aca9e4adc8ca79f83ce813e06f255c2f2}\label{classjava__cup_1_1parse__action__row_aca9e4adc8ca79f83ce813e06f255c2f2}} 
+\index{java\_cup.parse\_action\_row@{java\_cup.parse\_action\_row}!size@{size}}
+\index{size@{size}!java\_cup.parse\_action\_row@{java\_cup.parse\_action\_row}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily static int java\+\_\+cup.\+parse\+\_\+action\+\_\+row.\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Number of columns (terminals) in every row. 
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classjava__cup_1_1parse__action__row_aaae51297b159f10882c3059ccfdd9f7c}\label{classjava__cup_1_1parse__action__row_aaae51297b159f10882c3059ccfdd9f7c}} 
+\index{java\_cup.parse\_action\_row@{java\_cup.parse\_action\_row}!\_size@{\_size}}
+\index{\_size@{\_size}!java\_cup.parse\_action\_row@{java\_cup.parse\_action\_row}}
+\doxysubsubsection{\texorpdfstring{\_size}{\_size}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+parse\+\_\+action\+\_\+row.\+\_\+size = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Number of columns (terminals) in every row. \mbox{\Hypertarget{classjava__cup_1_1parse__action__row_ab8209a5066760da859015e0587c3ce24}\label{classjava__cup_1_1parse__action__row_ab8209a5066760da859015e0587c3ce24}} 
+\index{java\_cup.parse\_action\_row@{java\_cup.parse\_action\_row}!default\_reduce@{default\_reduce}}
+\index{default\_reduce@{default\_reduce}!java\_cup.parse\_action\_row@{java\_cup.parse\_action\_row}}
+\doxysubsubsection{\texorpdfstring{default\_reduce}{default\_reduce}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+parse\+\_\+action\+\_\+row.\+default\+\_\+reduce}
+
+Default (reduce) action for this row. -\/1 will represent default of error. \mbox{\Hypertarget{classjava__cup_1_1parse__action__row_a7ec3e0531ee25d030c8bbd297c9ac512}\label{classjava__cup_1_1parse__action__row_a7ec3e0531ee25d030c8bbd297c9ac512}} 
+\index{java\_cup.parse\_action\_row@{java\_cup.parse\_action\_row}!reduction\_count@{reduction\_count}}
+\index{reduction\_count@{reduction\_count}!java\_cup.parse\_action\_row@{java\_cup.parse\_action\_row}}
+\doxysubsubsection{\texorpdfstring{reduction\_count}{reduction\_count}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+parse\+\_\+action\+\_\+row.\+reduction\+\_\+count\mbox{[}$\,$\mbox{]} = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Table of reduction counts (reused by \mbox{\hyperlink{classjava__cup_1_1parse__action__row_a9f52efbd197a9fbade103fa97a57a296}{compute\+\_\+default()}}). \mbox{\Hypertarget{classjava__cup_1_1parse__action__row_aff77eb30bc2be7dea0133812ed665e61}\label{classjava__cup_1_1parse__action__row_aff77eb30bc2be7dea0133812ed665e61}} 
+\index{java\_cup.parse\_action\_row@{java\_cup.parse\_action\_row}!under\_term@{under\_term}}
+\index{under\_term@{under\_term}!java\_cup.parse\_action\_row@{java\_cup.parse\_action\_row}}
+\doxysubsubsection{\texorpdfstring{under\_term}{under\_term}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1parse__action}{parse\+\_\+action}} java\+\_\+cup.\+parse\+\_\+action\+\_\+row.\+under\+\_\+term\mbox{[}$\,$\mbox{]}}
+
+Actual action entries for the row. 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/java\+\_\+cup/parse\+\_\+action\+\_\+row.\+java\end{DoxyCompactItemize}

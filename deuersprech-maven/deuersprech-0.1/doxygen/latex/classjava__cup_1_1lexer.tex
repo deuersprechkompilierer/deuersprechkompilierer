@@ -1,0 +1,261 @@
+\hypertarget{classjava__cup_1_1lexer}{}\doxysection{java\+\_\+cup.\+lexer Klassenreferenz}
+\label{classjava__cup_1_1lexer}\index{java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsection*{Öffentliche, statische Methoden}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classjava__cup_1_1lexer_ac601d6ef5bdeb5d75c1307a7247ffbf0}{init}} ()  throws java.\+io.\+I\+O\+Exception     
+\item 
+static void \mbox{\hyperlink{classjava__cup_1_1lexer_aa267e85c68c2d272fa5a599723b88ea4}{emit\+\_\+error}} (String message)
+\item 
+static void \mbox{\hyperlink{classjava__cup_1_1lexer_ada1b259319602e83b63824eaa01226d9}{emit\+\_\+warn}} (String message)
+\item 
+static \mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} \mbox{\hyperlink{classjava__cup_1_1lexer_ad7c99ff3f599541e1981916c97e4c9f0}{next\+\_\+token}} ()  throws java.\+io.\+I\+O\+Exception     
+\item 
+static \mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} \mbox{\hyperlink{classjava__cup_1_1lexer_a1bd63f24431d5cf5780f721d24b76796}{debug\+\_\+next\+\_\+token}} ()  throws java.\+io.\+I\+O\+Exception     
+\end{DoxyCompactItemize}
+\doxysubsection*{Statische öffentliche Attribute}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1lexer_aedf782b10a0613e906cc0c23206fa06e}{error\+\_\+count}} = 0
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1lexer_aa92554f0b8af788c8d226bcff5e7765e}{warning\+\_\+count}} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte, statische Methoden}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classjava__cup_1_1lexer_a452b0f02f4cbdb5c8b1d720d6827c7f5}{advance}} ()  throws java.\+io.\+I\+O\+Exception     
+\item 
+static boolean \mbox{\hyperlink{classjava__cup_1_1lexer_a3180601bb9311cc042bb5f9ccea4e315}{id\+\_\+start\+\_\+char}} (int ch)
+\item 
+static boolean \mbox{\hyperlink{classjava__cup_1_1lexer_ab54946e988398d11fd2730c71bf63e89}{id\+\_\+char}} (int ch)
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1lexer_a8c048225c6c0688b5f2effddd219e184}{find\+\_\+single\+\_\+char}} (int ch)
+\item 
+static void \mbox{\hyperlink{classjava__cup_1_1lexer_a90d33f097cde09149071e6a7cfd67d10}{swallow\+\_\+comment}} ()  throws java.\+io.\+I\+O\+Exception     
+\item 
+static \mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} \mbox{\hyperlink{classjava__cup_1_1lexer_a1a24a2533f5953278f402307679a9033}{do\+\_\+code\+\_\+string}} ()  throws java.\+io.\+I\+O\+Exception     
+\item 
+static \mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} \mbox{\hyperlink{classjava__cup_1_1lexer_aab64c91ecb3384840608f5c4dc44e8a4}{do\+\_\+id}} ()  throws java.\+io.\+I\+O\+Exception     
+\item 
+static \mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} \mbox{\hyperlink{classjava__cup_1_1lexer_ad48cb0be420b1fc1f71aca126d267fc0}{real\+\_\+next\+\_\+token}} ()  throws java.\+io.\+I\+O\+Exception     
+\end{DoxyCompactItemize}
+\doxysubsection*{Statische, geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1lexer_a8083f3ed651b54b862ef23dc591416e6}{next\+\_\+char}}
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1lexer_affb0ef034a00c34e9615019696366b78}{next\+\_\+char2}}
+\item 
+static final int \mbox{\hyperlink{classjava__cup_1_1lexer_a0b6efdfa8d3903853ef68da487b81689}{E\+O\+F\+\_\+\+C\+H\+AR}} = -\/1
+\item 
+static Hashtable \mbox{\hyperlink{classjava__cup_1_1lexer_a42e860e4c13fad16ca90bc6c3a59129a}{keywords}} = new Hashtable(23)
+\item 
+static Hashtable \mbox{\hyperlink{classjava__cup_1_1lexer_aff4982cee9b2eb88d72f89c12acfb838}{char\+\_\+symbols}} = new Hashtable(11)
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1lexer_a12e8e8f3d65e436274be9e9cdde03683}{current\+\_\+line}} = 1
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1lexer_a1a4840e2b4f800bf7e42bec8761f4bcb}{current\+\_\+position}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+This class implements a small scanner (aka lexical analyzer or lexer) for the Java\+Cup specification. This scanner reads characters from standard input (System.\+in) and returns integers corresponding to the terminal number of the next token. Once end of input is reached the E\+OF token is returned on every subsequent call.
+
+Tokens currently returned include\+: 
+\begin{DoxyPre}
+   Symbol        Constant Returned     Symbol        Constant Returned
+   -\/-\/-\/-\/-\/-\/        -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/     -\/-\/-\/-\/-\/-\/        -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+   "package"     PACKAGE               "import"      IMPORT 
+   "code"        CODE                  "action"      ACTION 
+   "parser"      PARSER                "terminal"    TERMINAL
+   "non"         NON                   "init"        INIT 
+   "scan"        SCAN                  "with"        WITH
+   "start"       START                   ;           SEMI 
+     ,           COMMA                   *           STAR 
+     .           DOT                     :           COLON
+     ::=         COLON\_COLON\_EQUALS      |           BAR
+   identifier    ID                    \{:...:\}       CODE\_STRING
+   "debug"       DEBUG
+ \end{DoxyPre}
+ All symbol constants are defined in sym.\+java which is generated by Java\+Cup from parser.\+cup.
+
+In addition to the scanner proper (called first via \mbox{\hyperlink{classjava__cup_1_1lexer_ac601d6ef5bdeb5d75c1307a7247ffbf0}{init()}} then with \mbox{\hyperlink{classjava__cup_1_1lexer_ad7c99ff3f599541e1981916c97e4c9f0}{next\+\_\+token()}} to get each token) this class provides simple error and warning routines and keeps a count of errors and warnings that is publicly accessible.
+
+This class is \char`\"{}static\char`\"{} (i.\+e., it has only static members and methods).
+
+\begin{DoxyVersion}{Version}
+last updated\+: 11/25/95 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Autor}
+Scott Hudson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classjava__cup_1_1lexer_a452b0f02f4cbdb5c8b1d720d6827c7f5}\label{classjava__cup_1_1lexer_a452b0f02f4cbdb5c8b1d720d6827c7f5}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!advance@{advance}}
+\index{advance@{advance}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{advance()}{advance()}}
+{\footnotesize\ttfamily static void java\+\_\+cup.\+lexer.\+advance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+io.\+I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+Advance the scanner one character in the input stream. This moves next\+\_\+char2 to next\+\_\+char and then reads a new next\+\_\+char2. ~\newline
+ \mbox{\Hypertarget{classjava__cup_1_1lexer_a1bd63f24431d5cf5780f721d24b76796}\label{classjava__cup_1_1lexer_a1bd63f24431d5cf5780f721d24b76796}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!debug\_next\_token@{debug\_next\_token}}
+\index{debug\_next\_token@{debug\_next\_token}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{debug\_next\_token()}{debug\_next\_token()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} java\+\_\+cup.\+lexer.\+debug\+\_\+next\+\_\+token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+io.\+I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Debugging version of \mbox{\hyperlink{classjava__cup_1_1lexer_ad7c99ff3f599541e1981916c97e4c9f0}{next\+\_\+token()}}. This routine calls the real scanning routine, prints a message on System.\+out indicating what the token is, then returns it. \mbox{\Hypertarget{classjava__cup_1_1lexer_a1a24a2533f5953278f402307679a9033}\label{classjava__cup_1_1lexer_a1a24a2533f5953278f402307679a9033}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!do\_code\_string@{do\_code\_string}}
+\index{do\_code\_string@{do\_code\_string}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{do\_code\_string()}{do\_code\_string()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} java\+\_\+cup.\+lexer.\+do\+\_\+code\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+io.\+I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+Swallow up a code string. Code strings begin with \char`\"{}\{\+:\char`\"{} and include all characters up to the first occurrence of \char`\"{}\+:\}\char`\"{} (there is no way to include \char`\"{}\+:\}\char`\"{} inside a code string). The routine returns an str\+\_\+token object suitable for return by the scanner. \mbox{\Hypertarget{classjava__cup_1_1lexer_aab64c91ecb3384840608f5c4dc44e8a4}\label{classjava__cup_1_1lexer_aab64c91ecb3384840608f5c4dc44e8a4}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!do\_id@{do\_id}}
+\index{do\_id@{do\_id}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{do\_id()}{do\_id()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} java\+\_\+cup.\+lexer.\+do\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+io.\+I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+Process an identifier. Identifiers begin with a letter, underscore, or dollar sign, which is followed by zero or more letters, numbers, underscores or dollar signs. This routine returns an str\+\_\+token suitable for return by the scanner. \mbox{\Hypertarget{classjava__cup_1_1lexer_aa267e85c68c2d272fa5a599723b88ea4}\label{classjava__cup_1_1lexer_aa267e85c68c2d272fa5a599723b88ea4}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!emit\_error@{emit\_error}}
+\index{emit\_error@{emit\_error}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{emit\_error()}{emit\_error()}}
+{\footnotesize\ttfamily static void java\+\_\+cup.\+lexer.\+emit\+\_\+error (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Emit an error message. The message will be marked with both the current line number and the position in the line. Error messages are printed on standard error (System.\+err). 
+\begin{DoxyParams}{Parameter}
+{\em message} & the message to print. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1lexer_ada1b259319602e83b63824eaa01226d9}\label{classjava__cup_1_1lexer_ada1b259319602e83b63824eaa01226d9}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!emit\_warn@{emit\_warn}}
+\index{emit\_warn@{emit\_warn}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{emit\_warn()}{emit\_warn()}}
+{\footnotesize\ttfamily static void java\+\_\+cup.\+lexer.\+emit\+\_\+warn (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Emit a warning message. The message will be marked with both the current line number and the position in the line. Messages are printed on standard error (System.\+err). 
+\begin{DoxyParams}{Parameter}
+{\em message} & the message to print. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1lexer_a8c048225c6c0688b5f2effddd219e184}\label{classjava__cup_1_1lexer_a8c048225c6c0688b5f2effddd219e184}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!find\_single\_char@{find\_single\_char}}
+\index{find\_single\_char@{find\_single\_char}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{find\_single\_char()}{find\_single\_char()}}
+{\footnotesize\ttfamily static int java\+\_\+cup.\+lexer.\+find\+\_\+single\+\_\+char (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+Try to look up a single character symbol, returns -\/1 for not found. 
+\begin{DoxyParams}{Parameter}
+{\em ch} & the character in question. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1lexer_ab54946e988398d11fd2730c71bf63e89}\label{classjava__cup_1_1lexer_ab54946e988398d11fd2730c71bf63e89}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!id\_char@{id\_char}}
+\index{id\_char@{id\_char}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{id\_char()}{id\_char()}}
+{\footnotesize\ttfamily static boolean java\+\_\+cup.\+lexer.\+id\+\_\+char (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+Determine if a character is ok for the middle of an id. 
+\begin{DoxyParams}{Parameter}
+{\em ch} & the character in question. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1lexer_a3180601bb9311cc042bb5f9ccea4e315}\label{classjava__cup_1_1lexer_a3180601bb9311cc042bb5f9ccea4e315}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!id\_start\_char@{id\_start\_char}}
+\index{id\_start\_char@{id\_start\_char}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{id\_start\_char()}{id\_start\_char()}}
+{\footnotesize\ttfamily static boolean java\+\_\+cup.\+lexer.\+id\+\_\+start\+\_\+char (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+Determine if a character is ok to start an id. 
+\begin{DoxyParams}{Parameter}
+{\em ch} & the character in question. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1lexer_ac601d6ef5bdeb5d75c1307a7247ffbf0}\label{classjava__cup_1_1lexer_ac601d6ef5bdeb5d75c1307a7247ffbf0}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!init@{init}}
+\index{init@{init}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily static void java\+\_\+cup.\+lexer.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+io.\+I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Initialize the scanner. This sets up the keywords and char\+\_\+symbols tables and reads the first two characters of lookahead. ~\newline
+ \mbox{\Hypertarget{classjava__cup_1_1lexer_ad7c99ff3f599541e1981916c97e4c9f0}\label{classjava__cup_1_1lexer_ad7c99ff3f599541e1981916c97e4c9f0}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!next\_token@{next\_token}}
+\index{next\_token@{next\_token}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{next\_token()}{next\_token()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} java\+\_\+cup.\+lexer.\+next\+\_\+token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+io.\+I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Return one token. This is the main external interface to the scanner. It consumes sufficient characters to determine the next input token and returns it. To help with debugging, this routine actually calls \mbox{\hyperlink{classjava__cup_1_1lexer_ad48cb0be420b1fc1f71aca126d267fc0}{real\+\_\+next\+\_\+token()}} which does the work. If you need to debug the parser, this can be changed to call \mbox{\hyperlink{classjava__cup_1_1lexer_a1bd63f24431d5cf5780f721d24b76796}{debug\+\_\+next\+\_\+token()}} which prints a debugging message before returning the token. \mbox{\Hypertarget{classjava__cup_1_1lexer_ad48cb0be420b1fc1f71aca126d267fc0}\label{classjava__cup_1_1lexer_ad48cb0be420b1fc1f71aca126d267fc0}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!real\_next\_token@{real\_next\_token}}
+\index{real\_next\_token@{real\_next\_token}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{real\_next\_token()}{real\_next\_token()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} java\+\_\+cup.\+lexer.\+real\+\_\+next\+\_\+token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+io.\+I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+The actual routine to return one token. This is normally called from \mbox{\hyperlink{classjava__cup_1_1lexer_ad7c99ff3f599541e1981916c97e4c9f0}{next\+\_\+token()}}, but for debugging purposes can be called indirectly from \mbox{\hyperlink{classjava__cup_1_1lexer_a1bd63f24431d5cf5780f721d24b76796}{debug\+\_\+next\+\_\+token()}}. \mbox{\Hypertarget{classjava__cup_1_1lexer_a90d33f097cde09149071e6a7cfd67d10}\label{classjava__cup_1_1lexer_a90d33f097cde09149071e6a7cfd67d10}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!swallow\_comment@{swallow\_comment}}
+\index{swallow\_comment@{swallow\_comment}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{swallow\_comment()}{swallow\_comment()}}
+{\footnotesize\ttfamily static void java\+\_\+cup.\+lexer.\+swallow\+\_\+comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+io.\+I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+Handle swallowing up a comment. Both old style C and new style C++ comments are handled. 
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classjava__cup_1_1lexer_aff4982cee9b2eb88d72f89c12acfb838}\label{classjava__cup_1_1lexer_aff4982cee9b2eb88d72f89c12acfb838}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!char\_symbols@{char\_symbols}}
+\index{char\_symbols@{char\_symbols}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{char\_symbols}{char\_symbols}}
+{\footnotesize\ttfamily Hashtable java\+\_\+cup.\+lexer.\+char\+\_\+symbols = new Hashtable(11)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Table of single character symbols. For ease of implementation, we store all unambiguous single character tokens in this table of Integer objects keyed by Integer objects with the numerical value of the appropriate char (currently Character objects have a bug which precludes their use in tables). \mbox{\Hypertarget{classjava__cup_1_1lexer_a12e8e8f3d65e436274be9e9cdde03683}\label{classjava__cup_1_1lexer_a12e8e8f3d65e436274be9e9cdde03683}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!current\_line@{current\_line}}
+\index{current\_line@{current\_line}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{current\_line}{current\_line}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+lexer.\+current\+\_\+line = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Current line number for use in error messages. \mbox{\Hypertarget{classjava__cup_1_1lexer_a1a4840e2b4f800bf7e42bec8761f4bcb}\label{classjava__cup_1_1lexer_a1a4840e2b4f800bf7e42bec8761f4bcb}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!current\_position@{current\_position}}
+\index{current\_position@{current\_position}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{current\_position}{current\_position}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+lexer.\+current\+\_\+position = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Character position in current line. \mbox{\Hypertarget{classjava__cup_1_1lexer_a0b6efdfa8d3903853ef68da487b81689}\label{classjava__cup_1_1lexer_a0b6efdfa8d3903853ef68da487b81689}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!EOF\_CHAR@{EOF\_CHAR}}
+\index{EOF\_CHAR@{EOF\_CHAR}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{EOF\_CHAR}{EOF\_CHAR}}
+{\footnotesize\ttfamily final int java\+\_\+cup.\+lexer.\+E\+O\+F\+\_\+\+C\+H\+AR = -\/1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+E\+OF constant. \mbox{\Hypertarget{classjava__cup_1_1lexer_aedf782b10a0613e906cc0c23206fa06e}\label{classjava__cup_1_1lexer_aedf782b10a0613e906cc0c23206fa06e}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!error\_count@{error\_count}}
+\index{error\_count@{error\_count}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{error\_count}{error\_count}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+lexer.\+error\+\_\+count = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Count of total errors detected so far. \mbox{\Hypertarget{classjava__cup_1_1lexer_a42e860e4c13fad16ca90bc6c3a59129a}\label{classjava__cup_1_1lexer_a42e860e4c13fad16ca90bc6c3a59129a}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!keywords@{keywords}}
+\index{keywords@{keywords}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{keywords}{keywords}}
+{\footnotesize\ttfamily Hashtable java\+\_\+cup.\+lexer.\+keywords = new Hashtable(23)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Table of keywords. Keywords are initially treated as identifiers. Just before they are returned we look them up in this table to see if they match one of the keywords. The string of the name is the key here, which indexes Integer objects holding the symbol number. \mbox{\Hypertarget{classjava__cup_1_1lexer_a8083f3ed651b54b862ef23dc591416e6}\label{classjava__cup_1_1lexer_a8083f3ed651b54b862ef23dc591416e6}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!next\_char@{next\_char}}
+\index{next\_char@{next\_char}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{next\_char}{next\_char}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+lexer.\+next\+\_\+char\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+First character of lookahead. \mbox{\Hypertarget{classjava__cup_1_1lexer_affb0ef034a00c34e9615019696366b78}\label{classjava__cup_1_1lexer_affb0ef034a00c34e9615019696366b78}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!next\_char2@{next\_char2}}
+\index{next\_char2@{next\_char2}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{next\_char2}{next\_char2}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+lexer.\+next\+\_\+char2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Second character of lookahead. \mbox{\Hypertarget{classjava__cup_1_1lexer_aa92554f0b8af788c8d226bcff5e7765e}\label{classjava__cup_1_1lexer_aa92554f0b8af788c8d226bcff5e7765e}} 
+\index{java\_cup.lexer@{java\_cup.lexer}!warning\_count@{warning\_count}}
+\index{warning\_count@{warning\_count}!java\_cup.lexer@{java\_cup.lexer}}
+\doxysubsubsection{\texorpdfstring{warning\_count}{warning\_count}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+lexer.\+warning\+\_\+count = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Count of warnings issued so far 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/java\+\_\+cup/lexer.\+java\end{DoxyCompactItemize}

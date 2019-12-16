@@ -1,0 +1,79 @@
+\hypertarget{classjava__cup_1_1parse__reduce__table}{}\doxysection{java\+\_\+cup.\+parse\+\_\+reduce\+\_\+table Klassenreferenz}
+\label{classjava__cup_1_1parse__reduce__table}\index{java\_cup.parse\_reduce\_table@{java\_cup.parse\_reduce\_table}}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1parse__reduce__table_a58b979a16b627745d6fd068c81639c2d}{parse\+\_\+reduce\+\_\+table}} ()
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1parse__reduce__table_a0bc4207928b10fea498aef5ec9c4985a}{num\+\_\+states}} ()
+\item 
+String \mbox{\hyperlink{classjava__cup_1_1parse__reduce__table_aa6b6f0c116dba3098cd10c3e154a0660}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Öffentliche Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1parse__reduce__row}{parse\+\_\+reduce\+\_\+row}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classjava__cup_1_1parse__reduce__table_a9721acdd2f4b4b56611854463a6809d5}{under\+\_\+state}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1parse__reduce__table_ab125613212fee4d185331b1531f1df3c}{\+\_\+num\+\_\+states}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+This class represents the complete \char`\"{}reduce-\/goto\char`\"{} table of the parser. It has one row for each state in the parse machines, and a column for each terminal symbol. Each entry contains a state number to shift to as the last step of a reduce.
+
+\begin{DoxySeeAlso}{Siehe auch}
+\mbox{\hyperlink{classjava__cup_1_1parse__reduce__row}{java\+\_\+cup.\+parse\+\_\+reduce\+\_\+row}} 
+\end{DoxySeeAlso}
+\begin{DoxyVersion}{Version}
+last updated\+: 11/25/95 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Autor}
+Scott Hudson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjava__cup_1_1parse__reduce__table_a58b979a16b627745d6fd068c81639c2d}\label{classjava__cup_1_1parse__reduce__table_a58b979a16b627745d6fd068c81639c2d}} 
+\index{java\_cup.parse\_reduce\_table@{java\_cup.parse\_reduce\_table}!parse\_reduce\_table@{parse\_reduce\_table}}
+\index{parse\_reduce\_table@{parse\_reduce\_table}!java\_cup.parse\_reduce\_table@{java\_cup.parse\_reduce\_table}}
+\doxysubsubsection{\texorpdfstring{parse\_reduce\_table()}{parse\_reduce\_table()}}
+{\footnotesize\ttfamily java\+\_\+cup.\+parse\+\_\+reduce\+\_\+table.\+parse\+\_\+reduce\+\_\+table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Simple constructor. Note\+: all terminals, non-\/terminals, and productions must already have been entered, and the viable prefix recognizer should have been constructed before this is called. 
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classjava__cup_1_1parse__reduce__table_a0bc4207928b10fea498aef5ec9c4985a}\label{classjava__cup_1_1parse__reduce__table_a0bc4207928b10fea498aef5ec9c4985a}} 
+\index{java\_cup.parse\_reduce\_table@{java\_cup.parse\_reduce\_table}!num\_states@{num\_states}}
+\index{num\_states@{num\_states}!java\_cup.parse\_reduce\_table@{java\_cup.parse\_reduce\_table}}
+\doxysubsubsection{\texorpdfstring{num\_states()}{num\_states()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+parse\+\_\+reduce\+\_\+table.\+num\+\_\+states (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+How many rows/states in the machine/table. \mbox{\Hypertarget{classjava__cup_1_1parse__reduce__table_aa6b6f0c116dba3098cd10c3e154a0660}\label{classjava__cup_1_1parse__reduce__table_aa6b6f0c116dba3098cd10c3e154a0660}} 
+\index{java\_cup.parse\_reduce\_table@{java\_cup.parse\_reduce\_table}!toString@{toString}}
+\index{toString@{toString}!java\_cup.parse\_reduce\_table@{java\_cup.parse\_reduce\_table}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+parse\+\_\+reduce\+\_\+table.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert to a string. 
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classjava__cup_1_1parse__reduce__table_ab125613212fee4d185331b1531f1df3c}\label{classjava__cup_1_1parse__reduce__table_ab125613212fee4d185331b1531f1df3c}} 
+\index{java\_cup.parse\_reduce\_table@{java\_cup.parse\_reduce\_table}!\_num\_states@{\_num\_states}}
+\index{\_num\_states@{\_num\_states}!java\_cup.parse\_reduce\_table@{java\_cup.parse\_reduce\_table}}
+\doxysubsubsection{\texorpdfstring{\_num\_states}{\_num\_states}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+parse\+\_\+reduce\+\_\+table.\+\_\+num\+\_\+states\hspace{0.3cm}{\ttfamily [protected]}}
+
+How many rows/states in the machine/table. \mbox{\Hypertarget{classjava__cup_1_1parse__reduce__table_a9721acdd2f4b4b56611854463a6809d5}\label{classjava__cup_1_1parse__reduce__table_a9721acdd2f4b4b56611854463a6809d5}} 
+\index{java\_cup.parse\_reduce\_table@{java\_cup.parse\_reduce\_table}!under\_state@{under\_state}}
+\index{under\_state@{under\_state}!java\_cup.parse\_reduce\_table@{java\_cup.parse\_reduce\_table}}
+\doxysubsubsection{\texorpdfstring{under\_state}{under\_state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1parse__reduce__row}{parse\+\_\+reduce\+\_\+row}} \mbox{[}$\,$\mbox{]} java\+\_\+cup.\+parse\+\_\+reduce\+\_\+table.\+under\+\_\+state}
+
+Actual array of rows, one per state 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/java\+\_\+cup/parse\+\_\+reduce\+\_\+table.\+java\end{DoxyCompactItemize}

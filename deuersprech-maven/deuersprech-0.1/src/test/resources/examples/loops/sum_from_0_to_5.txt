@@ -1,0 +1,11 @@
+ganzzahl i; 
+ganzzahl x;
+
+i ISTGLEICH 0; 
+x ISTGLEICH 0;
+
+waehrend(i KLEINER 5) {
+	x ISTGLEICH x PLUS i;
+	druckzeile(x);
+	i ISTGLEICH i PLUS 1;
+}

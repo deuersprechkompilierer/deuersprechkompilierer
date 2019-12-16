@@ -1,0 +1,133 @@
+\hypertarget{classjava__cup_1_1parse__action}{}\doxysection{java\+\_\+cup.\+parse\+\_\+action Klassenreferenz}
+\label{classjava__cup_1_1parse__action}\index{java\_cup.parse\_action@{java\_cup.parse\_action}}
+Klassendiagramm für java\+\_\+cup.\+parse\+\_\+action\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classjava__cup_1_1parse__action}
+\end{center}
+\end{figure}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1parse__action_a48272fd7762547b8021357e51ddd7a95}{parse\+\_\+action}} ()
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1parse__action_ac0878ca74fc240cf0b8b99973c59b4d5}{kind}} ()
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1parse__action_aac0f83d614ee31c0124bb73c5fed633b}{equals}} (\mbox{\hyperlink{classjava__cup_1_1parse__action}{parse\+\_\+action}} other)
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1parse__action_a67d7b10ad9f6cacc5554ef39365512d7}{equals}} (Object other)
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1parse__action_a411dcb3ac5367b046cad548c83bc6f41}{hash\+Code}} ()
+\item 
+String \mbox{\hyperlink{classjava__cup_1_1parse__action_a267a56f5572436e147ab9b1ab987e6da}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Statische öffentliche Attribute}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classjava__cup_1_1parse__action_a52fea1381bb54b4eb379c6ea3398a137}{E\+R\+R\+OR}} = 0
+\item 
+static final int \mbox{\hyperlink{classjava__cup_1_1parse__action_aa2bada047360dfd969086dd151a5a969}{S\+H\+I\+FT}} = 1
+\item 
+static final int \mbox{\hyperlink{classjava__cup_1_1parse__action_a449fa9bc5956192891bec6979133c0e9}{R\+E\+D\+U\+CE}} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+This class serves as the base class for entries in a parse action table. ~\newline
+ Full entries will either be S\+H\+I\+F\+T(state\+\_\+num), R\+E\+D\+U\+C\+E(production), or E\+R\+R\+OR. Objects of this base class will default to E\+R\+R\+OR, while the other two types will be represented by subclasses.
+
+\begin{DoxySeeAlso}{Siehe auch}
+\mbox{\hyperlink{classjava__cup_1_1reduce__action}{java\+\_\+cup.\+reduce\+\_\+action}} 
+
+\mbox{\hyperlink{classjava__cup_1_1shift__action}{java\+\_\+cup.\+shift\+\_\+action}} 
+\end{DoxySeeAlso}
+\begin{DoxyVersion}{Version}
+last updated\+: 11/25/95 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Autor}
+Scott Hudson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjava__cup_1_1parse__action_a48272fd7762547b8021357e51ddd7a95}\label{classjava__cup_1_1parse__action_a48272fd7762547b8021357e51ddd7a95}} 
+\index{java\_cup.parse\_action@{java\_cup.parse\_action}!parse\_action@{parse\_action}}
+\index{parse\_action@{parse\_action}!java\_cup.parse\_action@{java\_cup.parse\_action}}
+\doxysubsubsection{\texorpdfstring{parse\_action()}{parse\_action()}}
+{\footnotesize\ttfamily java\+\_\+cup.\+parse\+\_\+action.\+parse\+\_\+action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Simple constructor. 
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classjava__cup_1_1parse__action_a67d7b10ad9f6cacc5554ef39365512d7}\label{classjava__cup_1_1parse__action_a67d7b10ad9f6cacc5554ef39365512d7}} 
+\index{java\_cup.parse\_action@{java\_cup.parse\_action}!equals@{equals}}
+\index{equals@{equals}!java\_cup.parse\_action@{java\_cup.parse\_action}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+parse\+\_\+action.\+equals (\begin{DoxyParamCaption}\item[{Object}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generic equality test. 
+
+Erneute Implementation in \mbox{\hyperlink{classjava__cup_1_1reduce__action_ae3f2566f5c511f4d4db799eeded186fb}{java\+\_\+cup.\+reduce\+\_\+action}} und \mbox{\hyperlink{classjava__cup_1_1shift__action_a8f69f8d3868402bf4694ef451662dd7d}{java\+\_\+cup.\+shift\+\_\+action}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1parse__action_aac0f83d614ee31c0124bb73c5fed633b}\label{classjava__cup_1_1parse__action_aac0f83d614ee31c0124bb73c5fed633b}} 
+\index{java\_cup.parse\_action@{java\_cup.parse\_action}!equals@{equals}}
+\index{equals@{equals}!java\_cup.parse\_action@{java\_cup.parse\_action}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+parse\+\_\+action.\+equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1parse__action}{parse\+\_\+action}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Equality test. \mbox{\Hypertarget{classjava__cup_1_1parse__action_a411dcb3ac5367b046cad548c83bc6f41}\label{classjava__cup_1_1parse__action_a411dcb3ac5367b046cad548c83bc6f41}} 
+\index{java\_cup.parse\_action@{java\_cup.parse\_action}!hashCode@{hashCode}}
+\index{hashCode@{hashCode}!java\_cup.parse\_action@{java\_cup.parse\_action}}
+\doxysubsubsection{\texorpdfstring{hashCode()}{hashCode()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+parse\+\_\+action.\+hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compute a hash code. 
+
+Erneute Implementation in \mbox{\hyperlink{classjava__cup_1_1reduce__action_aedfa1f624f5d80ce85f104dd509c2a73}{java\+\_\+cup.\+reduce\+\_\+action}} und \mbox{\hyperlink{classjava__cup_1_1shift__action_a231a35ed2e061d842298c94c189ac8cc}{java\+\_\+cup.\+shift\+\_\+action}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1parse__action_ac0878ca74fc240cf0b8b99973c59b4d5}\label{classjava__cup_1_1parse__action_ac0878ca74fc240cf0b8b99973c59b4d5}} 
+\index{java\_cup.parse\_action@{java\_cup.parse\_action}!kind@{kind}}
+\index{kind@{kind}!java\_cup.parse\_action@{java\_cup.parse\_action}}
+\doxysubsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+parse\+\_\+action.\+kind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Quick access to the type -- base class defaults to error. 
+
+Erneute Implementation in \mbox{\hyperlink{classjava__cup_1_1reduce__action_ae6411da35918a13e3e2a4b265d62a5c4}{java\+\_\+cup.\+reduce\+\_\+action}} und \mbox{\hyperlink{classjava__cup_1_1shift__action_ae6702f1008c9f05d019319214749b394}{java\+\_\+cup.\+shift\+\_\+action}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1parse__action_a267a56f5572436e147ab9b1ab987e6da}\label{classjava__cup_1_1parse__action_a267a56f5572436e147ab9b1ab987e6da}} 
+\index{java\_cup.parse\_action@{java\_cup.parse\_action}!toString@{toString}}
+\index{toString@{toString}!java\_cup.parse\_action@{java\_cup.parse\_action}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+parse\+\_\+action.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert to string. 
+
+Erneute Implementation in \mbox{\hyperlink{classjava__cup_1_1shift__action_ac217202f5cb45dbee2c87c7928b99df6}{java\+\_\+cup.\+shift\+\_\+action}} und \mbox{\hyperlink{classjava__cup_1_1reduce__action_ad461b495d47876e0d980aad68359afd9}{java\+\_\+cup.\+reduce\+\_\+action}}.
+
+
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classjava__cup_1_1parse__action_a52fea1381bb54b4eb379c6ea3398a137}\label{classjava__cup_1_1parse__action_a52fea1381bb54b4eb379c6ea3398a137}} 
+\index{java\_cup.parse\_action@{java\_cup.parse\_action}!ERROR@{ERROR}}
+\index{ERROR@{ERROR}!java\_cup.parse\_action@{java\_cup.parse\_action}}
+\doxysubsubsection{\texorpdfstring{ERROR}{ERROR}}
+{\footnotesize\ttfamily final int java\+\_\+cup.\+parse\+\_\+action.\+E\+R\+R\+OR = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Constant for action type -- error action. \mbox{\Hypertarget{classjava__cup_1_1parse__action_a449fa9bc5956192891bec6979133c0e9}\label{classjava__cup_1_1parse__action_a449fa9bc5956192891bec6979133c0e9}} 
+\index{java\_cup.parse\_action@{java\_cup.parse\_action}!REDUCE@{REDUCE}}
+\index{REDUCE@{REDUCE}!java\_cup.parse\_action@{java\_cup.parse\_action}}
+\doxysubsubsection{\texorpdfstring{REDUCE}{REDUCE}}
+{\footnotesize\ttfamily final int java\+\_\+cup.\+parse\+\_\+action.\+R\+E\+D\+U\+CE = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+Constants for action type -- reduce action. \mbox{\Hypertarget{classjava__cup_1_1parse__action_aa2bada047360dfd969086dd151a5a969}\label{classjava__cup_1_1parse__action_aa2bada047360dfd969086dd151a5a969}} 
+\index{java\_cup.parse\_action@{java\_cup.parse\_action}!SHIFT@{SHIFT}}
+\index{SHIFT@{SHIFT}!java\_cup.parse\_action@{java\_cup.parse\_action}}
+\doxysubsubsection{\texorpdfstring{SHIFT}{SHIFT}}
+{\footnotesize\ttfamily final int java\+\_\+cup.\+parse\+\_\+action.\+S\+H\+I\+FT = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+Constant for action type -- shift action. 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/java\+\_\+cup/parse\+\_\+action.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,344 @@
+\hypertarget{classjava__cup_1_1lalr__state}{}\doxysection{java\+\_\+cup.\+lalr\+\_\+state Klassenreferenz}
+\label{classjava__cup_1_1lalr__state}\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1lalr__state_add09dab23ebc0e40de79febe653cc7b4}{lalr\+\_\+state}} (\mbox{\hyperlink{classjava__cup_1_1lalr__item__set}{lalr\+\_\+item\+\_\+set}} itms)  throws internal\+\_\+error    
+\item 
+\mbox{\hyperlink{classjava__cup_1_1lalr__item__set}{lalr\+\_\+item\+\_\+set}} \mbox{\hyperlink{classjava__cup_1_1lalr__state_a79f7c20c7a43b52f36dfd4531c824732}{items}} ()
+\item 
+\mbox{\hyperlink{classjava__cup_1_1lalr__transition}{lalr\+\_\+transition}} \mbox{\hyperlink{classjava__cup_1_1lalr__state_ad3c1f8e5f82060f48717a8a4a7561fc1}{transitions}} ()
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1lalr__state_a4739bfae64234f684f099013d301522c}{index}} ()
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1lalr__state_aaccbf90f93da595e05ff7da4ebc4c4ce}{add\+\_\+transition}} (\mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}} on\+\_\+sym, \mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}} to\+\_\+st)  throws internal\+\_\+error     
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1lalr__state_abb1ba0becc5c57c487adac88c1dee36b}{build\+\_\+table\+\_\+entries}} (\mbox{\hyperlink{classjava__cup_1_1parse__action__table}{parse\+\_\+action\+\_\+table}} act\+\_\+table, \mbox{\hyperlink{classjava__cup_1_1parse__reduce__table}{parse\+\_\+reduce\+\_\+table}} reduce\+\_\+table)  throws internal\+\_\+error     
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1lalr__state_a2f8a5292f1bc14bb2b2671537d42007c}{equals}} (\mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}} other)
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1lalr__state_a9f285851c55de7cb7b1a027722979715}{equals}} (Object other)
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1lalr__state_a85e8cda19bf2356c9722c833262a9341}{hash\+Code}} ()
+\item 
+String \mbox{\hyperlink{classjava__cup_1_1lalr__state_a9a170eace1e9b641d03d6cb8cb269f05}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Öffentliche, statische Methoden}
+\begin{DoxyCompactItemize}
+\item 
+static Enumeration \mbox{\hyperlink{classjava__cup_1_1lalr__state_a1fbb9402cedc4be04f3900f34fb41c35}{all}} ()
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1lalr__state_ada0e039a8b6dc81f861863c9936ceed8}{number}} ()
+\item 
+static \mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}} \mbox{\hyperlink{classjava__cup_1_1lalr__state_ac70f9ce9782a839e7311aa2c8ac2dcf3}{find\+\_\+state}} (\mbox{\hyperlink{classjava__cup_1_1lalr__item__set}{lalr\+\_\+item\+\_\+set}} itms)
+\item 
+static \mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}} \mbox{\hyperlink{classjava__cup_1_1lalr__state_ad7a493973dc1622375005c721f2d2585}{build\+\_\+machine}} (\mbox{\hyperlink{classjava__cup_1_1production}{production}} start\+\_\+prod)  throws internal\+\_\+error     
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte Methoden}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1lalr__state_a62f863be0ab72998e795368d548187bc}{propagate\+\_\+lookaheads}} ()  throws internal\+\_\+error     
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1lalr__state_a164722f02e3b31167a5dde6bd2c8959c}{report\+\_\+conflicts}} ()  throws internal\+\_\+error     
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1lalr__state_ace4616bdd729d7c9bb01f3e16d0aff31}{report\+\_\+reduce\+\_\+reduce}} (\mbox{\hyperlink{classjava__cup_1_1lalr__item}{lalr\+\_\+item}} itm1, \mbox{\hyperlink{classjava__cup_1_1lalr__item}{lalr\+\_\+item}} itm2)  throws internal\+\_\+error     
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1lalr__state_a9104f87fd9f391195ee6a6c6bc552eab}{report\+\_\+shift\+\_\+reduce}} (\mbox{\hyperlink{classjava__cup_1_1lalr__item}{lalr\+\_\+item}} red\+\_\+itm, int conflict\+\_\+sym)  throws internal\+\_\+error     
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte, statische Methoden}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classjava__cup_1_1lalr__state_a229e006a60f28ad4f2cb5ef8dad29093}{dump\+\_\+state}} (\mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}} st)  throws internal\+\_\+error     
+\item 
+static void \mbox{\hyperlink{classjava__cup_1_1lalr__state_a1392280a8e0cbafed1a2998d07ee5712}{propagate\+\_\+all\+\_\+lookaheads}} ()  throws internal\+\_\+error     
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1lalr__item__set}{lalr\+\_\+item\+\_\+set}} \mbox{\hyperlink{classjava__cup_1_1lalr__state_ad33394e5cb5e5bedd773c6f24f4bf10d}{\+\_\+items}}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1lalr__transition}{lalr\+\_\+transition}} \mbox{\hyperlink{classjava__cup_1_1lalr__state_a56c5af0c5c3311a3924a189e5d78488c}{\+\_\+transitions}} = null
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1lalr__state_a4666222da645e9d587e0eb5ce06c4e34}{\+\_\+index}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Statische, geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+static Hashtable \mbox{\hyperlink{classjava__cup_1_1lalr__state_a29fba5f54f53da9abf2704dc866cdefc}{\+\_\+all}} = new Hashtable()
+\item 
+static Hashtable \mbox{\hyperlink{classjava__cup_1_1lalr__state_aa9df91fa0bfd008b07cbfc004a88296d}{\+\_\+all\+\_\+kernels}} = new Hashtable()
+\item 
+static int \mbox{\hyperlink{classjava__cup_1_1lalr__state_a5d25e665ad17b63888b48c2b4ac1ea83}{next\+\_\+index}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+This class represents a state in the L\+A\+LR viable prefix recognition machine. A state consists of an L\+A\+LR item set and a set of transitions to other states under terminal and non-\/terminal symbols. Each state represents a potential configuration of the parser. If the item set of a state includes an item such as\+: 
+\begin{DoxyPre}
+   [A ::= B * C d E , \{a,b,c\}]
+ \end{DoxyPre}
+ this indicates that when the parser is in this state it is currently looking for an A of the given form, has already seen the B, and would expect to see an a, b, or c after this sequence is complete. Note that the parser is normally looking for several things at once (represented by several items). In our example above, the state would also include items such as\+: 
+\begin{DoxyPre}
+   [C ::= * X e Z, \{d\}]
+   [X ::= * f, \{e\}]
+ \end{DoxyPre}
+ to indicate that it was currently looking for a C followed by a d (which would be reduced into a C, matching the first symbol in our production above), and the terminal f followed by e.
+
+At runtime, the parser uses a viable prefix recognition machine made up of these states to parse. The parser has two operations, shift and reduce. In a shift, it consumes one token and makes a transition to a new state. This corresponds to \char`\"{}moving the dot past\char`\"{} a terminal in one or more items in the state (these new shifted items will then be found in the state at the end of the transition). For a reduce operation, the parser is signifying that it is recognizing the R\+HS of some production. To do this it first \char`\"{}backs up\char`\"{} by popping a stack of previously saved states. It pops off the same number of states as are found in the R\+HS of the production. This leaves the machine in the same state is was in when the parser first attempted to find the R\+HS. From this state it makes a transition based on the non-\/terminal on the L\+HS of the production. This corresponds to placing the parse in a configuration equivalent to having replaced all the symbols from the the input corresponding to the R\+HS with the symbol on the L\+HS.
+
+\begin{DoxySeeAlso}{Siehe auch}
+\mbox{\hyperlink{classjava__cup_1_1lalr__item}{java\+\_\+cup.\+lalr\+\_\+item}} 
+
+\mbox{\hyperlink{classjava__cup_1_1lalr__item__set}{java\+\_\+cup.\+lalr\+\_\+item\+\_\+set}} 
+
+\mbox{\hyperlink{classjava__cup_1_1lalr__transition}{java\+\_\+cup.\+lalr\+\_\+transition}} 
+\end{DoxySeeAlso}
+\begin{DoxyVersion}{Version}
+last updated\+: 11/25/95 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Autor}
+Scott Hudson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjava__cup_1_1lalr__state_add09dab23ebc0e40de79febe653cc7b4}\label{classjava__cup_1_1lalr__state_add09dab23ebc0e40de79febe653cc7b4}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!lalr\_state@{lalr\_state}}
+\index{lalr\_state@{lalr\_state}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{lalr\_state()}{lalr\_state()}}
+{\footnotesize\ttfamily java\+\_\+cup.\+lalr\+\_\+state.\+lalr\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1lalr__item__set}{lalr\+\_\+item\+\_\+set}}}]{itms }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for building a state from a set of items. 
+\begin{DoxyParams}{Parameter}
+{\em itms} & the set of items that makes up this state. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classjava__cup_1_1lalr__state_aaccbf90f93da595e05ff7da4ebc4c4ce}\label{classjava__cup_1_1lalr__state_aaccbf90f93da595e05ff7da4ebc4c4ce}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!add\_transition@{add\_transition}}
+\index{add\_transition@{add\_transition}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{add\_transition()}{add\_transition()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+lalr\+\_\+state.\+add\+\_\+transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}}}]{on\+\_\+sym,  }\item[{\mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}}}]{to\+\_\+st }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a transition out of this state to another. 
+\begin{DoxyParams}{Parameter}
+{\em on\+\_\+sym} & the symbol the transition is under. \\
+\hline
+{\em to\+\_\+st} & the state the transition goes to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1lalr__state_a1fbb9402cedc4be04f3900f34fb41c35}\label{classjava__cup_1_1lalr__state_a1fbb9402cedc4be04f3900f34fb41c35}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!all@{all}}
+\index{all@{all}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily static Enumeration java\+\_\+cup.\+lalr\+\_\+state.\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Collection of all states. \mbox{\Hypertarget{classjava__cup_1_1lalr__state_ad7a493973dc1622375005c721f2d2585}\label{classjava__cup_1_1lalr__state_ad7a493973dc1622375005c721f2d2585}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!build\_machine@{build\_machine}}
+\index{build\_machine@{build\_machine}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{build\_machine()}{build\_machine()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}} java\+\_\+cup.\+lalr\+\_\+state.\+build\+\_\+machine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1production}{production}}}]{start\+\_\+prod }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Build an L\+A\+LR viable prefix recognition machine given a start production. This method operates by first building a start state from the start production (based on a single item with the dot at the beginning and E\+OF as expected lookahead). Then for each state it attempts to extend the machine by creating transitions out of the state to new or existing states. When considering extension from a state we make a transition on each symbol that appears before the dot in some item. For example, if we have the items\+: 
+\begin{DoxyPre}
+   [A ::= a b * X c, \{d,e\}]
+   [B ::= a b * X d, \{a,b\}]
+ \end{DoxyPre}
+ in some state, then we would be making a transition under X to a new state. This new state would be formed by a \char`\"{}kernel\char`\"{} of items corresponding to moving the dot past the X. In this case\+: 
+\begin{DoxyPre}
+   [A ::= a b X * c, \{d,e\}]
+   [B ::= a b X * Y, \{a,b\}]
+ \end{DoxyPre}
+ The full state would then be formed by \char`\"{}closing\char`\"{} this kernel set of items so that it included items that represented productions of things the parser was now looking for. In this case we would items corresponding to productions of Y, since various forms of Y are expected next when in this state (see \mbox{\hyperlink{classjava__cup_1_1lalr__item__set_a9e30f462eb3299ee022fe5c9ff01ef71}{lalr\+\_\+item\+\_\+set.\+compute\+\_\+closure()}} for details on closure). 
+
+The process of building the viable prefix recognizer terminates when no new states can be added. However, in order to build a smaller number of states (i.\+e., corresponding to L\+A\+LR rather than canonical LR) the state building process does not maintain full loookaheads in all items. ~\newline
+ Consequently, after the machine is built, we go back and propagate lookaheads through the constructed machine using a call to \mbox{\hyperlink{classjava__cup_1_1lalr__state_a1392280a8e0cbafed1a2998d07ee5712}{propagate\+\_\+all\+\_\+lookaheads()}}. This makes use of propagation links constructed during the closure and transition process.
+
+
+\begin{DoxyParams}{Parameter}
+{\em start\+\_\+prod} & the start production of the grammar \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Siehe auch}
+\mbox{\hyperlink{classjava__cup_1_1lalr__item__set_a9e30f462eb3299ee022fe5c9ff01ef71}{java\+\_\+cup.\+lalr\+\_\+item\+\_\+set\+::compute\+\_\+closure}} 
+
+\mbox{\hyperlink{classjava__cup_1_1lalr__state_a1392280a8e0cbafed1a2998d07ee5712}{java\+\_\+cup.\+lalr\+\_\+state\+::propagate\+\_\+all\+\_\+lookaheads}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classjava__cup_1_1lalr__state_abb1ba0becc5c57c487adac88c1dee36b}\label{classjava__cup_1_1lalr__state_abb1ba0becc5c57c487adac88c1dee36b}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!build\_table\_entries@{build\_table\_entries}}
+\index{build\_table\_entries@{build\_table\_entries}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{build\_table\_entries()}{build\_table\_entries()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+lalr\+\_\+state.\+build\+\_\+table\+\_\+entries (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1parse__action__table}{parse\+\_\+action\+\_\+table}}}]{act\+\_\+table,  }\item[{\mbox{\hyperlink{classjava__cup_1_1parse__reduce__table}{parse\+\_\+reduce\+\_\+table}}}]{reduce\+\_\+table }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Fill in the parse table entries for this state. There are two parse tables that encode the viable prefix recognition machine, an action table and a reduce-\/goto table. The rows in each table correspond to states of the machine. The columns of the action table are indexed by terminal symbols and correspond to either transitions out of the state (shift entries) or reductions from the state to some previous state saved on the stack (reduce entries). All entries in the action table that are not shifts or reduces, represent errors. The reduce-\/goto table is indexed by non terminals and represents transitions out of a state on that non-\/terminal.
+
+Conflicts occur if more than one action needs to go in one entry of the action table (this cannot happen with the reduce-\/goto table). Conflicts are resolved by always shifting for shift/reduce conflicts and choosing the lowest numbered production (hence the one that appeared first in the specification) in reduce/reduce conflicts. All conflicts are reported and if more conflicts are detected than were declared by the user, code generation is aborted.
+
+
+\begin{DoxyParams}{Parameter}
+{\em act\+\_\+table} & the action table to put entries in. \\
+\hline
+{\em reduce\+\_\+table} & the reduce-\/goto table to put entries in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1lalr__state_a229e006a60f28ad4f2cb5ef8dad29093}\label{classjava__cup_1_1lalr__state_a229e006a60f28ad4f2cb5ef8dad29093}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!dump\_state@{dump\_state}}
+\index{dump\_state@{dump\_state}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{dump\_state()}{dump\_state()}}
+{\footnotesize\ttfamily static void java\+\_\+cup.\+lalr\+\_\+state.\+dump\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}}}]{st }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+Helper routine for debugging -- produces a dump of the given state onto System.\+out. \mbox{\Hypertarget{classjava__cup_1_1lalr__state_a2f8a5292f1bc14bb2b2671537d42007c}\label{classjava__cup_1_1lalr__state_a2f8a5292f1bc14bb2b2671537d42007c}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!equals@{equals}}
+\index{equals@{equals}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+lalr\+\_\+state.\+equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Equality comparison. \mbox{\Hypertarget{classjava__cup_1_1lalr__state_a9f285851c55de7cb7b1a027722979715}\label{classjava__cup_1_1lalr__state_a9f285851c55de7cb7b1a027722979715}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!equals@{equals}}
+\index{equals@{equals}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+lalr\+\_\+state.\+equals (\begin{DoxyParamCaption}\item[{Object}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generic equality comparison. \mbox{\Hypertarget{classjava__cup_1_1lalr__state_ac70f9ce9782a839e7311aa2c8ac2dcf3}\label{classjava__cup_1_1lalr__state_ac70f9ce9782a839e7311aa2c8ac2dcf3}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!find\_state@{find\_state}}
+\index{find\_state@{find\_state}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{find\_state()}{find\_state()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}} java\+\_\+cup.\+lalr\+\_\+state.\+find\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1lalr__item__set}{lalr\+\_\+item\+\_\+set}}}]{itms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Find and return state with a given a kernel item set (or null if not found). The kernel item set is the subset of items that were used to originally create the state. These items are formed by \char`\"{}shifting the
+ dot\char`\"{} within items of other states that have a transition to this one. The remaining elements of this state\textquotesingle{}s item set are added during closure. 
+\begin{DoxyParams}{Parameter}
+{\em itms} & the kernel set of the state we are looking for. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1lalr__state_a85e8cda19bf2356c9722c833262a9341}\label{classjava__cup_1_1lalr__state_a85e8cda19bf2356c9722c833262a9341}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!hashCode@{hashCode}}
+\index{hashCode@{hashCode}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{hashCode()}{hashCode()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+lalr\+\_\+state.\+hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Produce a hash code. \mbox{\Hypertarget{classjava__cup_1_1lalr__state_a4739bfae64234f684f099013d301522c}\label{classjava__cup_1_1lalr__state_a4739bfae64234f684f099013d301522c}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!index@{index}}
+\index{index@{index}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+lalr\+\_\+state.\+index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Index of this state in the parse tables \mbox{\Hypertarget{classjava__cup_1_1lalr__state_a79f7c20c7a43b52f36dfd4531c824732}\label{classjava__cup_1_1lalr__state_a79f7c20c7a43b52f36dfd4531c824732}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!items@{items}}
+\index{items@{items}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{items()}{items()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1lalr__item__set}{lalr\+\_\+item\+\_\+set}} java\+\_\+cup.\+lalr\+\_\+state.\+items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The item set for this state. \mbox{\Hypertarget{classjava__cup_1_1lalr__state_ada0e039a8b6dc81f861863c9936ceed8}\label{classjava__cup_1_1lalr__state_ada0e039a8b6dc81f861863c9936ceed8}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!number@{number}}
+\index{number@{number}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{number()}{number()}}
+{\footnotesize\ttfamily static int java\+\_\+cup.\+lalr\+\_\+state.\+number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Indicate total number of states there are. \mbox{\Hypertarget{classjava__cup_1_1lalr__state_a1392280a8e0cbafed1a2998d07ee5712}\label{classjava__cup_1_1lalr__state_a1392280a8e0cbafed1a2998d07ee5712}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!propagate\_all\_lookaheads@{propagate\_all\_lookaheads}}
+\index{propagate\_all\_lookaheads@{propagate\_all\_lookaheads}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{propagate\_all\_lookaheads()}{propagate\_all\_lookaheads()}}
+{\footnotesize\ttfamily static void java\+\_\+cup.\+lalr\+\_\+state.\+propagate\+\_\+all\+\_\+lookaheads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+Propagate lookahead sets through the constructed viable prefix recognizer. When the machine is constructed, each item that results in the creation of another such that its lookahead is included in the other\textquotesingle{}s will have a propagate link set up for it. This allows additions to the lookahead of one item to be included in other items that it was used to directly or indirectly create. \mbox{\Hypertarget{classjava__cup_1_1lalr__state_a62f863be0ab72998e795368d548187bc}\label{classjava__cup_1_1lalr__state_a62f863be0ab72998e795368d548187bc}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!propagate\_lookaheads@{propagate\_lookaheads}}
+\index{propagate\_lookaheads@{propagate\_lookaheads}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{propagate\_lookaheads()}{propagate\_lookaheads()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+lalr\+\_\+state.\+propagate\+\_\+lookaheads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Propagate lookahead sets out of this state. This recursively propagates to all items that have propagation links from some item in this state. \mbox{\Hypertarget{classjava__cup_1_1lalr__state_a164722f02e3b31167a5dde6bd2c8959c}\label{classjava__cup_1_1lalr__state_a164722f02e3b31167a5dde6bd2c8959c}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!report\_conflicts@{report\_conflicts}}
+\index{report\_conflicts@{report\_conflicts}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{report\_conflicts()}{report\_conflicts()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+lalr\+\_\+state.\+report\+\_\+conflicts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Produce warning messages for all conflicts found in this state. ~\newline
+ \mbox{\Hypertarget{classjava__cup_1_1lalr__state_ace4616bdd729d7c9bb01f3e16d0aff31}\label{classjava__cup_1_1lalr__state_ace4616bdd729d7c9bb01f3e16d0aff31}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!report\_reduce\_reduce@{report\_reduce\_reduce}}
+\index{report\_reduce\_reduce@{report\_reduce\_reduce}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{report\_reduce\_reduce()}{report\_reduce\_reduce()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+lalr\+\_\+state.\+report\+\_\+reduce\+\_\+reduce (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1lalr__item}{lalr\+\_\+item}}}]{itm1,  }\item[{\mbox{\hyperlink{classjava__cup_1_1lalr__item}{lalr\+\_\+item}}}]{itm2 }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Produce a warning message for one reduce/reduce conflict.
+
+
+\begin{DoxyParams}{Parameter}
+{\em itm1} & first item in conflict. \\
+\hline
+{\em itm2} & second item in conflict. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1lalr__state_a9104f87fd9f391195ee6a6c6bc552eab}\label{classjava__cup_1_1lalr__state_a9104f87fd9f391195ee6a6c6bc552eab}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!report\_shift\_reduce@{report\_shift\_reduce}}
+\index{report\_shift\_reduce@{report\_shift\_reduce}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{report\_shift\_reduce()}{report\_shift\_reduce()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+lalr\+\_\+state.\+report\+\_\+shift\+\_\+reduce (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1lalr__item}{lalr\+\_\+item}}}]{red\+\_\+itm,  }\item[{int}]{conflict\+\_\+sym }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Produce a warning message for one shift/reduce conflict.
+
+
+\begin{DoxyParams}{Parameter}
+{\em red\+\_\+itm} & the item with the reduce. \\
+\hline
+{\em conflict\+\_\+sym} & the index of the symbol conflict occurs under. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1lalr__state_a9a170eace1e9b641d03d6cb8cb269f05}\label{classjava__cup_1_1lalr__state_a9a170eace1e9b641d03d6cb8cb269f05}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!toString@{toString}}
+\index{toString@{toString}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+lalr\+\_\+state.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert to a string. \mbox{\Hypertarget{classjava__cup_1_1lalr__state_ad3c1f8e5f82060f48717a8a4a7561fc1}\label{classjava__cup_1_1lalr__state_ad3c1f8e5f82060f48717a8a4a7561fc1}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!transitions@{transitions}}
+\index{transitions@{transitions}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{transitions()}{transitions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1lalr__transition}{lalr\+\_\+transition}} java\+\_\+cup.\+lalr\+\_\+state.\+transitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+List of transitions out of this state. 
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classjava__cup_1_1lalr__state_a29fba5f54f53da9abf2704dc866cdefc}\label{classjava__cup_1_1lalr__state_a29fba5f54f53da9abf2704dc866cdefc}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!\_all@{\_all}}
+\index{\_all@{\_all}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{\_all}{\_all}}
+{\footnotesize\ttfamily Hashtable java\+\_\+cup.\+lalr\+\_\+state.\+\_\+all = new Hashtable()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Collection of all states. \mbox{\Hypertarget{classjava__cup_1_1lalr__state_aa9df91fa0bfd008b07cbfc004a88296d}\label{classjava__cup_1_1lalr__state_aa9df91fa0bfd008b07cbfc004a88296d}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!\_all\_kernels@{\_all\_kernels}}
+\index{\_all\_kernels@{\_all\_kernels}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{\_all\_kernels}{\_all\_kernels}}
+{\footnotesize\ttfamily Hashtable java\+\_\+cup.\+lalr\+\_\+state.\+\_\+all\+\_\+kernels = new Hashtable()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Hash table to find states by their kernels (i.\+e, the original, unclosed, set of items -- which uniquely define the state). This table stores state objects using (a copy of) their kernel item sets as keys. \mbox{\Hypertarget{classjava__cup_1_1lalr__state_a4666222da645e9d587e0eb5ce06c4e34}\label{classjava__cup_1_1lalr__state_a4666222da645e9d587e0eb5ce06c4e34}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!\_index@{\_index}}
+\index{\_index@{\_index}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{\_index}{\_index}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+lalr\+\_\+state.\+\_\+index\hspace{0.3cm}{\ttfamily [protected]}}
+
+Index of this state in the parse tables \mbox{\Hypertarget{classjava__cup_1_1lalr__state_ad33394e5cb5e5bedd773c6f24f4bf10d}\label{classjava__cup_1_1lalr__state_ad33394e5cb5e5bedd773c6f24f4bf10d}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!\_items@{\_items}}
+\index{\_items@{\_items}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{\_items}{\_items}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1lalr__item__set}{lalr\+\_\+item\+\_\+set}} java\+\_\+cup.\+lalr\+\_\+state.\+\_\+items\hspace{0.3cm}{\ttfamily [protected]}}
+
+The item set for this state. \mbox{\Hypertarget{classjava__cup_1_1lalr__state_a56c5af0c5c3311a3924a189e5d78488c}\label{classjava__cup_1_1lalr__state_a56c5af0c5c3311a3924a189e5d78488c}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!\_transitions@{\_transitions}}
+\index{\_transitions@{\_transitions}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{\_transitions}{\_transitions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1lalr__transition}{lalr\+\_\+transition}} java\+\_\+cup.\+lalr\+\_\+state.\+\_\+transitions = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+List of transitions out of this state. \mbox{\Hypertarget{classjava__cup_1_1lalr__state_a5d25e665ad17b63888b48c2b4ac1ea83}\label{classjava__cup_1_1lalr__state_a5d25e665ad17b63888b48c2b4ac1ea83}} 
+\index{java\_cup.lalr\_state@{java\_cup.lalr\_state}!next\_index@{next\_index}}
+\index{next\_index@{next\_index}!java\_cup.lalr\_state@{java\_cup.lalr\_state}}
+\doxysubsubsection{\texorpdfstring{next\_index}{next\_index}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+lalr\+\_\+state.\+next\+\_\+index = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Static counter for assigning unique state indexes. 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/java\+\_\+cup/lalr\+\_\+state.\+java\end{DoxyCompactItemize}

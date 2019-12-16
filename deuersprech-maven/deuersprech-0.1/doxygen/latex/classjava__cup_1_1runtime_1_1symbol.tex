@@ -1,0 +1,75 @@
+\hypertarget{classjava__cup_1_1runtime_1_1symbol}{}\doxysection{java\+\_\+cup.\+runtime.\+symbol Klassenreferenz}
+\label{classjava__cup_1_1runtime_1_1symbol}\index{java\_cup.runtime.symbol@{java\_cup.runtime.symbol}}
+Klassendiagramm für java\+\_\+cup.\+runtime.\+symbol\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.428571cm]{classjava__cup_1_1runtime_1_1symbol}
+\end{center}
+\end{figure}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1symbol_a3197491721c934d5a056d41b781a9ef3}{symbol}} (int sym\+\_\+num, int state)
+\item 
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1symbol_a43047f3a7a38c0767f6cd9a76a1e27bd}{symbol}} (int sym\+\_\+num)
+\end{DoxyCompactItemize}
+\doxysubsection*{Öffentliche Attribute}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1runtime_1_1symbol_ae20e6415c2e71ac102042e3c7e62554d}{sym}}
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1runtime_1_1symbol_acf83d21db313b2e797f6ebac04b9ec91}{parse\+\_\+state}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+This class represents a (terminal or non-\/terminal) symbol that, among other things can be placed on the parse stack. Symbols are used to keep track of state on the parse stack. The symbol currently on top of the stack contains the current state in the parse\+\_\+state field. In addition to the parse\+\_\+state field, symbols also maintain a record of the symbol number that they represent in the sym field. Finally, symbols are used contain to any attributes used by semantic action (this is done via fields added in subclasses -- see for example, \mbox{\hyperlink{classjava__cup_1_1runtime_1_1int__token}{int\+\_\+token}} and \mbox{\hyperlink{classjava__cup_1_1runtime_1_1str__token}{str\+\_\+token}}).
+
+\begin{DoxySeeAlso}{Siehe auch}
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{java\+\_\+cup.\+runtime.\+token}} 
+
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1int__token}{java\+\_\+cup.\+runtime.\+int\+\_\+token}} 
+
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1str__token}{java\+\_\+cup.\+runtime.\+str\+\_\+token}} 
+\end{DoxySeeAlso}
+\begin{DoxyVersion}{Version}
+last updated\+: 11/25/95 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Autor}
+Scott Hudson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1symbol_a3197491721c934d5a056d41b781a9ef3}\label{classjava__cup_1_1runtime_1_1symbol_a3197491721c934d5a056d41b781a9ef3}} 
+\index{java\_cup.runtime.symbol@{java\_cup.runtime.symbol}!symbol@{symbol}}
+\index{symbol@{symbol}!java\_cup.runtime.symbol@{java\_cup.runtime.symbol}}
+\doxysubsubsection{\texorpdfstring{symbol()}{symbol()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily java\+\_\+cup.\+runtime.\+symbol.\+symbol (\begin{DoxyParamCaption}\item[{int}]{sym\+\_\+num,  }\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Full constructor. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1symbol_a43047f3a7a38c0767f6cd9a76a1e27bd}\label{classjava__cup_1_1runtime_1_1symbol_a43047f3a7a38c0767f6cd9a76a1e27bd}} 
+\index{java\_cup.runtime.symbol@{java\_cup.runtime.symbol}!symbol@{symbol}}
+\index{symbol@{symbol}!java\_cup.runtime.symbol@{java\_cup.runtime.symbol}}
+\doxysubsubsection{\texorpdfstring{symbol()}{symbol()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily java\+\_\+cup.\+runtime.\+symbol.\+symbol (\begin{DoxyParamCaption}\item[{int}]{sym\+\_\+num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor without a known state. 
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1symbol_acf83d21db313b2e797f6ebac04b9ec91}\label{classjava__cup_1_1runtime_1_1symbol_acf83d21db313b2e797f6ebac04b9ec91}} 
+\index{java\_cup.runtime.symbol@{java\_cup.runtime.symbol}!parse\_state@{parse\_state}}
+\index{parse\_state@{parse\_state}!java\_cup.runtime.symbol@{java\_cup.runtime.symbol}}
+\doxysubsubsection{\texorpdfstring{parse\_state}{parse\_state}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+runtime.\+symbol.\+parse\+\_\+state}
+
+The parse state to be recorded on the parse stack with this symbol. This field is for the convenience of the parser and shouldn\textquotesingle{}t be modified except by the parser. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1symbol_ae20e6415c2e71ac102042e3c7e62554d}\label{classjava__cup_1_1runtime_1_1symbol_ae20e6415c2e71ac102042e3c7e62554d}} 
+\index{java\_cup.runtime.symbol@{java\_cup.runtime.symbol}!sym@{sym}}
+\index{sym@{sym}!java\_cup.runtime.symbol@{java\_cup.runtime.symbol}}
+\doxysubsubsection{\texorpdfstring{sym}{sym}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+runtime.\+symbol.\+sym}
+
+The symbol number of the terminal or non terminal being represented 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/java\+\_\+cup/runtime/symbol.\+java\end{DoxyCompactItemize}

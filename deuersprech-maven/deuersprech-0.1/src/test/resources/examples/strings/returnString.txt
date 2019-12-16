@@ -1,0 +1,5 @@
+kette eineFunktion() {
+    gebzurueck "aight";
+}
+
+druck(eineFunktion());

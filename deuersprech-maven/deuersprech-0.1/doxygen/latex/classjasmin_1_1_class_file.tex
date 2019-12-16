@@ -1,0 +1,88 @@
+\hypertarget{classjasmin_1_1_class_file}{}\doxysection{jasmin.\+Class\+File Klassenreferenz}
+\label{classjasmin_1_1_class_file}\index{jasmin.ClassFile@{jasmin.ClassFile}}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classjasmin_1_1_class_file_a9ff2b73c344fcbd0467e3bc8eef10987}\label{classjasmin_1_1_class_file_a9ff2b73c344fcbd0467e3bc8eef10987}} 
+void {\bfseries end\+Header} ()  throws jas\+Error       
+\item 
+\mbox{\Hypertarget{classjasmin_1_1_class_file_a1352e7d7638fad0caf1f962961fd7648}\label{classjasmin_1_1_class_file_a1352e7d7638fad0caf1f962961fd7648}} 
+void {\bfseries add\+Inner} (short iacc, String name, String inner, String outer)
+\item 
+\mbox{\hyperlink{classjasmin_1_1_class_file_a30a1614c55db55d6801aa1ba79b3a297}{Class\+File}} ()
+\item 
+void \mbox{\hyperlink{classjasmin_1_1_class_file_a9d1cce29cbddbeea172c11bd7bdcdf25}{read\+Jasmin}} (Reader input, String name, boolean number\+Lines)  throws I\+O\+Exception, Exception 
+\item 
+int \mbox{\hyperlink{classjasmin_1_1_class_file_a6d4180c1b97efbcf99627f8589a85f09}{error\+Count}} ()
+\item 
+String \mbox{\hyperlink{classjasmin_1_1_class_file_a32e7c203948bbf37b22ea840bb2983f0}{get\+Class\+Name}} ()
+\item 
+void \mbox{\hyperlink{classjasmin_1_1_class_file_acec127e1dab875435d19277dc47b8270}{write}} (Output\+Stream outp)  throws I\+O\+Exception, jas\+Error 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+A \mbox{\hyperlink{classjasmin_1_1_class_file}{Class\+File}} object is used to represent the binary data that makes up a Java class file -\/ it also serves as the public A\+PI to the \mbox{\hyperlink{class_jasmin}{Jasmin}} assembler, though users should beware\+: the A\+PI is likely to change in future versions (though its such a small A\+PI at the moment that changes are likely to have only a small impact).
+
+To assemble a file, you first construct a \mbox{\hyperlink{classjasmin_1_1_class_file}{jasmin.\+Class\+File}} object, then call \mbox{\hyperlink{classjasmin_1_1_class_file_a9d1cce29cbddbeea172c11bd7bdcdf25}{read\+Jasmin()}} to read in the contents of a \mbox{\hyperlink{class_jasmin}{Jasmin}} assembly file, then call \mbox{\hyperlink{classjasmin_1_1_class_file_acec127e1dab875435d19277dc47b8270}{write()}} to write out the binary representation of the class file.
+
+There are a few other utility methods as well. See Main.\+java for an example which uses all of the public methods provided in \mbox{\hyperlink{classjasmin_1_1_class_file}{Class\+File}}.
+
+\begin{DoxyAuthor}{Autor}
+Jonathan Meyer 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+05, 8 Feb 1997 
+\end{DoxyVersion}
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjasmin_1_1_class_file_a30a1614c55db55d6801aa1ba79b3a297}\label{classjasmin_1_1_class_file_a30a1614c55db55d6801aa1ba79b3a297}} 
+\index{jasmin.ClassFile@{jasmin.ClassFile}!ClassFile@{ClassFile}}
+\index{ClassFile@{ClassFile}!jasmin.ClassFile@{jasmin.ClassFile}}
+\doxysubsubsection{\texorpdfstring{ClassFile()}{ClassFile()}}
+{\footnotesize\ttfamily jasmin.\+Class\+File.\+Class\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Makes a new \mbox{\hyperlink{classjasmin_1_1_class_file}{Class\+File}} object, used to represent a Java class file. You can then use read\+Jasmin to read in a class file stored in \mbox{\hyperlink{class_jasmin}{Jasmin}} assembly format. 
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classjasmin_1_1_class_file_a6d4180c1b97efbcf99627f8589a85f09}\label{classjasmin_1_1_class_file_a6d4180c1b97efbcf99627f8589a85f09}} 
+\index{jasmin.ClassFile@{jasmin.ClassFile}!errorCount@{errorCount}}
+\index{errorCount@{errorCount}!jasmin.ClassFile@{jasmin.ClassFile}}
+\doxysubsubsection{\texorpdfstring{errorCount()}{errorCount()}}
+{\footnotesize\ttfamily int jasmin.\+Class\+File.\+error\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of warnings/errors encountered while parsing a file. 0 if everything went OK. \mbox{\Hypertarget{classjasmin_1_1_class_file_a32e7c203948bbf37b22ea840bb2983f0}\label{classjasmin_1_1_class_file_a32e7c203948bbf37b22ea840bb2983f0}} 
+\index{jasmin.ClassFile@{jasmin.ClassFile}!getClassName@{getClassName}}
+\index{getClassName@{getClassName}!jasmin.ClassFile@{jasmin.ClassFile}}
+\doxysubsubsection{\texorpdfstring{getClassName()}{getClassName()}}
+{\footnotesize\ttfamily String jasmin.\+Class\+File.\+get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the name of the class in the file (i.\+e. the string given to the .class parameter in \mbox{\hyperlink{class_jasmin}{Jasmin}}) \mbox{\Hypertarget{classjasmin_1_1_class_file_a9d1cce29cbddbeea172c11bd7bdcdf25}\label{classjasmin_1_1_class_file_a9d1cce29cbddbeea172c11bd7bdcdf25}} 
+\index{jasmin.ClassFile@{jasmin.ClassFile}!readJasmin@{readJasmin}}
+\index{readJasmin@{readJasmin}!jasmin.ClassFile@{jasmin.ClassFile}}
+\doxysubsubsection{\texorpdfstring{readJasmin()}{readJasmin()}}
+{\footnotesize\ttfamily void jasmin.\+Class\+File.\+read\+Jasmin (\begin{DoxyParamCaption}\item[{Reader}]{input,  }\item[{String}]{name,  }\item[{boolean}]{number\+Lines }\end{DoxyParamCaption}) throws I\+O\+Exception, Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Parses a \mbox{\hyperlink{class_jasmin}{Jasmin}} file, converting it internally into a binary representation. If something goes wrong, this throws one of an I\+O\+Exception, or a jas\+Error, or one of a few other exceptions. I\textquotesingle{}ll tie this down more formally in the next version.
+
+
+\begin{DoxyParams}{Parameter}
+{\em input} & is the stream containing the \mbox{\hyperlink{class_jasmin}{Jasmin}} assembly code for the class.\\
+\hline
+{\em name} & is the name of the stream. This name will be concatenated to error messages printed to System.\+err.\\
+\hline
+{\em number\+Lines} & true if you want \mbox{\hyperlink{class_jasmin}{Jasmin}} to generate line numbers automatically, based on the assembly source, or false if you are using the \char`\"{}.\+line\char`\"{} directive and don\textquotesingle{}t want \mbox{\hyperlink{class_jasmin}{Jasmin}} to help out. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjasmin_1_1_class_file_acec127e1dab875435d19277dc47b8270}\label{classjasmin_1_1_class_file_acec127e1dab875435d19277dc47b8270}} 
+\index{jasmin.ClassFile@{jasmin.ClassFile}!write@{write}}
+\index{write@{write}!jasmin.ClassFile@{jasmin.ClassFile}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void jasmin.\+Class\+File.\+write (\begin{DoxyParamCaption}\item[{Output\+Stream}]{outp }\end{DoxyParamCaption}) throws I\+O\+Exception, \mbox{\hyperlink{classjas_1_1jas_error}{jas\+Error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Writes the binary data for the class represented by this \mbox{\hyperlink{classjasmin_1_1_class_file}{Class\+File}} object to the specified output stream, using the Java Class File format. Throws either an I\+O\+Exception or a jas\+Error if something goes wrong. 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/jasmin/Class\+File.\+java\end{DoxyCompactItemize}

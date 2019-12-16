@@ -1,0 +1,8 @@
+ganzzahl a; 
+ganzzahl b; 
+
+a ISTGLEICH 2; 
+b ISTGLEICH 56; 
+
+druckzeile(a); 
+druckzeile(a MAL 2 PLUS b);

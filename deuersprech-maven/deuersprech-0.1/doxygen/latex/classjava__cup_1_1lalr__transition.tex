@@ -1,0 +1,124 @@
+\hypertarget{classjava__cup_1_1lalr__transition}{}\doxysection{java\+\_\+cup.\+lalr\+\_\+transition Klassenreferenz}
+\label{classjava__cup_1_1lalr__transition}\index{java\_cup.lalr\_transition@{java\_cup.lalr\_transition}}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1lalr__transition_a518ba9276a97f4736827eaf6560120d7}{lalr\+\_\+transition}} (\mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}} on\+\_\+sym, \mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}} to\+\_\+st, \mbox{\hyperlink{classjava__cup_1_1lalr__transition}{lalr\+\_\+transition}} nxt)  throws internal\+\_\+error     
+\item 
+\mbox{\hyperlink{classjava__cup_1_1lalr__transition_a7d636634e07f4c6c456d6827bd2463d2}{lalr\+\_\+transition}} (\mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}} on\+\_\+sym, \mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}} to\+\_\+st)  throws internal\+\_\+error     
+\item 
+\mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}} \mbox{\hyperlink{classjava__cup_1_1lalr__transition_a4f5e2ef4c2b9ceb7d2fd966d73f9cc04}{on\+\_\+symbol}} ()
+\item 
+\mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}} \mbox{\hyperlink{classjava__cup_1_1lalr__transition_abdcd06e79656d9a38a2dc520f94c3c19}{to\+\_\+state}} ()
+\item 
+\mbox{\hyperlink{classjava__cup_1_1lalr__transition}{lalr\+\_\+transition}} \mbox{\hyperlink{classjava__cup_1_1lalr__transition_a7ec6a2cca99b57a9d0e53ed2cca9028e}{next}} ()
+\item 
+String \mbox{\hyperlink{classjava__cup_1_1lalr__transition_a603f19d01535149db18066b262f80975}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}} \mbox{\hyperlink{classjava__cup_1_1lalr__transition_a734f20846b31676e16775055f09d2111}{\+\_\+on\+\_\+symbol}}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}} \mbox{\hyperlink{classjava__cup_1_1lalr__transition_a01cf566c96dc32bbc42fb33584c026b0}{\+\_\+to\+\_\+state}}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1lalr__transition}{lalr\+\_\+transition}} \mbox{\hyperlink{classjava__cup_1_1lalr__transition_a1ef631b2d5cabe558b4f672ec9fe5037}{\+\_\+next}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+This class represents a transition in an L\+A\+LR viable prefix recognition machine. Transitions can be under terminals for non-\/terminals. They are internally linked together into singly linked lists containing all the transitions out of a single state via the \+\_\+next field.
+
+\begin{DoxySeeAlso}{Siehe auch}
+\mbox{\hyperlink{classjava__cup_1_1lalr__state}{java\+\_\+cup.\+lalr\+\_\+state}} 
+\end{DoxySeeAlso}
+\begin{DoxyVersion}{Version}
+last updated\+: 11/25/95 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Autor}
+Scott Hudson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjava__cup_1_1lalr__transition_a518ba9276a97f4736827eaf6560120d7}\label{classjava__cup_1_1lalr__transition_a518ba9276a97f4736827eaf6560120d7}} 
+\index{java\_cup.lalr\_transition@{java\_cup.lalr\_transition}!lalr\_transition@{lalr\_transition}}
+\index{lalr\_transition@{lalr\_transition}!java\_cup.lalr\_transition@{java\_cup.lalr\_transition}}
+\doxysubsubsection{\texorpdfstring{lalr\_transition()}{lalr\_transition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily java\+\_\+cup.\+lalr\+\_\+transition.\+lalr\+\_\+transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}}}]{on\+\_\+sym,  }\item[{\mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}}}]{to\+\_\+st,  }\item[{\mbox{\hyperlink{classjava__cup_1_1lalr__transition}{lalr\+\_\+transition}}}]{nxt }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Full constructor. 
+\begin{DoxyParams}{Parameter}
+{\em on\+\_\+sym} & symbol we are transitioning on. \\
+\hline
+{\em to\+\_\+st} & state we transition to. \\
+\hline
+{\em nxt} & next transition in linked list. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1lalr__transition_a7d636634e07f4c6c456d6827bd2463d2}\label{classjava__cup_1_1lalr__transition_a7d636634e07f4c6c456d6827bd2463d2}} 
+\index{java\_cup.lalr\_transition@{java\_cup.lalr\_transition}!lalr\_transition@{lalr\_transition}}
+\index{lalr\_transition@{lalr\_transition}!java\_cup.lalr\_transition@{java\_cup.lalr\_transition}}
+\doxysubsubsection{\texorpdfstring{lalr\_transition()}{lalr\_transition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily java\+\_\+cup.\+lalr\+\_\+transition.\+lalr\+\_\+transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}}}]{on\+\_\+sym,  }\item[{\mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}}}]{to\+\_\+st }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classjava__cup_1_1internal__error}{internal\+\_\+error}}\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor with null next. 
+\begin{DoxyParams}{Parameter}
+{\em on\+\_\+sym} & symbol we are transitioning on. \\
+\hline
+{\em to\+\_\+st} & state we transition to. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classjava__cup_1_1lalr__transition_a7ec6a2cca99b57a9d0e53ed2cca9028e}\label{classjava__cup_1_1lalr__transition_a7ec6a2cca99b57a9d0e53ed2cca9028e}} 
+\index{java\_cup.lalr\_transition@{java\_cup.lalr\_transition}!next@{next}}
+\index{next@{next}!java\_cup.lalr\_transition@{java\_cup.lalr\_transition}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1lalr__transition}{lalr\+\_\+transition}} java\+\_\+cup.\+lalr\+\_\+transition.\+next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Next transition in linked list of transitions out of a state \mbox{\Hypertarget{classjava__cup_1_1lalr__transition_a4f5e2ef4c2b9ceb7d2fd966d73f9cc04}\label{classjava__cup_1_1lalr__transition_a4f5e2ef4c2b9ceb7d2fd966d73f9cc04}} 
+\index{java\_cup.lalr\_transition@{java\_cup.lalr\_transition}!on\_symbol@{on\_symbol}}
+\index{on\_symbol@{on\_symbol}!java\_cup.lalr\_transition@{java\_cup.lalr\_transition}}
+\doxysubsubsection{\texorpdfstring{on\_symbol()}{on\_symbol()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}} java\+\_\+cup.\+lalr\+\_\+transition.\+on\+\_\+symbol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The symbol we make the transition on. \mbox{\Hypertarget{classjava__cup_1_1lalr__transition_abdcd06e79656d9a38a2dc520f94c3c19}\label{classjava__cup_1_1lalr__transition_abdcd06e79656d9a38a2dc520f94c3c19}} 
+\index{java\_cup.lalr\_transition@{java\_cup.lalr\_transition}!to\_state@{to\_state}}
+\index{to\_state@{to\_state}!java\_cup.lalr\_transition@{java\_cup.lalr\_transition}}
+\doxysubsubsection{\texorpdfstring{to\_state()}{to\_state()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}} java\+\_\+cup.\+lalr\+\_\+transition.\+to\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The state we transition to. \mbox{\Hypertarget{classjava__cup_1_1lalr__transition_a603f19d01535149db18066b262f80975}\label{classjava__cup_1_1lalr__transition_a603f19d01535149db18066b262f80975}} 
+\index{java\_cup.lalr\_transition@{java\_cup.lalr\_transition}!toString@{toString}}
+\index{toString@{toString}!java\_cup.lalr\_transition@{java\_cup.lalr\_transition}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String java\+\_\+cup.\+lalr\+\_\+transition.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert to a string. 
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classjava__cup_1_1lalr__transition_a1ef631b2d5cabe558b4f672ec9fe5037}\label{classjava__cup_1_1lalr__transition_a1ef631b2d5cabe558b4f672ec9fe5037}} 
+\index{java\_cup.lalr\_transition@{java\_cup.lalr\_transition}!\_next@{\_next}}
+\index{\_next@{\_next}!java\_cup.lalr\_transition@{java\_cup.lalr\_transition}}
+\doxysubsubsection{\texorpdfstring{\_next}{\_next}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1lalr__transition}{lalr\+\_\+transition}} java\+\_\+cup.\+lalr\+\_\+transition.\+\_\+next\hspace{0.3cm}{\ttfamily [protected]}}
+
+Next transition in linked list of transitions out of a state \mbox{\Hypertarget{classjava__cup_1_1lalr__transition_a734f20846b31676e16775055f09d2111}\label{classjava__cup_1_1lalr__transition_a734f20846b31676e16775055f09d2111}} 
+\index{java\_cup.lalr\_transition@{java\_cup.lalr\_transition}!\_on\_symbol@{\_on\_symbol}}
+\index{\_on\_symbol@{\_on\_symbol}!java\_cup.lalr\_transition@{java\_cup.lalr\_transition}}
+\doxysubsubsection{\texorpdfstring{\_on\_symbol}{\_on\_symbol}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}} java\+\_\+cup.\+lalr\+\_\+transition.\+\_\+on\+\_\+symbol\hspace{0.3cm}{\ttfamily [protected]}}
+
+The symbol we make the transition on. \mbox{\Hypertarget{classjava__cup_1_1lalr__transition_a01cf566c96dc32bbc42fb33584c026b0}\label{classjava__cup_1_1lalr__transition_a01cf566c96dc32bbc42fb33584c026b0}} 
+\index{java\_cup.lalr\_transition@{java\_cup.lalr\_transition}!\_to\_state@{\_to\_state}}
+\index{\_to\_state@{\_to\_state}!java\_cup.lalr\_transition@{java\_cup.lalr\_transition}}
+\doxysubsubsection{\texorpdfstring{\_to\_state}{\_to\_state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1lalr__state}{lalr\+\_\+state}} java\+\_\+cup.\+lalr\+\_\+transition.\+\_\+to\+\_\+state\hspace{0.3cm}{\ttfamily [protected]}}
+
+The state we transition to. 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/java\+\_\+cup/lalr\+\_\+transition.\+java\end{DoxyCompactItemize}

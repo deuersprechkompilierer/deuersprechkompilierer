@@ -1,0 +1,76 @@
+\hypertarget{classjas_1_1_local_var_entry}{}\doxysection{jas.\+Local\+Var\+Entry Klassenreferenz}
+\label{classjas_1_1_local_var_entry}\index{jas.LocalVarEntry@{jas.LocalVarEntry}}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjas_1_1_local_var_entry_a33e823a8085d76f33422bdc509364218}{Local\+Var\+Entry}} (\mbox{\hyperlink{classjas_1_1_label}{Label}} start\+Label, \mbox{\hyperlink{classjas_1_1_label}{Label}} end\+Label, String name, String sig, int slot)
+\item 
+\mbox{\hyperlink{classjas_1_1_local_var_entry_a7230f25ba40fb90691b316839f4ff0c9}{Local\+Var\+Entry}} (int start\+Offset, int end\+Offset, String name, String sig, int slot)
+\item 
+\mbox{\hyperlink{classjas_1_1_local_var_entry_a2a24412d63b4a55981013584384e0e2b}{Local\+Var\+Entry}} (\mbox{\hyperlink{classjas_1_1_label}{Label}} start\+Label, \mbox{\hyperlink{classjas_1_1_label}{Label}} end\+Label, \mbox{\hyperlink{classjas_1_1_c_p}{CP}} name, \mbox{\hyperlink{classjas_1_1_c_p}{CP}} sig, int slot)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjas_1_1_local_var_entry_a33e823a8085d76f33422bdc509364218}\label{classjas_1_1_local_var_entry_a33e823a8085d76f33422bdc509364218}} 
+\index{jas.LocalVarEntry@{jas.LocalVarEntry}!LocalVarEntry@{LocalVarEntry}}
+\index{LocalVarEntry@{LocalVarEntry}!jas.LocalVarEntry@{jas.LocalVarEntry}}
+\doxysubsubsection{\texorpdfstring{LocalVarEntry()}{LocalVarEntry()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily jas.\+Local\+Var\+Entry.\+Local\+Var\+Entry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjas_1_1_label}{Label}}}]{start\+Label,  }\item[{\mbox{\hyperlink{classjas_1_1_label}{Label}}}]{end\+Label,  }\item[{String}]{name,  }\item[{String}]{sig,  }\item[{int}]{slot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create local variable scope information that can be used while debugging. 
+\begin{DoxyParams}{Parameter}
+{\em start\+Label} & beginning of scope for variable \\
+\hline
+{\em end\+Label} & end of scope for variable \\
+\hline
+{\em name} & name of variable \\
+\hline
+{\em sig} & signature for variable \\
+\hline
+{\em slot} & index of the local variable in the local variables registers of the VM where its value can be found \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjas_1_1_local_var_entry_a7230f25ba40fb90691b316839f4ff0c9}\label{classjas_1_1_local_var_entry_a7230f25ba40fb90691b316839f4ff0c9}} 
+\index{jas.LocalVarEntry@{jas.LocalVarEntry}!LocalVarEntry@{LocalVarEntry}}
+\index{LocalVarEntry@{LocalVarEntry}!jas.LocalVarEntry@{jas.LocalVarEntry}}
+\doxysubsubsection{\texorpdfstring{LocalVarEntry()}{LocalVarEntry()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily jas.\+Local\+Var\+Entry.\+Local\+Var\+Entry (\begin{DoxyParamCaption}\item[{int}]{start\+Offset,  }\item[{int}]{end\+Offset,  }\item[{String}]{name,  }\item[{String}]{sig,  }\item[{int}]{slot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create local variable scope information that can be used while debugging. 
+\begin{DoxyParams}{Parameter}
+{\em start\+Offset} & beginning of scope for variable \\
+\hline
+{\em end\+Offset} & end of scope for variable \\
+\hline
+{\em name} & name of variable \\
+\hline
+{\em sig} & signature for variable \\
+\hline
+{\em slot} & index of the local variable in the local variables registers of the VM where its value can be found \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjas_1_1_local_var_entry_a2a24412d63b4a55981013584384e0e2b}\label{classjas_1_1_local_var_entry_a2a24412d63b4a55981013584384e0e2b}} 
+\index{jas.LocalVarEntry@{jas.LocalVarEntry}!LocalVarEntry@{LocalVarEntry}}
+\index{LocalVarEntry@{LocalVarEntry}!jas.LocalVarEntry@{jas.LocalVarEntry}}
+\doxysubsubsection{\texorpdfstring{LocalVarEntry()}{LocalVarEntry()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily jas.\+Local\+Var\+Entry.\+Local\+Var\+Entry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjas_1_1_label}{Label}}}]{start\+Label,  }\item[{\mbox{\hyperlink{classjas_1_1_label}{Label}}}]{end\+Label,  }\item[{\mbox{\hyperlink{classjas_1_1_c_p}{CP}}}]{name,  }\item[{\mbox{\hyperlink{classjas_1_1_c_p}{CP}}}]{sig,  }\item[{int}]{slot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create local variable scope information that can be used while debugging. 
+\begin{DoxyParams}{Parameter}
+{\em start\+Label} & beginning of scope for variable \\
+\hline
+{\em end\+Label} & end of scope for variable \\
+\hline
+{\em name} & \mbox{\hyperlink{classjas_1_1_c_p}{CP}} to be associated as name of variable \\
+\hline
+{\em sig} & \mbox{\hyperlink{classjas_1_1_c_p}{CP}} to be associated as signature for variable \\
+\hline
+{\em slot} & The index of the local variable in the local variables part of the VM where its value can be found \\
+\hline
+\end{DoxyParams}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/jas/Local\+Var\+Entry.\+java\end{DoxyCompactItemize}

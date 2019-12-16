@@ -1,0 +1,3 @@
+kette t;
+t ISTGLEICH "hallo deuersprech";
+druckzeile(t);

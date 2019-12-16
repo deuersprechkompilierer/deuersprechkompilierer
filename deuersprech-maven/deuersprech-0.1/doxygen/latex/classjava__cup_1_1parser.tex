@@ -1,0 +1,625 @@
+\hypertarget{classjava__cup_1_1parser}{}\doxysection{java\+\_\+cup.\+parser Klassenreferenz}
+\label{classjava__cup_1_1parser}\index{java\_cup.parser@{java\_cup.parser}}
+Klassendiagramm für java\+\_\+cup.\+parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classjava__cup_1_1parser}
+\end{center}
+\end{figure}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1parser_afe00027917443b35c02acbc09a866182}{parser}} ()
+\item 
+short\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classjava__cup_1_1parser_a41e5404e7188bdf8f27dbad101dd6d9e}{production\+\_\+table}} ()
+\item 
+short\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classjava__cup_1_1parser_adb8382ad1b7ee6ee885bc09d1873ca41}{action\+\_\+table}} ()
+\item 
+short\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classjava__cup_1_1parser_a0a59997f8ddc8ed3ad44d21f3bb8ad2e}{reduce\+\_\+table}} ()
+\item 
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1symbol}{java\+\_\+cup.\+runtime.\+symbol}} \mbox{\hyperlink{classjava__cup_1_1parser_ae70c5bc6e599f0deae02637b8593f856}{do\+\_\+action}} (int act\+\_\+num, \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser}{java\+\_\+cup.\+runtime.\+lr\+\_\+parser}} \mbox{\hyperlink{classjava__cup_1_1parser}{parser}}, java.\+util.\+Stack \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a03216d43a4b4b12241f756340cb87510}{stack}}, int top)  throws java.\+lang.\+Exception   
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1parser_a9ff8e59ad023b628982f164fafdb7ae7}{start\+\_\+state}} ()
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1parser_a6cdc8343793c13574161749402b54a4f}{start\+\_\+production}} ()
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1parser_aa03964af11860af784e28f238c854e88}{E\+O\+F\+\_\+sym}} ()
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1parser_ae9dcfb289bab07b9f741eaa19dd16a22}{error\+\_\+sym}} ()
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1parser_a79748310e5b51d092e80e7d93038b53e}{user\+\_\+init}} ()  throws java.\+lang.\+Exception     
+\item 
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{java\+\_\+cup.\+runtime.\+token}} \mbox{\hyperlink{classjava__cup_1_1parser_a87782c74819f70160cd3b8befcd1cbe7}{scan}} ()  throws java.\+lang.\+Exception     
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1parser_a04a12567b4909f046d52acfc1f32321a}{report\+\_\+fatal\+\_\+error}} (String message, Object info)
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1parser_a89df5677700a712071a5886ae615990a}{report\+\_\+error}} (String message, Object info)
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a50c2df82dbd588a4cd2d766464bdab4f}{done\+\_\+parsing}} ()
+\item 
+abstract \mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}} \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a7568cadfff5ba639df5682ad4b8053a3}{do\+\_\+action}} (int act\+\_\+num, \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_ab76d46efe01d441b33be1d20e6ea6da4}{lr\+\_\+parser}} \mbox{\hyperlink{classjava__cup_1_1parser}{parser}}, Stack \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a03216d43a4b4b12241f756340cb87510}{stack}}, int top)  throws java.\+lang.\+Exception
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a04227e479c2cea375e3cf2ef5d636835}{syntax\+\_\+error}} (\mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_ab5eccf0af903e07866f0f02df1d4d0c4}{cur\+\_\+token}})
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a94bf07a8b473ea5a09b10d6fd9fcf3e6}{unrecovered\+\_\+syntax\+\_\+error}} (\mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_ab5eccf0af903e07866f0f02df1d4d0c4}{cur\+\_\+token}})  throws java.\+lang.\+Exception     
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_ac1abd03449226b3cecdc5963680598da}{parse}} ()  throws java.\+lang.\+Exception     
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a6787733433651f37c306b8f52b9d4f50}{debug\+\_\+message}} (String mess)
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a7d2aa2da339f78215c619019ab04f849}{dump\+\_\+stack}} ()
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a08f883a75958bf5a1fe746e8d7223c62}{debug\+\_\+reduce}} (int prod\+\_\+num, int nt\+\_\+num, int rhs\+\_\+size)
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a5618eff296192ed4b343aad298311bb5}{debug\+\_\+shift}} (\mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} shift\+\_\+tkn)
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a93d9194d36d7da0dd0cec826cbd58ac4}{debug\+\_\+parse}} ()  throws java.\+lang.\+Exception     
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte Methoden}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1parser_a23d238deb9df493dfde699c93ffbc028}{init\+\_\+actions}} ()
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a9d6b781605eaf4132d13c99887dd2b57}{error\+\_\+sync\+\_\+size}} ()
+\item 
+final short \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a15b9e9ffa13f71a2388cfa53daf040b8}{get\+\_\+action}} (int state, int \mbox{\hyperlink{classjava__cup_1_1sym}{sym}})
+\item 
+final short \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a7e024eee17dc2544d6c7b0879b90af48}{get\+\_\+reduce}} (int state, int \mbox{\hyperlink{classjava__cup_1_1sym}{sym}})
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a4be82f20b12658ab32b96f79dc4b3b5c}{error\+\_\+recovery}} (boolean debug)  throws java.\+lang.\+Exception     
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_aa946c7b1ac1f4a754da18691a35f7374}{shift\+\_\+under\+\_\+error}} ()
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_ae0fd1f602f61d5601de794301638f15a}{find\+\_\+recovery\+\_\+config}} (boolean debug)
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a10439a3af11fcad7da203115382f57f8}{read\+\_\+lookahead}} ()  throws java.\+lang.\+Exception     
+\item 
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a11fd99b23da9c005f44c0290fd9e3d3d}{cur\+\_\+err\+\_\+token}} ()
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a2b86779a90b18ae4b99f910786cc574d}{advance\+\_\+lookahead}} ()
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a5b2a3b29742dffc66115adf706ede8fe}{restart\+\_\+lookahead}} ()  throws java.\+lang.\+Exception     
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a3d994dee692cf45f416ca13cc2fad141}{try\+\_\+parse\+\_\+ahead}} (boolean debug)  throws java.\+lang.\+Exception     
+\item 
+void \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_af59f4efb1645e541f8d6aafdcd8cc8fc}{parse\+\_\+lookahead}} (boolean debug)  throws java.\+lang.\+Exception     
+\end{DoxyCompactItemize}
+\doxysubsection*{Geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+C\+UP \$actions \mbox{\hyperlink{classjava__cup_1_1parser_afe20ed0a5d582b20b55b710fdf71489b}{action\+\_\+obj}}
+\item 
+boolean \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_acea23411bc70e7aeb8e99b42930575f2}{\+\_\+done\+\_\+parsing}} = false
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_ad5b5bfcebc25ec178af7e2c84e634a77}{tos}}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_ab5eccf0af903e07866f0f02df1d4d0c4}{cur\+\_\+token}}
+\item 
+Stack \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a03216d43a4b4b12241f756340cb87510}{stack}} = new Stack()
+\item 
+short\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a1e45da8c6f8d3bba77f1114f676b6aeb}{production\+\_\+tab}}
+\item 
+short\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a6b7f8ae1151d60155d7887d3b5ebe267}{action\+\_\+tab}}
+\item 
+short\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_abe04632ae39a9649d88e1ae9308f5ea8}{reduce\+\_\+tab}}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a3dc293d782e0b5302ed1fc5722bf9194}{lookahead}} \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a89b536f08f96654478dac9c3bf232eb8}{lookahead\+\_\+pos}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Statische, geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+static final short \mbox{\hyperlink{classjava__cup_1_1parser_ad91737ffadd365df20684297fbd83fae}{\+\_\+production\+\_\+table}} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}
+\item 
+static final short\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classjava__cup_1_1parser_aeba41dc907e019f84e67f87c4b58fce5}{\+\_\+action\+\_\+table}}
+\item 
+static final short\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classjava__cup_1_1parser_aaa0d38f080944ab850c81ddf222ab942}{\+\_\+reduce\+\_\+table}}
+\item 
+static final int \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_aaee3f9ee3279ca92f2ef486fa75b3457}{\+\_\+error\+\_\+sync\+\_\+size}} = 3
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjava__cup_1_1parser_afe00027917443b35c02acbc09a866182}\label{classjava__cup_1_1parser_afe00027917443b35c02acbc09a866182}} 
+\index{java\_cup.parser@{java\_cup.parser}!parser@{parser}}
+\index{parser@{parser}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{parser()}{parser()}}
+{\footnotesize\ttfamily java\+\_\+cup.\+parser.\+parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor 
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classjava__cup_1_1parser_adb8382ad1b7ee6ee885bc09d1873ca41}\label{classjava__cup_1_1parser_adb8382ad1b7ee6ee885bc09d1873ca41}} 
+\index{java\_cup.parser@{java\_cup.parser}!action\_table@{action\_table}}
+\index{action\_table@{action\_table}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{action\_table()}{action\_table()}}
+{\footnotesize\ttfamily short \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} java\+\_\+cup.\+parser.\+action\+\_\+table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+access to parse action table 
+
+Erneute Implementation von \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_afcbe268d803efb044404126ae2faf730}{java\+\_\+cup.\+runtime.\+lr\+\_\+parser}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a2b86779a90b18ae4b99f910786cc574d}\label{classjava__cup_1_1runtime_1_1lr__parser_a2b86779a90b18ae4b99f910786cc574d}} 
+\index{java\_cup.parser@{java\_cup.parser}!advance\_lookahead@{advance\_lookahead}}
+\index{advance\_lookahead@{advance\_lookahead}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{advance\_lookahead()}{advance\_lookahead()}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+advance\+\_\+lookahead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Advance to next \char`\"{}parse ahead\char`\"{} input symbol. Return true if we have input to advance to, false otherwise. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a11fd99b23da9c005f44c0290fd9e3d3d}\label{classjava__cup_1_1runtime_1_1lr__parser_a11fd99b23da9c005f44c0290fd9e3d3d}} 
+\index{java\_cup.parser@{java\_cup.parser}!cur\_err\_token@{cur\_err\_token}}
+\index{cur\_err\_token@{cur\_err\_token}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{cur\_err\_token()}{cur\_err\_token()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+cur\+\_\+err\+\_\+token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Return the current lookahead in our error \char`\"{}parse ahead\char`\"{} buffer. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a6787733433651f37c306b8f52b9d4f50}\label{classjava__cup_1_1runtime_1_1lr__parser_a6787733433651f37c306b8f52b9d4f50}} 
+\index{java\_cup.parser@{java\_cup.parser}!debug\_message@{debug\_message}}
+\index{debug\_message@{debug\_message}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{debug\_message()}{debug\_message()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+debug\+\_\+message (\begin{DoxyParamCaption}\item[{String}]{mess }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Write a debugging message to System.\+err for the debugging version of the parser.
+
+
+\begin{DoxyParams}{Parameter}
+{\em mess} & the text of the debugging message. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a93d9194d36d7da0dd0cec826cbd58ac4}\label{classjava__cup_1_1runtime_1_1lr__parser_a93d9194d36d7da0dd0cec826cbd58ac4}} 
+\index{java\_cup.parser@{java\_cup.parser}!debug\_parse@{debug\_parse}}
+\index{debug\_parse@{debug\_parse}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{debug\_parse()}{debug\_parse()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+debug\+\_\+parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+lang.\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Perform a parse with debugging output. This does exactly the same things as \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_ac1abd03449226b3cecdc5963680598da}{parse()}}, except that it calls \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a5618eff296192ed4b343aad298311bb5}{debug\+\_\+shift()}} and \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a08f883a75958bf5a1fe746e8d7223c62}{debug\+\_\+reduce()}} when shift and reduce moves are taken by the parser and produces various other debugging messages. ~\newline
+ \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a08f883a75958bf5a1fe746e8d7223c62}\label{classjava__cup_1_1runtime_1_1lr__parser_a08f883a75958bf5a1fe746e8d7223c62}} 
+\index{java\_cup.parser@{java\_cup.parser}!debug\_reduce@{debug\_reduce}}
+\index{debug\_reduce@{debug\_reduce}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{debug\_reduce()}{debug\_reduce()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+debug\+\_\+reduce (\begin{DoxyParamCaption}\item[{int}]{prod\+\_\+num,  }\item[{int}]{nt\+\_\+num,  }\item[{int}]{rhs\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Do debug output for a reduce.
+
+
+\begin{DoxyParams}{Parameter}
+{\em prod\+\_\+num} & the production we are reducing with. \\
+\hline
+{\em nt\+\_\+num} & the index of the L\+HS non terminal. \\
+\hline
+{\em rhs\+\_\+size} & the size of the R\+HS. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a5618eff296192ed4b343aad298311bb5}\label{classjava__cup_1_1runtime_1_1lr__parser_a5618eff296192ed4b343aad298311bb5}} 
+\index{java\_cup.parser@{java\_cup.parser}!debug\_shift@{debug\_shift}}
+\index{debug\_shift@{debug\_shift}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{debug\_shift()}{debug\_shift()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+debug\+\_\+shift (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}}}]{shift\+\_\+tkn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Do debug output for shift.
+
+
+\begin{DoxyParams}{Parameter}
+{\em shift\+\_\+tkn} & the token being shifted onto the stack. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1parser_ae70c5bc6e599f0deae02637b8593f856}\label{classjava__cup_1_1parser_ae70c5bc6e599f0deae02637b8593f856}} 
+\index{java\_cup.parser@{java\_cup.parser}!do\_action@{do\_action}}
+\index{do\_action@{do\_action}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{do\_action()}{do\_action()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1runtime_1_1symbol}{java\+\_\+cup.\+runtime.\+symbol}} java\+\_\+cup.\+parser.\+do\+\_\+action (\begin{DoxyParamCaption}\item[{int}]{act\+\_\+num,  }\item[{\mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser}{java\+\_\+cup.\+runtime.\+lr\+\_\+parser}}}]{parser,  }\item[{java.\+util.\+Stack}]{stack,  }\item[{int}]{top }\end{DoxyParamCaption}) throws java.\+lang.\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+invoke a user supplied parse action \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a7568cadfff5ba639df5682ad4b8053a3}\label{classjava__cup_1_1runtime_1_1lr__parser_a7568cadfff5ba639df5682ad4b8053a3}} 
+\index{java\_cup.parser@{java\_cup.parser}!do\_action@{do\_action}}
+\index{do\_action@{do\_action}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{do\_action()}{do\_action()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classjava__cup_1_1symbol}{symbol}} java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+do\+\_\+action (\begin{DoxyParamCaption}\item[{int}]{act\+\_\+num,  }\item[{\mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser}{lr\+\_\+parser}}}]{parser,  }\item[{Stack}]{stack,  }\item[{int}]{top }\end{DoxyParamCaption}) throws java.\+lang.\+Exception\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [inherited]}}
+
+Perform a bit of user supplied action code (supplied by generated subclass). Actions are indexed by an internal action number assigned at parser generation time.
+
+
+\begin{DoxyParams}{Parameter}
+{\em act\+\_\+num} & the internal index of the action to be performed. \\
+\hline
+{\em parser} & the parser object we are acting for. \\
+\hline
+{\em stack} & the parse stack of that object. \\
+\hline
+{\em top} & the index of the top element of the parse stack. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a50c2df82dbd588a4cd2d766464bdab4f}\label{classjava__cup_1_1runtime_1_1lr__parser_a50c2df82dbd588a4cd2d766464bdab4f}} 
+\index{java\_cup.parser@{java\_cup.parser}!done\_parsing@{done\_parsing}}
+\index{done\_parsing@{done\_parsing}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{done\_parsing()}{done\_parsing()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+done\+\_\+parsing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+This method is called to indicate that the parser should quit. This is normally called by an accept action, but can be used to cancel parsing early in other circumstances if desired. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a7d2aa2da339f78215c619019ab04f849}\label{classjava__cup_1_1runtime_1_1lr__parser_a7d2aa2da339f78215c619019ab04f849}} 
+\index{java\_cup.parser@{java\_cup.parser}!dump\_stack@{dump\_stack}}
+\index{dump\_stack@{dump\_stack}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{dump\_stack()}{dump\_stack()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+dump\+\_\+stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Dump the parse stack for debugging purposes. \mbox{\Hypertarget{classjava__cup_1_1parser_aa03964af11860af784e28f238c854e88}\label{classjava__cup_1_1parser_aa03964af11860af784e28f238c854e88}} 
+\index{java\_cup.parser@{java\_cup.parser}!EOF\_sym@{EOF\_sym}}
+\index{EOF\_sym@{EOF\_sym}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{EOF\_sym()}{EOF\_sym()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+parser.\+E\+O\+F\+\_\+sym (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+E\+OF symbol index 
+
+Erneute Implementation von \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_ac708a184369c8298e97186bbc407504a}{java\+\_\+cup.\+runtime.\+lr\+\_\+parser}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a4be82f20b12658ab32b96f79dc4b3b5c}\label{classjava__cup_1_1runtime_1_1lr__parser_a4be82f20b12658ab32b96f79dc4b3b5c}} 
+\index{java\_cup.parser@{java\_cup.parser}!error\_recovery@{error\_recovery}}
+\index{error\_recovery@{error\_recovery}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{error\_recovery()}{error\_recovery()}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+error\+\_\+recovery (\begin{DoxyParamCaption}\item[{boolean}]{debug }\end{DoxyParamCaption}) throws java.\+lang.\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Attempt to recover from a syntax error. This returns false if recovery fails, true if it succeeds. Recovery happens in 4 steps. First we pop the parse stack down to a point at which we have a shift out of the top-\/most state on the error symbol. This represents the initial error recovery configuration. If no such configuration is found, then we fail. Next a small number of \char`\"{}lookahead\char`\"{} or \char`\"{}parse
+ ahead\char`\"{} tokens are read into a buffer. The size of this buffer is determined by \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a9d6b781605eaf4132d13c99887dd2b57}{error\+\_\+sync\+\_\+size()}} and determines how many tokens beyond the error must be matched to consider the recovery a success. Next, we begin to discard tokens in attempt to get past the point of error to a point where we can continue parsing. After each token, we attempt to \char`\"{}parse ahead\char`\"{} though the buffered lookahead tokens. The \char`\"{}parse ahead\char`\"{} process simulates that actual parse, but does not modify the real parser\textquotesingle{}s configuration, nor execute any actions. If we can parse all the stored tokens without error, then the recovery is considered a success. Once a successful recovery point is determined, we do an actual parse over the stored input -- modifying the real parse configuration and executing all actions. Finally, we return the the normal parser to continue with the overall parse.
+
+
+\begin{DoxyParams}{Parameter}
+{\em debug} & should we produce debugging messages as we parse. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1parser_ae9dcfb289bab07b9f741eaa19dd16a22}\label{classjava__cup_1_1parser_ae9dcfb289bab07b9f741eaa19dd16a22}} 
+\index{java\_cup.parser@{java\_cup.parser}!error\_sym@{error\_sym}}
+\index{error\_sym@{error\_sym}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{error\_sym()}{error\_sym()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+parser.\+error\+\_\+sym (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+error symbol index 
+
+Erneute Implementation von \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a798ec786decf626b0d1201c4836ea838}{java\+\_\+cup.\+runtime.\+lr\+\_\+parser}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a9d6b781605eaf4132d13c99887dd2b57}\label{classjava__cup_1_1runtime_1_1lr__parser_a9d6b781605eaf4132d13c99887dd2b57}} 
+\index{java\_cup.parser@{java\_cup.parser}!error\_sync\_size@{error\_sync\_size}}
+\index{error\_sync\_size@{error\_sync\_size}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{error\_sync\_size()}{error\_sync\_size()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+error\+\_\+sync\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+The number of tokens after an error we much match to consider it recovered from. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_ae0fd1f602f61d5601de794301638f15a}\label{classjava__cup_1_1runtime_1_1lr__parser_ae0fd1f602f61d5601de794301638f15a}} 
+\index{java\_cup.parser@{java\_cup.parser}!find\_recovery\_config@{find\_recovery\_config}}
+\index{find\_recovery\_config@{find\_recovery\_config}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{find\_recovery\_config()}{find\_recovery\_config()}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+find\+\_\+recovery\+\_\+config (\begin{DoxyParamCaption}\item[{boolean}]{debug }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Put the (real) parse stack into error recovery configuration by popping the stack down to a state that can shift on the special error symbol, then doing the shift. If no suitable state exists on the stack we return false
+
+
+\begin{DoxyParams}{Parameter}
+{\em debug} & should we produce debugging messages as we parse. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a15b9e9ffa13f71a2388cfa53daf040b8}\label{classjava__cup_1_1runtime_1_1lr__parser_a15b9e9ffa13f71a2388cfa53daf040b8}} 
+\index{java\_cup.parser@{java\_cup.parser}!get\_action@{get\_action}}
+\index{get\_action@{get\_action}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{get\_action()}{get\_action()}}
+{\footnotesize\ttfamily final short java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+get\+\_\+action (\begin{DoxyParamCaption}\item[{int}]{state,  }\item[{int}]{sym }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Fetch an action from the action table. The table is broken up into rows, one per state (rows are indexed directly by state number). ~\newline
+ Within each row, a list of index, value pairs are given (as sequential entries in the table), and the list is terminated by a default entry (denoted with a symbol index of -\/1). To find the proper entry in a row we do a linear or binary search (depending on the size of the row). ~\newline
+
+
+
+\begin{DoxyParams}{Parameter}
+{\em state} & the state index of the action being accessed. \\
+\hline
+{\em sym} & the symbol index of the action being accessed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a7e024eee17dc2544d6c7b0879b90af48}\label{classjava__cup_1_1runtime_1_1lr__parser_a7e024eee17dc2544d6c7b0879b90af48}} 
+\index{java\_cup.parser@{java\_cup.parser}!get\_reduce@{get\_reduce}}
+\index{get\_reduce@{get\_reduce}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{get\_reduce()}{get\_reduce()}}
+{\footnotesize\ttfamily final short java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+get\+\_\+reduce (\begin{DoxyParamCaption}\item[{int}]{state,  }\item[{int}]{sym }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Fetch a state from the reduce-\/goto table. The table is broken up into rows, one per state (rows are indexed directly by state number). ~\newline
+ Within each row, a list of index, value pairs are given (as sequential entries in the table), and the list is terminated by a default entry (denoted with a symbol index of -\/1). To find the proper entry in a row we do a linear search. ~\newline
+
+
+
+\begin{DoxyParams}{Parameter}
+{\em state} & the state index of the entry being accessed. \\
+\hline
+{\em sym} & the symbol index of the entry being accessed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1parser_a23d238deb9df493dfde699c93ffbc028}\label{classjava__cup_1_1parser_a23d238deb9df493dfde699c93ffbc028}} 
+\index{java\_cup.parser@{java\_cup.parser}!init\_actions@{init\_actions}}
+\index{init\_actions@{init\_actions}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{init\_actions()}{init\_actions()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+parser.\+init\+\_\+actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+action encapsulation object initializer 
+
+Erneute Implementation von \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a039487eaa3e287c3cefe6be4d6a9cb0d}{java\+\_\+cup.\+runtime.\+lr\+\_\+parser}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_ac1abd03449226b3cecdc5963680598da}\label{classjava__cup_1_1runtime_1_1lr__parser_ac1abd03449226b3cecdc5963680598da}} 
+\index{java\_cup.parser@{java\_cup.parser}!parse@{parse}}
+\index{parse@{parse}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+lang.\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+This method provides the main parsing routine. It returns only when \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a50c2df82dbd588a4cd2d766464bdab4f}{done\+\_\+parsing()}} has been called (typically because the parser has accepted, or a fatal error has been reported). See the header documentation for the class regarding how shift/reduce parsers operate and how the various tables are used. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_af59f4efb1645e541f8d6aafdcd8cc8fc}\label{classjava__cup_1_1runtime_1_1lr__parser_af59f4efb1645e541f8d6aafdcd8cc8fc}} 
+\index{java\_cup.parser@{java\_cup.parser}!parse\_lookahead@{parse\_lookahead}}
+\index{parse\_lookahead@{parse\_lookahead}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{parse\_lookahead()}{parse\_lookahead()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+parse\+\_\+lookahead (\begin{DoxyParamCaption}\item[{boolean}]{debug }\end{DoxyParamCaption}) throws java.\+lang.\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Parse forward using stored lookahead symbols. In this case we have already verified that parsing will make it through the stored lookahead symbols and we are now getting back to the point at which we can hand control back to the normal parser. Consequently, this version of the parser performs all actions and modifies the real parse configuration. ~\newline
+ This returns once we have consumed all the stored input or we accept.
+
+
+\begin{DoxyParams}{Parameter}
+{\em debug} & should we produce debugging messages as we parse. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1parser_a41e5404e7188bdf8f27dbad101dd6d9e}\label{classjava__cup_1_1parser_a41e5404e7188bdf8f27dbad101dd6d9e}} 
+\index{java\_cup.parser@{java\_cup.parser}!production\_table@{production\_table}}
+\index{production\_table@{production\_table}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{production\_table()}{production\_table()}}
+{\footnotesize\ttfamily short \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} java\+\_\+cup.\+parser.\+production\+\_\+table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+access to production table 
+
+Erneute Implementation von \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a47574963288311c8900054dbeef83a60}{java\+\_\+cup.\+runtime.\+lr\+\_\+parser}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a10439a3af11fcad7da203115382f57f8}\label{classjava__cup_1_1runtime_1_1lr__parser_a10439a3af11fcad7da203115382f57f8}} 
+\index{java\_cup.parser@{java\_cup.parser}!read\_lookahead@{read\_lookahead}}
+\index{read\_lookahead@{read\_lookahead}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{read\_lookahead()}{read\_lookahead()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+read\+\_\+lookahead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+lang.\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Read from input to establish our buffer of \char`\"{}parse ahead\char`\"{} lookahead symbols. \mbox{\Hypertarget{classjava__cup_1_1parser_a0a59997f8ddc8ed3ad44d21f3bb8ad2e}\label{classjava__cup_1_1parser_a0a59997f8ddc8ed3ad44d21f3bb8ad2e}} 
+\index{java\_cup.parser@{java\_cup.parser}!reduce\_table@{reduce\_table}}
+\index{reduce\_table@{reduce\_table}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{reduce\_table()}{reduce\_table()}}
+{\footnotesize\ttfamily short \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} java\+\_\+cup.\+parser.\+reduce\+\_\+table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+access to reduce\+\_\+goto table 
+
+Erneute Implementation von \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_ad0d66eb13eaf071cfcb93d0af14f79e8}{java\+\_\+cup.\+runtime.\+lr\+\_\+parser}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1parser_a89df5677700a712071a5886ae615990a}\label{classjava__cup_1_1parser_a89df5677700a712071a5886ae615990a}} 
+\index{java\_cup.parser@{java\_cup.parser}!report\_error@{report\_error}}
+\index{report\_error@{report\_error}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{report\_error()}{report\_error()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+parser.\+report\+\_\+error (\begin{DoxyParamCaption}\item[{String}]{message,  }\item[{Object}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Report a non fatal error (or warning). This method takes a message string and an additional object (to be used by specializations implemented in subclasses). Here in the base class a very simple implementation is provided which simply prints the message to System.\+err.
+
+
+\begin{DoxyParams}{Parameter}
+{\em message} & an error message. \\
+\hline
+{\em info} & an extra object reserved for use by specialized subclasses. \\
+\hline
+\end{DoxyParams}
+
+
+Erneute Implementation von \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_adc8ab857dfe0180131c44ff9c417f888}{java\+\_\+cup.\+runtime.\+lr\+\_\+parser}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1parser_a04a12567b4909f046d52acfc1f32321a}\label{classjava__cup_1_1parser_a04a12567b4909f046d52acfc1f32321a}} 
+\index{java\_cup.parser@{java\_cup.parser}!report\_fatal\_error@{report\_fatal\_error}}
+\index{report\_fatal\_error@{report\_fatal\_error}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{report\_fatal\_error()}{report\_fatal\_error()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+parser.\+report\+\_\+fatal\+\_\+error (\begin{DoxyParamCaption}\item[{String}]{message,  }\item[{Object}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Report a fatal error. This method takes a message string and an additional object (to be used by specializations implemented in subclasses). Here in the base class a very simple implementation is provided which reports the error then throws an exception.
+
+
+\begin{DoxyParams}{Parameter}
+{\em message} & an error message. \\
+\hline
+{\em info} & an extra object reserved for use by specialized subclasses. \\
+\hline
+\end{DoxyParams}
+
+
+Erneute Implementation von \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_af8135ee8ea97cbf2e1a14c930f875157}{java\+\_\+cup.\+runtime.\+lr\+\_\+parser}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a5b2a3b29742dffc66115adf706ede8fe}\label{classjava__cup_1_1runtime_1_1lr__parser_a5b2a3b29742dffc66115adf706ede8fe}} 
+\index{java\_cup.parser@{java\_cup.parser}!restart\_lookahead@{restart\_lookahead}}
+\index{restart\_lookahead@{restart\_lookahead}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{restart\_lookahead()}{restart\_lookahead()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+restart\+\_\+lookahead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+lang.\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Reset the parse ahead input to one token past where we started error recovery (this consumes one new token from the real input). \mbox{\Hypertarget{classjava__cup_1_1parser_a87782c74819f70160cd3b8befcd1cbe7}\label{classjava__cup_1_1parser_a87782c74819f70160cd3b8befcd1cbe7}} 
+\index{java\_cup.parser@{java\_cup.parser}!scan@{scan}}
+\index{scan@{scan}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{scan()}{scan()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{java\+\_\+cup.\+runtime.\+token}} java\+\_\+cup.\+parser.\+scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+lang.\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+scan to get the next token 
+
+Erneute Implementation von \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_aa84baf4da2e02e30d9dade387c4c49d5}{java\+\_\+cup.\+runtime.\+lr\+\_\+parser}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_aa946c7b1ac1f4a754da18691a35f7374}\label{classjava__cup_1_1runtime_1_1lr__parser_aa946c7b1ac1f4a754da18691a35f7374}} 
+\index{java\_cup.parser@{java\_cup.parser}!shift\_under\_error@{shift\_under\_error}}
+\index{shift\_under\_error@{shift\_under\_error}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{shift\_under\_error()}{shift\_under\_error()}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+shift\+\_\+under\+\_\+error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Determine if we can shift under the special error symbol out of the state currently on the top of the (real) parse stack. \mbox{\Hypertarget{classjava__cup_1_1parser_a6cdc8343793c13574161749402b54a4f}\label{classjava__cup_1_1parser_a6cdc8343793c13574161749402b54a4f}} 
+\index{java\_cup.parser@{java\_cup.parser}!start\_production@{start\_production}}
+\index{start\_production@{start\_production}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{start\_production()}{start\_production()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+parser.\+start\+\_\+production (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+start production 
+
+Erneute Implementation von \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a40096de36b96862922033ad05b4c7abd}{java\+\_\+cup.\+runtime.\+lr\+\_\+parser}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1parser_a9ff8e59ad023b628982f164fafdb7ae7}\label{classjava__cup_1_1parser_a9ff8e59ad023b628982f164fafdb7ae7}} 
+\index{java\_cup.parser@{java\_cup.parser}!start\_state@{start\_state}}
+\index{start\_state@{start\_state}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{start\_state()}{start\_state()}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+parser.\+start\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+start state 
+
+Erneute Implementation von \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a4ce3a3afce662cfca95ec9a9bb41871e}{java\+\_\+cup.\+runtime.\+lr\+\_\+parser}}.
+
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a04227e479c2cea375e3cf2ef5d636835}\label{classjava__cup_1_1runtime_1_1lr__parser_a04227e479c2cea375e3cf2ef5d636835}} 
+\index{java\_cup.parser@{java\_cup.parser}!syntax\_error@{syntax\_error}}
+\index{syntax\_error@{syntax\_error}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{syntax\_error()}{syntax\_error()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+syntax\+\_\+error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}}}]{cur\+\_\+token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+This method is called when a syntax error has been detected and recovery is about to be invoked. Here in the base class we just emit a \char`\"{}\+Syntax error\char`\"{} error message. ~\newline
+
+
+
+\begin{DoxyParams}{Parameter}
+{\em cur\+\_\+token} & the current lookahead token. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a3d994dee692cf45f416ca13cc2fad141}\label{classjava__cup_1_1runtime_1_1lr__parser_a3d994dee692cf45f416ca13cc2fad141}} 
+\index{java\_cup.parser@{java\_cup.parser}!try\_parse\_ahead@{try\_parse\_ahead}}
+\index{try\_parse\_ahead@{try\_parse\_ahead}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{try\_parse\_ahead()}{try\_parse\_ahead()}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+try\+\_\+parse\+\_\+ahead (\begin{DoxyParamCaption}\item[{boolean}]{debug }\end{DoxyParamCaption}) throws java.\+lang.\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Do a simulated parse forward (a \char`\"{}parse ahead\char`\"{}) from the current stack configuration using stored lookahead input and a virtual parse stack. Return true if we make it all the way through the stored lookahead input without error. This basically simulates the action of \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_ac1abd03449226b3cecdc5963680598da}{parse()}} using only our saved \char`\"{}parse ahead\char`\"{} input, and not executing any actions.
+
+
+\begin{DoxyParams}{Parameter}
+{\em debug} & should we produce debugging messages as we parse. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a94bf07a8b473ea5a09b10d6fd9fcf3e6}\label{classjava__cup_1_1runtime_1_1lr__parser_a94bf07a8b473ea5a09b10d6fd9fcf3e6}} 
+\index{java\_cup.parser@{java\_cup.parser}!unrecovered\_syntax\_error@{unrecovered\_syntax\_error}}
+\index{unrecovered\_syntax\_error@{unrecovered\_syntax\_error}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{unrecovered\_syntax\_error()}{unrecovered\_syntax\_error()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+unrecovered\+\_\+syntax\+\_\+error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}}}]{cur\+\_\+token }\end{DoxyParamCaption}) throws java.\+lang.\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+This method is called if it is determined that syntax error recovery has been unsuccessful. Here in the base class we report a fatal error.
+
+
+\begin{DoxyParams}{Parameter}
+{\em cur\+\_\+token} & the current lookahead token. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjava__cup_1_1parser_a79748310e5b51d092e80e7d93038b53e}\label{classjava__cup_1_1parser_a79748310e5b51d092e80e7d93038b53e}} 
+\index{java\_cup.parser@{java\_cup.parser}!user\_init@{user\_init}}
+\index{user\_init@{user\_init}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{user\_init()}{user\_init()}}
+{\footnotesize\ttfamily void java\+\_\+cup.\+parser.\+user\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws java.\+lang.\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+user initialization 
+
+Erneute Implementation von \mbox{\hyperlink{classjava__cup_1_1runtime_1_1lr__parser_a8e75fe6176579a0b290756e952f0edb9}{java\+\_\+cup.\+runtime.\+lr\+\_\+parser}}.
+
+
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classjava__cup_1_1parser_aeba41dc907e019f84e67f87c4b58fce5}\label{classjava__cup_1_1parser_aeba41dc907e019f84e67f87c4b58fce5}} 
+\index{java\_cup.parser@{java\_cup.parser}!\_action\_table@{\_action\_table}}
+\index{\_action\_table@{\_action\_table}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{\_action\_table}{\_action\_table}}
+{\footnotesize\ttfamily final short \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} java\+\_\+cup.\+parser.\+\_\+action\+\_\+table\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+parse action table \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_acea23411bc70e7aeb8e99b42930575f2}\label{classjava__cup_1_1runtime_1_1lr__parser_acea23411bc70e7aeb8e99b42930575f2}} 
+\index{java\_cup.parser@{java\_cup.parser}!\_done\_parsing@{\_done\_parsing}}
+\index{\_done\_parsing@{\_done\_parsing}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{\_done\_parsing}{\_done\_parsing}}
+{\footnotesize\ttfamily boolean java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+\_\+done\+\_\+parsing = false\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Internal flag to indicate when parser should quit. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_aaee3f9ee3279ca92f2ef486fa75b3457}\label{classjava__cup_1_1runtime_1_1lr__parser_aaee3f9ee3279ca92f2ef486fa75b3457}} 
+\index{java\_cup.parser@{java\_cup.parser}!\_error\_sync\_size@{\_error\_sync\_size}}
+\index{\_error\_sync\_size@{\_error\_sync\_size}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{\_error\_sync\_size}{\_error\_sync\_size}}
+{\footnotesize\ttfamily final int java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+\_\+error\+\_\+sync\+\_\+size = 3\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+The default number of tokens after an error we much match to consider it recovered from. \mbox{\Hypertarget{classjava__cup_1_1parser_ad91737ffadd365df20684297fbd83fae}\label{classjava__cup_1_1parser_ad91737ffadd365df20684297fbd83fae}} 
+\index{java\_cup.parser@{java\_cup.parser}!\_production\_table@{\_production\_table}}
+\index{\_production\_table@{\_production\_table}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{\_production\_table}{\_production\_table}}
+{\footnotesize\ttfamily final short java\+\_\+cup.\+parser.\+\_\+production\+\_\+table\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initialisierung\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{        \{0, 2\},     \{32, 0\},     \{1, 10\},     \{1, 4\},     \{33, 0\}, }
+\DoxyCodeLine{        \{2, 4\},     \{2, 1\},     \{3, 2\},     \{3, 1\},     \{34, 0\}, }
+\DoxyCodeLine{        \{11, 4\},     \{4, 2\},     \{5, 4\},     \{5, 1\},     \{6, 4\}, }
+\DoxyCodeLine{        \{6, 1\},     \{13, 4\},     \{13, 1\},     \{14, 4\},     \{14, 1\}, }
+\DoxyCodeLine{        \{16, 4\},     \{16, 1\},     \{7, 2\},     \{7, 1\},     \{35, 0\}, }
+\DoxyCodeLine{        \{15, 5\},     \{36, 0\},     \{15, 6\},     \{37, 0\},     \{15, 4\}, }
+\DoxyCodeLine{        \{38, 0\},     \{15, 5\},     \{18, 3\},     \{18, 1\},     \{19, 3\}, }
+\DoxyCodeLine{        \{19, 1\},     \{39, 0\},     \{8, 5\},     \{8, 1\},     \{9, 2\}, }
+\DoxyCodeLine{        \{9, 1\},     \{40, 0\},     \{20, 5\},     \{41, 0\},     \{20, 3\}, }
+\DoxyCodeLine{        \{25, 3\},     \{25, 1\},     \{26, 1\},     \{21, 2\},     \{21, 1\}, }
+\DoxyCodeLine{        \{22, 2\},     \{22, 1\},     \{31, 2\},     \{31, 1\},     \{10, 3\}, }
+\DoxyCodeLine{        \{10, 1\},     \{12, 3\},     \{12, 1\},     \{17, 1\},     \{23, 1\}, }
+\DoxyCodeLine{        \{24, 1\},     \{28, 1\},     \{29, 1\},     \{30, 1\},     \{27, 0\}}
+\DoxyCodeLine{      \}}
+
+\end{DoxyCode}
+production table \mbox{\Hypertarget{classjava__cup_1_1parser_aaa0d38f080944ab850c81ddf222ab942}\label{classjava__cup_1_1parser_aaa0d38f080944ab850c81ddf222ab942}} 
+\index{java\_cup.parser@{java\_cup.parser}!\_reduce\_table@{\_reduce\_table}}
+\index{\_reduce\_table@{\_reduce\_table}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{\_reduce\_table}{\_reduce\_table}}
+{\footnotesize\ttfamily final short \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} java\+\_\+cup.\+parser.\+\_\+reduce\+\_\+table\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+reduce\+\_\+goto table \mbox{\Hypertarget{classjava__cup_1_1parser_afe20ed0a5d582b20b55b710fdf71489b}\label{classjava__cup_1_1parser_afe20ed0a5d582b20b55b710fdf71489b}} 
+\index{java\_cup.parser@{java\_cup.parser}!action\_obj@{action\_obj}}
+\index{action\_obj@{action\_obj}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{action\_obj}{action\_obj}}
+{\footnotesize\ttfamily C\+UP \$actions java\+\_\+cup.\+parser.\+action\+\_\+obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+instance of action encapsulation class \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a6b7f8ae1151d60155d7887d3b5ebe267}\label{classjava__cup_1_1runtime_1_1lr__parser_a6b7f8ae1151d60155d7887d3b5ebe267}} 
+\index{java\_cup.parser@{java\_cup.parser}!action\_tab@{action\_tab}}
+\index{action\_tab@{action\_tab}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{action\_tab}{action\_tab}}
+{\footnotesize\ttfamily short \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+action\+\_\+tab\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Direct reference to the action table. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_ab5eccf0af903e07866f0f02df1d4d0c4}\label{classjava__cup_1_1runtime_1_1lr__parser_ab5eccf0af903e07866f0f02df1d4d0c4}} 
+\index{java\_cup.parser@{java\_cup.parser}!cur\_token@{cur\_token}}
+\index{cur\_token@{cur\_token}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{cur\_token}{cur\_token}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+cur\+\_\+token\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+The current lookahead token. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a3dc293d782e0b5302ed1fc5722bf9194}\label{classjava__cup_1_1runtime_1_1lr__parser_a3dc293d782e0b5302ed1fc5722bf9194}} 
+\index{java\_cup.parser@{java\_cup.parser}!lookahead@{lookahead}}
+\index{lookahead@{lookahead}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{lookahead}{lookahead}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classjava__cup_1_1runtime_1_1token}{token}} java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+lookahead\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Lookahead tokens used for attempting error recovery \char`\"{}parse aheads\char`\"{}. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a89b536f08f96654478dac9c3bf232eb8}\label{classjava__cup_1_1runtime_1_1lr__parser_a89b536f08f96654478dac9c3bf232eb8}} 
+\index{java\_cup.parser@{java\_cup.parser}!lookahead\_pos@{lookahead\_pos}}
+\index{lookahead\_pos@{lookahead\_pos}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{lookahead\_pos}{lookahead\_pos}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+lookahead\+\_\+pos\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Position in lookahead input buffer used for \char`\"{}parse ahead\char`\"{}. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a1e45da8c6f8d3bba77f1114f676b6aeb}\label{classjava__cup_1_1runtime_1_1lr__parser_a1e45da8c6f8d3bba77f1114f676b6aeb}} 
+\index{java\_cup.parser@{java\_cup.parser}!production\_tab@{production\_tab}}
+\index{production\_tab@{production\_tab}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{production\_tab}{production\_tab}}
+{\footnotesize\ttfamily short \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+production\+\_\+tab\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Direct reference to the production table. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_abe04632ae39a9649d88e1ae9308f5ea8}\label{classjava__cup_1_1runtime_1_1lr__parser_abe04632ae39a9649d88e1ae9308f5ea8}} 
+\index{java\_cup.parser@{java\_cup.parser}!reduce\_tab@{reduce\_tab}}
+\index{reduce\_tab@{reduce\_tab}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{reduce\_tab}{reduce\_tab}}
+{\footnotesize\ttfamily short \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+reduce\+\_\+tab\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Direct reference to the reduce-\/goto table. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_a03216d43a4b4b12241f756340cb87510}\label{classjava__cup_1_1runtime_1_1lr__parser_a03216d43a4b4b12241f756340cb87510}} 
+\index{java\_cup.parser@{java\_cup.parser}!stack@{stack}}
+\index{stack@{stack}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{stack}{stack}}
+{\footnotesize\ttfamily Stack java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+stack = new Stack()\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+The parse stack itself. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1lr__parser_ad5b5bfcebc25ec178af7e2c84e634a77}\label{classjava__cup_1_1runtime_1_1lr__parser_ad5b5bfcebc25ec178af7e2c84e634a77}} 
+\index{java\_cup.parser@{java\_cup.parser}!tos@{tos}}
+\index{tos@{tos}!java\_cup.parser@{java\_cup.parser}}
+\doxysubsubsection{\texorpdfstring{tos}{tos}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+runtime.\+lr\+\_\+parser.\+tos\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+Indication of the index for top of stack (for use by actions). 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/java\+\_\+cup/parser.\+java\end{DoxyCompactItemize}

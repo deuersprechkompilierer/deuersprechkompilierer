@@ -1,0 +1,79 @@
+\hypertarget{classjava__cup_1_1runtime_1_1char__token}{}\doxysection{java\+\_\+cup.\+runtime.\+char\+\_\+token Klassenreferenz}
+\label{classjava__cup_1_1runtime_1_1char__token}\index{java\_cup.runtime.char\_token@{java\_cup.runtime.char\_token}}
+Klassendiagramm für java\+\_\+cup.\+runtime.\+char\+\_\+token\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classjava__cup_1_1runtime_1_1char__token}
+\end{center}
+\end{figure}
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1char__token_a53e3431098d71e94a709d5ec2dd8a5ad}{char\+\_\+token}} (int term\+\_\+num, char v)
+\item 
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1char__token_a6161696b96363e86a5bffc0095115226}{char\+\_\+token}} (int term\+\_\+num)
+\end{DoxyCompactItemize}
+\doxysubsection*{Öffentliche Attribute}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{classjava__cup_1_1runtime_1_1char__token_af7edfaa531374de47a1fa1e2e95760f5}{char\+\_\+val}}
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1runtime_1_1symbol_ae20e6415c2e71ac102042e3c7e62554d}{sym}}
+\item 
+int \mbox{\hyperlink{classjava__cup_1_1runtime_1_1symbol_acf83d21db313b2e797f6ebac04b9ec91}{parse\+\_\+state}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+This subclass of token represents symbols that need to maintain one char value as an attribute. It maintains that value in the public field int\+\_\+val.
+
+\begin{DoxySeeAlso}{Siehe auch}
+\mbox{\hyperlink{classjava__cup_1_1runtime_1_1str__token}{java\+\_\+cup.\+runtime.\+str\+\_\+token}} 
+\end{DoxySeeAlso}
+\begin{DoxyVersion}{Version}
+last updated\+: 1/7/96 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Autor}
+Scott Hudson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1char__token_a53e3431098d71e94a709d5ec2dd8a5ad}\label{classjava__cup_1_1runtime_1_1char__token_a53e3431098d71e94a709d5ec2dd8a5ad}} 
+\index{java\_cup.runtime.char\_token@{java\_cup.runtime.char\_token}!char\_token@{char\_token}}
+\index{char\_token@{char\_token}!java\_cup.runtime.char\_token@{java\_cup.runtime.char\_token}}
+\doxysubsubsection{\texorpdfstring{char\_token()}{char\_token()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily java\+\_\+cup.\+runtime.\+char\+\_\+token.\+char\+\_\+token (\begin{DoxyParamCaption}\item[{int}]{term\+\_\+num,  }\item[{char}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Full constructor. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1char__token_a6161696b96363e86a5bffc0095115226}\label{classjava__cup_1_1runtime_1_1char__token_a6161696b96363e86a5bffc0095115226}} 
+\index{java\_cup.runtime.char\_token@{java\_cup.runtime.char\_token}!char\_token@{char\_token}}
+\index{char\_token@{char\_token}!java\_cup.runtime.char\_token@{java\_cup.runtime.char\_token}}
+\doxysubsubsection{\texorpdfstring{char\_token()}{char\_token()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily java\+\_\+cup.\+runtime.\+char\+\_\+token.\+char\+\_\+token (\begin{DoxyParamCaption}\item[{int}]{term\+\_\+num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor with default value of 0 
+
+\doxysubsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{classjava__cup_1_1runtime_1_1char__token_af7edfaa531374de47a1fa1e2e95760f5}\label{classjava__cup_1_1runtime_1_1char__token_af7edfaa531374de47a1fa1e2e95760f5}} 
+\index{java\_cup.runtime.char\_token@{java\_cup.runtime.char\_token}!char\_val@{char\_val}}
+\index{char\_val@{char\_val}!java\_cup.runtime.char\_token@{java\_cup.runtime.char\_token}}
+\doxysubsubsection{\texorpdfstring{char\_val}{char\_val}}
+{\footnotesize\ttfamily char java\+\_\+cup.\+runtime.\+char\+\_\+token.\+char\+\_\+val}
+
+The stored char value. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1symbol_acf83d21db313b2e797f6ebac04b9ec91}\label{classjava__cup_1_1runtime_1_1symbol_acf83d21db313b2e797f6ebac04b9ec91}} 
+\index{java\_cup.runtime.char\_token@{java\_cup.runtime.char\_token}!parse\_state@{parse\_state}}
+\index{parse\_state@{parse\_state}!java\_cup.runtime.char\_token@{java\_cup.runtime.char\_token}}
+\doxysubsubsection{\texorpdfstring{parse\_state}{parse\_state}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+runtime.\+symbol.\+parse\+\_\+state\hspace{0.3cm}{\ttfamily [inherited]}}
+
+The parse state to be recorded on the parse stack with this symbol. This field is for the convenience of the parser and shouldn\textquotesingle{}t be modified except by the parser. \mbox{\Hypertarget{classjava__cup_1_1runtime_1_1symbol_ae20e6415c2e71ac102042e3c7e62554d}\label{classjava__cup_1_1runtime_1_1symbol_ae20e6415c2e71ac102042e3c7e62554d}} 
+\index{java\_cup.runtime.char\_token@{java\_cup.runtime.char\_token}!sym@{sym}}
+\index{sym@{sym}!java\_cup.runtime.char\_token@{java\_cup.runtime.char\_token}}
+\doxysubsubsection{\texorpdfstring{sym}{sym}}
+{\footnotesize\ttfamily int java\+\_\+cup.\+runtime.\+symbol.\+sym\hspace{0.3cm}{\ttfamily [inherited]}}
+
+The symbol number of the terminal or non terminal being represented 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/java\+\_\+cup/runtime/char\+\_\+token.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,708 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deuersprech-Kompilierer: de.deuersprech.compiler.MyArithmeticVisitor Klassenreferenz</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deuersprech-Kompilierer
+   </div>
+   <div id="projectbrief">Der originale Deuersprech-Kompilierer</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>de</b></li><li class="navelem"><b>deuersprech</b></li><li class="navelem"><b>compiler</b></li><li class="navelem"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html">MyArithmeticVisitor</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="#pub-static-methods">Öffentliche, statische Methoden</a> &#124;
+<a href="#pro-methods">Geschützte Methoden</a> &#124;
+<a href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor-members.html">Aufstellung aller Elemente</a>  </div>
+  <div class="headertitle">
+<div class="title">de.deuersprech.compiler.MyArithmeticVisitor Klassenreferenz</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Die Klasse <a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html" title="Die Klasse MyArithmeticVisitor baut auf ANTLR-generiertem Code auf und implementiert die Jasmin-Code-...">MyArithmeticVisitor</a> baut auf ANTLR-generiertem Code auf und implementiert die Jasmin-Code-Erzeugung auf Grundlage des vom Parser erstellen Syntaxbaum.  
+ <a href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#details">Mehr ...</a></p>
+<div class="dynheader">
+Klassendiagramm für de.deuersprech.compiler.MyArithmeticVisitor:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.png" usemap="#de.deuersprech.compiler.MyArithmeticVisitor_map" alt=""/>
+  <map id="de.deuersprech.compiler.MyArithmeticVisitor_map" name="de.deuersprech.compiler.MyArithmeticVisitor_map">
+<area href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html" alt="de.deuersprech.parser.ArithmeticBaseVisitor&lt; T &gt;" shape="rect" coords="173,112,509,136"/>
+<area href="interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor.html" alt="de.deuersprech.parser.ArithmeticVisitor&lt; T &gt;" shape="rect" coords="346,56,682,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Öffentliche Methoden</h2></td></tr>
+<tr class="memitem:aafede7534b12c1de1e4c1ada03ff0ce6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#aafede7534b12c1de1e4c1ada03ff0ce6">MyArithmeticVisitor</a> (<a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_function_list.html">FunctionList</a> definedFunctions)</td></tr>
+<tr class="separator:aafede7534b12c1de1e4c1ada03ff0ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7eccbd622cce4d679fdd25439960d7"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a9f7eccbd622cce4d679fdd25439960d7">visitProgram</a> (ProgramContext ctx)</td></tr>
+<tr class="separator:a9f7eccbd622cce4d679fdd25439960d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5882affef3e27e762283a806432b1a8"><td class="memItemLeft" align="right" valign="top"><a id="ae5882affef3e27e762283a806432b1a8"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#ae5882affef3e27e762283a806432b1a8">visitPrintln</a> (PrintlnContext ctx)</td></tr>
+<tr class="memdesc:ae5882affef3e27e762283a806432b1a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">vearbeitet den Aufruf der println-Funktion <br /></td></tr>
+<tr class="separator:ae5882affef3e27e762283a806432b1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96f4f385a10c97e2a07fa675f23d9cab"><td class="memItemLeft" align="right" valign="top"><a id="a96f4f385a10c97e2a07fa675f23d9cab"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a96f4f385a10c97e2a07fa675f23d9cab">visitPrint</a> (PrintContext ctx)</td></tr>
+<tr class="memdesc:a96f4f385a10c97e2a07fa675f23d9cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">vearbeitet den Aufruf der print-Funktion <br /></td></tr>
+<tr class="separator:a96f4f385a10c97e2a07fa675f23d9cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ac308768a8f5695f829d6137bb9f775"><td class="memItemLeft" align="right" valign="top"><a id="a8ac308768a8f5695f829d6137bb9f775"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a8ac308768a8f5695f829d6137bb9f775">visitNumber</a> (NumberContext ctx)</td></tr>
+<tr class="memdesc:a8ac308768a8f5695f829d6137bb9f775"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet ganze Zahlen <br /></td></tr>
+<tr class="separator:a8ac308768a8f5695f829d6137bb9f775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a00e3f7abd0b380de01e1d65eb351b4"><td class="memItemLeft" align="right" valign="top"><a id="a8a00e3f7abd0b380de01e1d65eb351b4"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a8a00e3f7abd0b380de01e1d65eb351b4">visitString</a> (StringContext ctx)</td></tr>
+<tr class="memdesc:a8a00e3f7abd0b380de01e1d65eb351b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet strings <br /></td></tr>
+<tr class="separator:a8a00e3f7abd0b380de01e1d65eb351b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76893746855dea0bb0372f6a92e9efa3"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a76893746855dea0bb0372f6a92e9efa3">visitAssignment</a> (AssignmentContext ctx)</td></tr>
+<tr class="memdesc:a76893746855dea0bb0372f6a92e9efa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet negative ganze Zahlen  <a href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a76893746855dea0bb0372f6a92e9efa3">Mehr ...</a><br /></td></tr>
+<tr class="separator:a76893746855dea0bb0372f6a92e9efa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ba7d663e820780383d75ae683fc17a0"><td class="memItemLeft" align="right" valign="top"><a id="a1ba7d663e820780383d75ae683fc17a0"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a1ba7d663e820780383d75ae683fc17a0">visitVarDeclaration</a> (VarDeclarationContext ctx)</td></tr>
+<tr class="memdesc:a1ba7d663e820780383d75ae683fc17a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet Variablen-Deklarationen. Der Name der Variable wird in der Hashmap variables mit dem zugehoerigen Index in der Variablentabelle gespeichert <br /></td></tr>
+<tr class="separator:a1ba7d663e820780383d75ae683fc17a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf8810e676cd724a3bf4b5dc57db0c3"><td class="memItemLeft" align="right" valign="top"><a id="aebf8810e676cd724a3bf4b5dc57db0c3"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#aebf8810e676cd724a3bf4b5dc57db0c3">visitVariable</a> (VariableContext ctx)</td></tr>
+<tr class="memdesc:aebf8810e676cd724a3bf4b5dc57db0c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet den Aufruf von Variablen Es erfolgt ein Zugriff auf die Variablen-Map, um den Index der lokalen Variablentabelle zu erhalten. <br /></td></tr>
+<tr class="separator:aebf8810e676cd724a3bf4b5dc57db0c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0daadf439d137d630065393b41a7d4"><td class="memItemLeft" align="right" valign="top"><a id="aca0daadf439d137d630065393b41a7d4"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#aca0daadf439d137d630065393b41a7d4">visitConstDeclaration</a> (ConstDeclarationContext ctx)</td></tr>
+<tr class="memdesc:aca0daadf439d137d630065393b41a7d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet Konstanten-Deklarationen. Der Name der Konstante wird in der Hashmap constants mit dem zugehoerigen Index in der Konstantentabelle gespeichert <br /></td></tr>
+<tr class="separator:aca0daadf439d137d630065393b41a7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44cd52de35d7e9bc950e1ae340415be0"><td class="memItemLeft" align="right" valign="top"><a id="a44cd52de35d7e9bc950e1ae340415be0"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a44cd52de35d7e9bc950e1ae340415be0">visitConstant</a> (ConstantContext ctx)</td></tr>
+<tr class="memdesc:a44cd52de35d7e9bc950e1ae340415be0"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet den Aufruf von Konstanten Es erfolgt ein Zugriff auf die Konstanten-Map, um den Index der lokalen Konstantentabelle zu erhalten. <br /></td></tr>
+<tr class="separator:a44cd52de35d7e9bc950e1ae340415be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03216627cd850b0015e84f93329cfcbc"><td class="memItemLeft" align="right" valign="top"><a id="a03216627cd850b0015e84f93329cfcbc"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a03216627cd850b0015e84f93329cfcbc">visitFunctionCall</a> (FunctionCallContext ctx)</td></tr>
+<tr class="memdesc:a03216627cd850b0015e84f93329cfcbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet funktions-aufrufe <br /></td></tr>
+<tr class="separator:a03216627cd850b0015e84f93329cfcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af04d0e1f8fbf2cb314c62c8ea94a98a6"><td class="memItemLeft" align="right" valign="top"><a id="af04d0e1f8fbf2cb314c62c8ea94a98a6"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#af04d0e1f8fbf2cb314c62c8ea94a98a6">visitFunctionDefinition</a> (FunctionDefinitionContext ctx)</td></tr>
+<tr class="memdesc:af04d0e1f8fbf2cb314c62c8ea94a98a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet funktions-deklarationen <br /></td></tr>
+<tr class="separator:af04d0e1f8fbf2cb314c62c8ea94a98a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a650d31f67f7156fc1dfe1edf6c4447a0"><td class="memItemLeft" align="right" valign="top"><a id="a650d31f67f7156fc1dfe1edf6c4447a0"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a650d31f67f7156fc1dfe1edf6c4447a0">visitBranch</a> (BranchContext ctx)</td></tr>
+<tr class="memdesc:a650d31f67f7156fc1dfe1edf6c4447a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet if-else-statements (im moment <em>nur</em> if-else!) <br /></td></tr>
+<tr class="separator:a650d31f67f7156fc1dfe1edf6c4447a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bed5d1c6404284dfbcd1d886ec3f63a"><td class="memItemLeft" align="right" valign="top"><a id="a3bed5d1c6404284dfbcd1d886ec3f63a"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a3bed5d1c6404284dfbcd1d886ec3f63a">visitLoop</a> (LoopContext ctx)</td></tr>
+<tr class="memdesc:a3bed5d1c6404284dfbcd1d886ec3f63a"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet den Aufruf von while-Schleifen <br /></td></tr>
+<tr class="separator:a3bed5d1c6404284dfbcd1d886ec3f63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6553b4c50a802b886d2dddd84f0bed3"><td class="memItemLeft" align="right" valign="top"><a id="ab6553b4c50a802b886d2dddd84f0bed3"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#ab6553b4c50a802b886d2dddd84f0bed3">visitDivision</a> (DivisionContext ctx)</td></tr>
+<tr class="memdesc:ab6553b4c50a802b886d2dddd84f0bed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet Divisionen <br /></td></tr>
+<tr class="separator:ab6553b4c50a802b886d2dddd84f0bed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e27c2880c5547b45e0605463b71d767"><td class="memItemLeft" align="right" valign="top"><a id="a3e27c2880c5547b45e0605463b71d767"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a3e27c2880c5547b45e0605463b71d767">visitMultiplication</a> (MultiplicationContext ctx)</td></tr>
+<tr class="memdesc:a3e27c2880c5547b45e0605463b71d767"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet Multiplikationen <br /></td></tr>
+<tr class="separator:a3e27c2880c5547b45e0605463b71d767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf765bf4f30a6b89ad7d31b0495c8265"><td class="memItemLeft" align="right" valign="top"><a id="aaf765bf4f30a6b89ad7d31b0495c8265"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#aaf765bf4f30a6b89ad7d31b0495c8265">visitSubtraction</a> (SubtractionContext ctx)</td></tr>
+<tr class="memdesc:aaf765bf4f30a6b89ad7d31b0495c8265"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet Subtraktionen <br /></td></tr>
+<tr class="separator:aaf765bf4f30a6b89ad7d31b0495c8265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f0d3b0fe9ee5b3aec8348e5a66a31c"><td class="memItemLeft" align="right" valign="top"><a id="a73f0d3b0fe9ee5b3aec8348e5a66a31c"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a73f0d3b0fe9ee5b3aec8348e5a66a31c">visitAddition</a> (AdditionContext ctx)</td></tr>
+<tr class="memdesc:a73f0d3b0fe9ee5b3aec8348e5a66a31c"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet Additionen <br /></td></tr>
+<tr class="separator:a73f0d3b0fe9ee5b3aec8348e5a66a31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64fb0d376f7fabf9e2ebcb2139bad8f0"><td class="memItemLeft" align="right" valign="top"><a id="a64fb0d376f7fabf9e2ebcb2139bad8f0"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a64fb0d376f7fabf9e2ebcb2139bad8f0">visitComparison</a> (ComparisonContext ctx)</td></tr>
+<tr class="memdesc:a64fb0d376f7fabf9e2ebcb2139bad8f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet aufrufe von vergleichsoperatoren <br /></td></tr>
+<tr class="separator:a64fb0d376f7fabf9e2ebcb2139bad8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a514410f354b72090527d11c6af68c1"><td class="memItemLeft" align="right" valign="top"><a id="a7a514410f354b72090527d11c6af68c1"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a7a514410f354b72090527d11c6af68c1">visitAndGate</a> (AndGateContext ctx)</td></tr>
+<tr class="memdesc:a7a514410f354b72090527d11c6af68c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet aufrufe des logischen und (&amp;&amp;) <br /></td></tr>
+<tr class="separator:a7a514410f354b72090527d11c6af68c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ccb897f13209c9a6b02c634daf8020"><td class="memItemLeft" align="right" valign="top"><a id="a31ccb897f13209c9a6b02c634daf8020"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a31ccb897f13209c9a6b02c634daf8020">visitOrGate</a> (OrGateContext ctx)</td></tr>
+<tr class="memdesc:a31ccb897f13209c9a6b02c634daf8020"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet aurufe des logischen oder (||) <br /></td></tr>
+<tr class="separator:a31ccb897f13209c9a6b02c634daf8020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d691ed06ee67fb118062c0f6383d4bd"><td class="memItemLeft" align="right" valign="top"><a id="a6d691ed06ee67fb118062c0f6383d4bd"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#a6d691ed06ee67fb118062c0f6383d4bd">visitInverseGate</a> (InverseGateContext ctx)</td></tr>
+<tr class="memdesc:a6d691ed06ee67fb118062c0f6383d4bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">verarbeitet aufrufe des logischen nicht (!) <br /></td></tr>
+<tr class="separator:a6d691ed06ee67fb118062c0f6383d4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f02e4fba66ab2c9bde64d519fff479"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html#a28f02e4fba66ab2c9bde64d519fff479">visitMainStatement</a> (ArithmeticParser.MainStatementContext ctx)</td></tr>
+<tr class="separator:a28f02e4fba66ab2c9bde64d519fff479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09cd9a2d825c794a85b959118691bb48"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html#a09cd9a2d825c794a85b959118691bb48">visitProgPartFunctionDef</a> (ArithmeticParser.ProgPartFunctionDefContext ctx)</td></tr>
+<tr class="separator:a09cd9a2d825c794a85b959118691bb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea2ac7ab60552b657986c346c840a3af"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html#aea2ac7ab60552b657986c346c840a3af">visitStatement</a> (ArithmeticParser.StatementContext ctx)</td></tr>
+<tr class="separator:aea2ac7ab60552b657986c346c840a3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421498fa623da683532a4c8b598b4199"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html#a421498fa623da683532a4c8b598b4199">visitStatementList</a> (ArithmeticParser.StatementListContext ctx)</td></tr>
+<tr class="separator:a421498fa623da683532a4c8b598b4199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f027d4052785f291eeb86db76f0fb9"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html#a56f027d4052785f291eeb86db76f0fb9">visitParameterDeclaration</a> (ArithmeticParser.ParameterDeclarationContext ctx)</td></tr>
+<tr class="separator:a56f027d4052785f291eeb86db76f0fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51bd160376b8d696bac0e7dd11cb4f7f"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html#a51bd160376b8d696bac0e7dd11cb4f7f">visitExpressionList</a> (ArithmeticParser.ExpressionListContext ctx)</td></tr>
+<tr class="separator:a51bd160376b8d696bac0e7dd11cb4f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd13ccd955e3c8083fb1e8066685bf6"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html#a2cd13ccd955e3c8083fb1e8066685bf6">visitBlock</a> (ArithmeticParser.BlockContext ctx)</td></tr>
+<tr class="separator:a2cd13ccd955e3c8083fb1e8066685bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a580908ed777666e6aea274cbb0f1e"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html#a16a580908ed777666e6aea274cbb0f1e">visitParenthesis</a> (ArithmeticParser.ParenthesisContext ctx)</td></tr>
+<tr class="separator:a16a580908ed777666e6aea274cbb0f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba6aad80059fdc7dac0d75f1783a13ea"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html#aba6aad80059fdc7dac0d75f1783a13ea">visitFunctionCallExpression</a> (ArithmeticParser.FunctionCallExpressionContext ctx)</td></tr>
+<tr class="separator:aba6aad80059fdc7dac0d75f1783a13ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Öffentliche, statische Methoden</h2></td></tr>
+<tr class="memitem:affda506841579df4e519c959fbbbf599"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="enumde_1_1deuersprech_1_1compiler_1_1_data_type.html">DataType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#affda506841579df4e519c959fbbbf599">toDataType</a> (String type)</td></tr>
+<tr class="separator:affda506841579df4e519c959fbbbf599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Geschützte Methoden</h2></td></tr>
+<tr class="memitem:aeef95627adb3db358b5c163d7c9595d2"><td class="memItemLeft" align="right" valign="top"><a id="aeef95627adb3db358b5c163d7c9595d2"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html#aeef95627adb3db358b5c163d7c9595d2">aggregateResult</a> (String aggregate, String nextResult)</td></tr>
+<tr class="memdesc:aeef95627adb3db358b5c163d7c9595d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">spezifiziert, wie zwei Strings konkateniert werden <br /></td></tr>
+<tr class="separator:aeef95627adb3db358b5c163d7c9595d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><p>Die Klasse <a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html" title="Die Klasse MyArithmeticVisitor baut auf ANTLR-generiertem Code auf und implementiert die Jasmin-Code-...">MyArithmeticVisitor</a> baut auf ANTLR-generiertem Code auf und implementiert die Jasmin-Code-Erzeugung auf Grundlage des vom Parser erstellen Syntaxbaum. </p>
+</div><h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
+<a id="aafede7534b12c1de1e4c1ada03ff0ce6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafede7534b12c1de1e4c1ada03ff0ce6">&#9670;&nbsp;</a></span>MyArithmeticVisitor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">de.deuersprech.compiler.MyArithmeticVisitor.MyArithmeticVisitor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_function_list.html">FunctionList</a>&#160;</td>
+          <td class="paramname"><em>definedFunctions</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Konstruktor der Klasse <a class="el" href="classde_1_1deuersprech_1_1compiler_1_1_my_arithmetic_visitor.html" title="Die Klasse MyArithmeticVisitor baut auf ANTLR-generiertem Code auf und implementiert die Jasmin-Code-...">MyArithmeticVisitor</a> </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">definedFunctions</td><td>Liste mit definierten Funktionen </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="affda506841579df4e519c959fbbbf599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affda506841579df4e519c959fbbbf599">&#9670;&nbsp;</a></span>toDataType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="enumde_1_1deuersprech_1_1compiler_1_1_data_type.html">DataType</a> de.deuersprech.compiler.MyArithmeticVisitor.toDataType </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>löst einen String (reserviertes Schlüsselwort für Typbezeichnung) zu einem <a class="el" href="enumde_1_1deuersprech_1_1compiler_1_1_data_type.html">DataType</a> auf </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>reserviertes Schlüsselwort für Typ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>zugehöriges DataType-Objekt </dd></dl>
+
+</div>
+</div>
+<a id="a76893746855dea0bb0372f6a92e9efa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76893746855dea0bb0372f6a92e9efa3">&#9670;&nbsp;</a></span>visitAssignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String de.deuersprech.compiler.MyArithmeticVisitor.visitAssignment </td>
+          <td>(</td>
+          <td class="paramtype">AssignmentContext&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>verarbeitet negative ganze Zahlen </p>
+<p>verarbeitet Zuweisungen. Es erfolgt ein Zugriff auf die Variablen-Map, um den Index der lokalen Variablentabelle zu erhalten. </p>
+
+<p>Erneute Implementation von <a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html#aaba1d987429cfc26b80149435e9a08b5">de.deuersprech.parser.ArithmeticBaseVisitor&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a2cd13ccd955e3c8083fb1e8066685bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd13ccd955e3c8083fb1e8066685bf6">&#9670;&nbsp;</a></span>visitBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html">de.deuersprech.parser.ArithmeticBaseVisitor</a>&lt; T &gt;.visitBlock </td>
+          <td>(</td>
+          <td class="paramtype">ArithmeticParser.BlockContext&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Visit a parse tree produced by <a class="el" href="">ArithmeticParser#block</a>. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>the parse tree </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>the visitor result</dd></dl>
+</p>
+<p>The default implementation returns the result of calling <a class="el" href="">visitChildren</a> on</p><div class="fragment"><div class="line">ctx </div>
+</div><!-- fragment --><p> .</p>
+
+<p>Implementiert <a class="el" href="interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor.html#a62d8102702134bbab69df9869d946227">de.deuersprech.parser.ArithmeticVisitor&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a51bd160376b8d696bac0e7dd11cb4f7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51bd160376b8d696bac0e7dd11cb4f7f">&#9670;&nbsp;</a></span>visitExpressionList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html">de.deuersprech.parser.ArithmeticBaseVisitor</a>&lt; T &gt;.visitExpressionList </td>
+          <td>(</td>
+          <td class="paramtype">ArithmeticParser.ExpressionListContext&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Visit a parse tree produced by <a class="el" href="">ArithmeticParser#expressionList</a>. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>the parse tree </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>the visitor result</dd></dl>
+</p>
+<p>The default implementation returns the result of calling <a class="el" href="">visitChildren</a> on</p><div class="fragment"><div class="line">ctx </div>
+</div><!-- fragment --><p> .</p>
+
+<p>Implementiert <a class="el" href="interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor.html#a8203843078c18cbeedfd349ba0a83fdd">de.deuersprech.parser.ArithmeticVisitor&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a id="aba6aad80059fdc7dac0d75f1783a13ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba6aad80059fdc7dac0d75f1783a13ea">&#9670;&nbsp;</a></span>visitFunctionCallExpression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html">de.deuersprech.parser.ArithmeticBaseVisitor</a>&lt; T &gt;.visitFunctionCallExpression </td>
+          <td>(</td>
+          <td class="paramtype">ArithmeticParser.FunctionCallExpressionContext&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Visit a parse tree produced by the</p><div class="fragment"><div class="line">functionCallExpression </div>
+</div><!-- fragment --><p> labeled alternative in <a class="el" href="">ArithmeticParser#expression</a>. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>the parse tree </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>the visitor result</dd></dl>
+</p>
+<p>The default implementation returns the result of calling <a class="el" href="">visitChildren</a> on</p><div class="fragment"><div class="line">ctx </div>
+</div><!-- fragment --><p> .</p>
+
+<p>Implementiert <a class="el" href="interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor.html#ae9cee16a9e727c4b57739deb850058af">de.deuersprech.parser.ArithmeticVisitor&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a28f02e4fba66ab2c9bde64d519fff479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28f02e4fba66ab2c9bde64d519fff479">&#9670;&nbsp;</a></span>visitMainStatement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html">de.deuersprech.parser.ArithmeticBaseVisitor</a>&lt; T &gt;.visitMainStatement </td>
+          <td>(</td>
+          <td class="paramtype">ArithmeticParser.MainStatementContext&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Visit a parse tree produced by the</p><div class="fragment"><div class="line">MainStatement </div>
+</div><!-- fragment --><p> labeled alternative in <a class="el" href="">ArithmeticParser#progPart</a>. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>the parse tree </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>the visitor result</dd></dl>
+</p>
+<p>The default implementation returns the result of calling <a class="el" href="">visitChildren</a> on</p><div class="fragment"><div class="line">ctx </div>
+</div><!-- fragment --><p> .</p>
+
+<p>Implementiert <a class="el" href="interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor.html#a418924dd0047bd9d4844219bac7d5356">de.deuersprech.parser.ArithmeticVisitor&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a56f027d4052785f291eeb86db76f0fb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56f027d4052785f291eeb86db76f0fb9">&#9670;&nbsp;</a></span>visitParameterDeclaration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html">de.deuersprech.parser.ArithmeticBaseVisitor</a>&lt; T &gt;.visitParameterDeclaration </td>
+          <td>(</td>
+          <td class="paramtype">ArithmeticParser.ParameterDeclarationContext&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Visit a parse tree produced by <a class="el" href="">ArithmeticParser#parameterDeclaration</a>. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>the parse tree </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>the visitor result</dd></dl>
+</p>
+<p>The default implementation returns the result of calling <a class="el" href="">visitChildren</a> on</p><div class="fragment"><div class="line">ctx </div>
+</div><!-- fragment --><p> .</p>
+
+<p>Implementiert <a class="el" href="interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor.html#a7e45e98d72770fe171b012d974480c9b">de.deuersprech.parser.ArithmeticVisitor&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a16a580908ed777666e6aea274cbb0f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16a580908ed777666e6aea274cbb0f1e">&#9670;&nbsp;</a></span>visitParenthesis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html">de.deuersprech.parser.ArithmeticBaseVisitor</a>&lt; T &gt;.visitParenthesis </td>
+          <td>(</td>
+          <td class="paramtype">ArithmeticParser.ParenthesisContext&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Visit a parse tree produced by the</p><div class="fragment"><div class="line">Parenthesis </div>
+</div><!-- fragment --><p> labeled alternative in <a class="el" href="">ArithmeticParser#expression</a>. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>the parse tree </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>the visitor result</dd></dl>
+</p>
+<p>The default implementation returns the result of calling <a class="el" href="">visitChildren</a> on</p><div class="fragment"><div class="line">ctx </div>
+</div><!-- fragment --><p> .</p>
+
+<p>Implementiert <a class="el" href="interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor.html#aa9bd7b286d4ff5065364aa6103da8a8d">de.deuersprech.parser.ArithmeticVisitor&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a09cd9a2d825c794a85b959118691bb48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09cd9a2d825c794a85b959118691bb48">&#9670;&nbsp;</a></span>visitProgPartFunctionDef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html">de.deuersprech.parser.ArithmeticBaseVisitor</a>&lt; T &gt;.visitProgPartFunctionDef </td>
+          <td>(</td>
+          <td class="paramtype">ArithmeticParser.ProgPartFunctionDefContext&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Visit a parse tree produced by the</p><div class="fragment"><div class="line">ProgPartFunctionDef </div>
+</div><!-- fragment --><p> labeled alternative in <a class="el" href="">ArithmeticParser#progPart</a>. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>the parse tree </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>the visitor result</dd></dl>
+</p>
+<p>The default implementation returns the result of calling <a class="el" href="">visitChildren</a> on</p><div class="fragment"><div class="line">ctx </div>
+</div><!-- fragment --><p> .</p>
+
+<p>Implementiert <a class="el" href="interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor.html#a91b19205c95f6c822889bc4d916776da">de.deuersprech.parser.ArithmeticVisitor&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a9f7eccbd622cce4d679fdd25439960d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f7eccbd622cce4d679fdd25439960d7">&#9670;&nbsp;</a></span>visitProgram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String de.deuersprech.compiler.MyArithmeticVisitor.visitProgram </td>
+          <td>(</td>
+          <td class="paramtype">ProgramContext&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Visit a parse tree produced by <a class="el" href="">ArithmeticParser#program</a>. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>the parse tree </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>the visitor result</dd></dl>
+The default implementation returns the result of calling <a class="el" href="">visitChildren</a> on</p><div class="fragment"><div class="line">ctx </div>
+</div><!-- fragment --><p> .</p>
+<p>The default implementation returns the result of calling <a class="el" href="">visitChildren</a> on</p><div class="fragment"><div class="line">ctx </div>
+</div><!-- fragment --><p> .</p>
+
+<p>Erneute Implementation von <a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html#a0f9f530260f15fe38a41801955648697">de.deuersprech.parser.ArithmeticBaseVisitor&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a id="aea2ac7ab60552b657986c346c840a3af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea2ac7ab60552b657986c346c840a3af">&#9670;&nbsp;</a></span>visitStatement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html">de.deuersprech.parser.ArithmeticBaseVisitor</a>&lt; T &gt;.visitStatement </td>
+          <td>(</td>
+          <td class="paramtype">ArithmeticParser.StatementContext&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Visit a parse tree produced by <a class="el" href="">ArithmeticParser#statement</a>. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>the parse tree </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>the visitor result</dd></dl>
+</p>
+<p>The default implementation returns the result of calling <a class="el" href="">visitChildren</a> on</p><div class="fragment"><div class="line">ctx </div>
+</div><!-- fragment --><p> .</p>
+
+<p>Implementiert <a class="el" href="interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor.html#a0c5abf9146f0f76acaec881f4e89088d">de.deuersprech.parser.ArithmeticVisitor&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a421498fa623da683532a4c8b598b4199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a421498fa623da683532a4c8b598b4199">&#9670;&nbsp;</a></span>visitStatementList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classde_1_1deuersprech_1_1parser_1_1_arithmetic_base_visitor.html">de.deuersprech.parser.ArithmeticBaseVisitor</a>&lt; T &gt;.visitStatementList </td>
+          <td>(</td>
+          <td class="paramtype">ArithmeticParser.StatementListContext&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Visit a parse tree produced by <a class="el" href="">ArithmeticParser#statementList</a>. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>the parse tree </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>the visitor result</dd></dl>
+</p>
+<p>The default implementation returns the result of calling <a class="el" href="">visitChildren</a> on</p><div class="fragment"><div class="line">ctx </div>
+</div><!-- fragment --><p> .</p>
+
+<p>Implementiert <a class="el" href="interfacede_1_1deuersprech_1_1parser_1_1_arithmetic_visitor.html#ae91bc55ca7997743db4f77bd4dfbbf26">de.deuersprech.parser.ArithmeticVisitor&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+<li>src/main/java/de/deuersprech/compiler/<a class="el" href="_my_arithmetic_visitor_8java.html">MyArithmeticVisitor.java</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

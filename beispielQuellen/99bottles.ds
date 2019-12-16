@@ -1,0 +1,37 @@
+ganzzahl flaschän;
+flaschän ISTGLEICH 99;
+
+waehrend(flaschän GROESSERGLEICH 0) {
+   flaschän ISTGLEICH druckeSongtäxt(flaschän);
+
+}
+
+ganzzahl druckeSongtäxt(ganzzahl flaschän) {
+    wenn(flaschän GROESSERGLEICH 2) {
+        druck(flaschän);
+        druck(" bottles of beer on the wall, ");
+        druck(flaschän);
+        druckzeile(" bottles of beer.");
+
+        flaschän ISTGLEICH flaschän MINUS 1;
+
+        druck("Take one down and pass it around, ");
+        druck(flaschän);
+        druckzeile(" bottles of beer on the wall.");
+        druckzeile(" ");
+
+    } sonst {
+        wenn(flaschän GLEICH 1) {
+            druckzeile("1 bottle of beer on the wall, 1 bottle of beer.");
+            druckzeile("Take one down and pass it around, no more bottles of beer on the wall.");
+            flaschän ISTGLEICH flaschän MINUS 1;
+            druckzeile("");
+        } sonst {
+            druckzeile("No more bottles of beer on the wall, no more bottles of beer.");
+            druckzeile("Go to the store and buy some more, 99 bottles of beer on the wall.");
+            flaschän ISTGLEICH (0 MINUS 1);
+        }
+    }
+    
+    gebzurueck flaschän;
+}

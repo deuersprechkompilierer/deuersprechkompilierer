@@ -1,0 +1,467 @@
+\documentclass[12pt, a4paper, oneside, ngerman]{article}
+%\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[]{hyperref}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{algorithm2e}
+\usepackage{subfig}
+\usepackage[left=2cm,top=2.5cm,right=2cm,bottom=2.5cm]{geometry}
+
+\title{Deuersprech - Benutzerdokumentation} 
+\usepackage[german]{babel}
+
+\setlength\parindent{0pt}
+
+\begin{document} 
+\selectlanguage{german}
+\author{\href{https://github.com/deuersprechkompilierer}{github.com/deuersprechkompilierer}}
+
+\maketitle
+\thispagestyle{empty}
+\pagebreak
+\tableofcontents
+\newpage
+ 
+
+
+\section{Verwendung von Deuersprech}
+Ein gültiges Programm in Deuersprech besteht aus beliebig vielen Aussagen und Funktionsdefinitionen. 
+
+\subsection{Datentypen}
+Deuersprech verfügt über zwei Datentypen.
+
+\subsubsection{ganzzahl}
+Der Datentyp 'ganzzahl' repräsentiert eine ganze Zahl mit einer Größe von 32 Binärziffern. Mögliche Werte liegen zwischen -2147483648 und 2147483647 ($-2^{31}$ bis $2^{31} - 1$).
+
+\subsubsection{kettte}
+Der Datentyp 'kette' repräsentiert eine Kette von Zeichen. Eine kette darf 0 bis beliebig viele Zeichen enthalten. Ein Zeichen muss ein gültiges UTF-8-Symbol sein.
+
+
+\subsection{Bezeichner}
+Bezeichner werden genutzt, um Variablen, Konstanten sowie Funktionen zu benennen.
+Bezeichner müssen eindeutig sein, d.h. ein Bezeichner darf im entsprechenden Gültigkeitsbereich in nur einer Deklaration des gleichen Typ vorkommen. 
+Gültige Bezeichner beginnen mit einem Klein- oder Großbuchstaben und dürfen von beliebig vielen weiteren Klein- bzw. Großbuchstaben sowie den Ziffern von 0 bis 9 gefolgt werden. 
+Ein Bezeichner darf kein reserviertes Schlüsselwort sein (vgl. Liste der reservierten Schlüsselwörter).
+Desweiteren darf ein Bezeichner, der aus mehr als zwei Zeichen besteht, kein englisches Wort sein und muss mindestens einen Umlaut enthalten.
+
+\medskip
+\noindent
+Beispiel: \begin{lstlisting}[frame=single]
+ganzzahl gultigerDeuersprechBezeichner;
+konstante ganzzahl EINANDERERGULTIGERBEZEICHNER;
+kette undNochEinar;
+ganzzahl x;
+\end{lstlisting}
+
+
+\subsection{Literale}
+Literale sind konstante Ausdrücke, die im Quelltext verwendet werden. Der Wert eines Literals kann ab der Kompilierzeit nicht mehr verändert werden.
+
+\subsubsection{ganzzahl-Literale}
+ganzzahl-Literale bestehen aus einer beliebig langen Folge der Ziffern von 0 bis 9. Ein ganzzahl-Literal muss aus mindestens einer Ziffer bestehen.\\
+
+\medskip
+\noindent
+Beispiel: \begin{lstlisting}[frame=single] 
+x ISTGLEICH 42
+wenn(1) {
+  druckzeile(839);
+} sonst {
+  druckzeile(3);
+}
+\end{lstlisting}
+
+\subsubsection{kette-Literale}
+kette-Literale bestehen aus einem doppelten Anführungszeichen, werden von beliebig vielen (auch 0) Zeichen gefolgt und mit einem weiteren doppelten Anführungszeichen wieder abgeschlossen.
+
+\medskip
+\noindent
+Beispiel: \begin{lstlisting}[frame=single] 
+x ISTGLEICH "Hallo Welt";
+y ISTGLEICH "";
+druckzeile("Tja, einfach smart, deshalb haben wir es auch so genannt: das 1 und 1 SmartPad (tm)"); 
+\end{lstlisting}
+
+
+\subsection{Besondere Formatierungszeichen} 
+Leerzeichen, Tabulatoren sowie Zeilenumbrüche dürfen in einer Quelltext-Datei vorkommen, werden jedoch vom Kompilierer ignoriert.
+
+\subsection{Aussagen}
+Alle Aussagen außer wenn-dann-Anweisungen und Schleifen werden mit einem Semikolon '';'' beendet.
+
+\medskip
+\noindent
+Beispiel: \begin{lstlisting}[frame=single] 
+druckzeile(39);
+druck(42);
+konstante ganzzahl PI;
+ganzzahl x;
+x ISTGLEICH 57;
+\end{lstlisting}
+
+%\pagebreak
+\subsection{Variablen}
+\subsubsection{Deklaration}
+Eine Variablendeklaration besteht aus einem Datentyp sowie dem gewünschtem Namen (Bezeichner).
+
+\medskip
+\noindent
+Beispiel:
+\begin{lstlisting} [frame=single] 
+ganzzahl a;
+kette b;
+\end{lstlisting}
+
+\subsubsection{Definition}
+Nach dem eine Variable deklariert wurde, kann ihr ein Wert zugewiesen werden. 
+Eine Zuweisung erfolgt durch das Zuweisungsoperator ''ISTGLEICH''. 
+Die linke Seite der Zuwesiung ist dabei der Name der Variable, die rechte Seite kann ein Literal, ein arithmetischer Ausdruck, der Aufruf einer Funktion, eine Variable oder eine Konstante sein.
+Wertzuweisungen von Variablen dürfen beliebig oft erfolgen. 
+Die Zuweisung muss getrennt von der Deklaration erfolgen. \\
+
+\medskip
+\noindent
+\textbf{Bemerkung:} Die Deklaration \textbf{muss} unbedingt von der Definition getrennt sein, d.h. bei der Deklaration kann keine Wertzuweisung erfolgen.
+
+\medskip
+\noindent
+Beispiel:
+\begin{lstlisting} [frame=single] 
+beispiel ISTGLEICH 42;
+beispiel ISTGLEICH eineFunktion();
+beispiel ISTGLEICH 1 PLUS 2 PLUS 3;
+beispiel ISTGLEICH eineAndereVariable;
+beispiel ISTGLEICH EINEKONSTANTE;
+\end{lstlisting}
+
+
+\subsubsection{Aufruf}
+Variablen dürfen auch in der rechten Seite einer Zuweisung vorkommen.
+
+\medskip
+\noindent
+Beispiel:
+\begin{lstlisting} [frame=single] 
+ganzzahl beispiel1;
+ganzzahl beispiel2;
+
+beispiel1 ISTGLEICH 42;
+beispiel2 ISTGLEICH beispiel1 MINUS 1;
+\end{lstlisting}
+
+\pagebreak
+\subsection{Konstanten}
+Konstanten werden ähnlich wie Variablen verwendet. Nur \texttt{ganzzahl}en können Konstanten sein.
+
+\subsubsection{Deklaration}
+Im Gegensatz zu einer Variablen wird dem Namen das Schlüsselwort \textit{konstante ganzzahl} anstatt nur \textit{ganzzahl} vorgestellt.
+
+\medskip
+\noindent
+Beispiel:
+\begin{lstlisting} [frame=single] 
+konstante ganzzahl BEISPIEL;
+\end{lstlisting}
+
+\subsubsection{Definition}
+Die Wertzuweisung erfolgt wie bei einer Variable, darf jedoch nur ein mal pro Konstante erfolgen.
+ 
+
+\subsubsection{Ergebnisausgabe}
+Mit Hilfe der Funktion \texttt{druckzeile(<argument>)} können Literale, arithmetische Ausdrücke, logische Ausdrücke, Vergleiche, Rückgabewerte von Funktionen, Variablen und Konstanten auf die Konsole ausgegeben werden. \\
+Die Funktion \texttt{druck(<argument>)} funktionert analog, gibt jedoch nach dem ausgegebenen Ausdruck keinen Zeilenumbruch aus.
+
+\medskip
+\noindent
+Beispiele:
+\begin{lstlisting} [frame=single] 
+ganzzahl beispiel;
+konstante ganzzahl BEISPIEL;
+
+beispiel ISTGLEICH 42;
+BEISPIEL ISTGLEICH 123;
+
+druckzeile(42);
+druckzeile(42 MAL 5);
+druckzeile(42 KLEINER 5);
+druckzeile(42 KLEINER 5 UND beispiel GLEICH BEISPIEL);
+druckzeile(testFunktion(42));
+druck(beispiel);
+druck(BEISPIEL);
+\end{lstlisting}
+
+
+\subsection{Funktionen}
+
+\subsubsection{Deklaration}
+Funktionen könnnen nahezu an einer beliebigen Stelle in der Quellkodierung deklariert werden. 
+Die Deklaration darf jedoch nur unmittelbar vor oder unmittelbar nach einer abgeschlossenen Aussage stattfinden.
+Ein Aufruf ist auch vor der Deklaration möglich. \\
+
+Eine Funktionsdeklaration setzt sich folgendermaßen zusammen:
+Schlüsselwort ''ganzzahl'' oder ''kette'' für den Typ des Rückgabewerts, Bezeichner als Name der Funktion, öffnende runde Klammer, beliebig viele Variablendeklarationen (keine Übergabeparameter sind auch möglich), schließende runde Klammer und schließlich ein Funktionsrumpf.
+Der Funktionsrumpf beginnt mit einer öffnenden geschweiften Klammer gefolgt von beliebig vielen Aussagen. 
+Eine besondere Aussage ist die Rückgabe. Beim Auruf von \textit{gebzueruck} wird die Funktion verlassen. Wenn hinter \textit{gebzueruck} ein Literal, eine Variable, eine Konstante, ein arithmetischer Ausdruck, ein logischer Ausdruck oder der Aufruf einer weiteren Funktion folgt, so stellt dies den Rückgabewert der Funktion dar.
+Der Funktionsrumpf wird mit einer schließenden geschweiften Klammer abgschlossen. \\
+
+\medskip
+\noindent
+\textbf{Bemerkung:} Die gebzueruck-Aussage darf nicht weggelassen werden. \\
+
+\medskip
+\noindent
+Beispiel:
+\begin{lstlisting} [frame=single] 
+ganzzahl addiere(ganzzahl a, ganzzahl b) {
+	druckzeile(a);
+	druckzeile(b);
+	gebzueruck a PLUS b;
+}
+\end{lstlisting}
+
+\subsubsection{Aufruf}
+Funktionsaufrufe dürfen in der rechten Seite von Zuweisungen, als Argument für die druckzeile-Funktion und als Teil von logischen sowie arithmetischen Ausdrücken vorkommen. Funktionsaufrufe dürfen auch eigenständige Aussagen sein. Ein Funktionsaufruf setzt sich wie folgt zusammen:
+
+\verb|[nameDerFunktion]([Parameterliste])|
+
+Die Funktion wird beim Verlassen mit dem zuvor definierten Rückgabewert substituiert.
+
+\medskip
+\noindent
+Beispiel:
+\begin{lstlisting} [frame=single] 
+ganzzahl x; ganzzahl y; ganzzahl z;
+
+x ISTGLEICH 40;
+y ISTGLEICH 2;
+z ISTGLEICH addiere(x, y);
+\end{lstlisting}
+
+\subsubsection{Gültigkeitsbereiche}
+Funktionen besitzen einem vom Hauptprogramm verschiedenen Gültigkeitsbereich. Das bedeutet, dass Variablen, die innerhalb eines Funktionsrumpfs deklariert werden, außerhalb der Funktion nicht verwendet werden können.\\
+
+\medskip
+\noindent
+Das folgende Beispiel verdeutlicht dieses Prinzip:
+\begin{lstlisting} [frame=single] 
+ganzzahl zufallsZahl() { 
+    ganzzahl i; 
+    i ISTGLEICH 42; 
+    gebzurueck i; 
+} 
+
+ganzzahl i; 
+i ISTGLEICH 2; 
+
+druckzeile(zufallsZahl());
+druckzeile(i);
+\end{lstlisting}
+
+Dieses Programm erzeugt die Ausgabe
+\begin{lstlisting} [frame=single] 
+42
+2
+\end{lstlisting}
+
+\subsubsection{Überladen}
+In Deuersprech ist es möglich Funktionen zu überladen, d.h. dass in der gleichen Quelldatei mehrere Funktionen mit dem gleichen Bezeichner existieren dürfen, wenn die Funktionen sich in ihrer Parameterliste und/oder ihrem Rückgabewert unterscheiden. \\
+
+\medskip
+\noindent
+Beispiel:
+\begin{lstlisting} [frame=single] 
+  ganzzahl testFunc() { 
+    gebzurueck 42; 
+  } 
+  
+  ganzzahl testFunc(ganzzahl a) { 
+    gebzurueck a; 
+  } 
+  
+  druckzeile(testFunc()); 
+  druckzeile(testFunc(23));
+\end{lstlisting} 
+
+\noindent
+Dieses Programm erzeugt die Ausgabe 
+\begin{lstlisting} [frame=single] 
+42
+23
+\end{lstlisting} 
+
+
+\subsection{Arithmetik}
+Arithmetische Ausdrücke dürfen folgende Komponenten besitzen:
+
+\subsubsection{Operationen}
+Jede Operation setzt sich aus einem linken Operanden, einem Operator sowie einem rechten Operanden zusammen.
+
+Zulässige Operationen sind:
+\begin{center}
+  \begin{tabular}{ | c | c | }
+    \hline
+    Operator & Operation\\ \hline \hline
+    PLUS & Additionen\\ \hline
+    MINUS & Subtraktionen\\ \hline
+    MAL & Multiplikationen\\ \hline
+    DURCH & Divisionen\\ \hline
+  \end{tabular}
+\end{center}
+Die Operationen sind hier in aufsteigender Bindung aufgelistet, d.h., dass beispielsweise eine Division eine höhere Bindung als eine Addition besitzt. (Umgangssprachlich ''Punkt vor Strich'')
+
+\subsubsection{Operanden}
+Zulässige Operanden für aritmetische Operationen sind:
+
+\begin{itemize}
+\item ganzzahl-Literale
+\item Variablen vom Typ ganzzahl
+\item Konstanten
+\item Funktionen (bzw. deren Rückgabewerte) mit dem Rückgabetyp ganzzahl
+\item weitere Operationen
+\end{itemize}
+
+Aus dem letzten Eintrag dieser Liste ergibt sich eine Rekursion, die eine beliebige Länge von arithmetischen Ausdrücken ermöglicht.
+
+\subsubsection{Klammerung}
+Operationen dürfen Klammern mit beliebiger Verschachtelungstiefe enthalten.
+Geklammerte Terme besitzen die höchst mögliche Bindung, d.h. höher als eine Division.
+
+\subsection{Aussagenlogik}
+Logische Ausdrücke werden wie in C intern als ''ganzzahl'' gespeichert und besitzen keinen eigenen Datentyp. Dabei repräsentiert der Wert 0 den Wahrheitswert \textit{falsch}, alle anderen Werte gelten als \textit{wahr}. Wie auch arithmetische Ausdrücke, dürfen logische Ausdrücke eine beliebige Länge besitzen und eine beliebig tiefe Klammerschachtelung besitzen.
+
+Logische Ausdrücke werden verwendet, um Bedingungen auszudrücken, also in wenn-sonst-Aussagen sowie in Schleifen.
+
+Folgende Operationen stehen dafür in dieser Priorität zur Verfügung:
+\begin{center}
+  \begin{tabular}{ | c | c | c | }
+    \hline
+    Operation   & Operator  & Ergebnis\\ \hline \hline
+    Konjunktion & UND       & Wahr, wenn beide Operanden wahr sind.  \\
+                &           & Sonst falsch.\\ \hline
+    Disjunktion & ODER      & Wahr, wenn ein oder beide Operanden wahr sind. \\ 
+	              &           & Sonst falsch.\\ \hline
+    Negation    & NICHT     & Das Gegenteil das negierten Term.\\ \hline   
+  \end{tabular}
+\end{center}
+
+Desweiteren stehen folgende Vergleichsoperationen zur Verfügung:
+\begin{center}
+  \begin{tabular}{ | c | c | }
+    \hline
+    Operator          & Vergleich               \\ \hline \hline
+    KLEINER           & kleiner als             \\ \hline
+    KLEINERGLEICH     & kleiner als oder gleich \\ \hline
+    GROESSER          & größer als              \\ \hline
+    GROESSERGLEICH    & größer als oder gleich  \\ \hline    
+    GLEICH            & gleich                  \\ \hline    
+  \end{tabular}
+\end{center}
+Wenn ein Vergleich eine wahre Aussage ist, ist das Ergebnis des Vergleich \textit{wahr}.
+Wenn ein Vergleich eine falsche Aussage ist, ist das Ergebnis \textit{falsch}.
+
+\subsection{Bedingte Verzweigungen}
+Eine bedingte Verzweigung ist ein Programmabschnitt der abhängig von einer Bedingung ausgeführt oder ignoriert wird. 
+Es ist ebenfalls möglich eine Alternative anzugeben, die nur ausgeführt wird, falls die Bedingung nicht erfüllt wird.
+
+Eine bedingte Verzweigung beginnt mit dem Schlüsselwort \textit{wenn} gefolgt von einer Bedingung umschlossen von runden Klammern. Dabei muss die Bedingung ein logischer Ausdruck sein. Wenn die Bedingung zu \textit{wahr} evaluiert wird, werden die Aussagen, die umgeben von geschweiften Klammern auf die Bedingung folgen, ausgeführt. 
+Anschlißend müssen das Schlüsselwort \textit{sonst} sowie weitere Aussagen umschlossen von geschweiften Klammern folgen. Diese Anweisungen werden ausgeführt falls die Bedingung zu \textit{falsch} evaluiert wird. Der sonst-Teil darf nicht ausgelassen werden.
+
+
+\medskip
+\noindent
+Beispiel:
+\begin{lstlisting} [frame=single] 
+ganzzahl x;
+ganzzahl y;
+
+x ISTGLEICH 42;
+y ISTGLEICH 3;
+
+wenn(x KLEINER y) {
+  druckzeile("Hurra!");
+} sonst {
+  druckzeile(": - (");
+}
+
+\end{lstlisting}
+
+\subsection{Schleifen}
+Eine Schleife beginnt mit dem Schlüsselwort \textit{waehrend}, wird von einer Bedingung in runden Klammern gefolgt und schließt mit einem Schleifenrumpf ab. Der Schleifenrumpf wiederrum wird mit geschweiften Klammern geöffnet und abgeschlossen.
+
+Sowohl beim ersten Aufruf der Schleife als nach jedem Schleifendurchlauf wird überprüft, ob die gegebenene Bedingung wahr oder falsch ist. Ist die Bedingung wahr, werden die Anweisungen im Schleifenrumpf ausgeführt. Falls die Bedingung falsch ist, werden die Anweisungen nicht ausgeührt.
+
+Beispiel (gibt die Summe der Zahlen von 1 bis 10 aus):
+\begin{lstlisting} [frame=single] 
+ganzzahl i;
+ganzzahl x;
+
+i ISTGLEICH 0;
+x ISTGLEICH 0;
+
+wahrend(i KLEINERGLEICH 10) {
+	i ISTGLEICH i PLUS 1;
+	x ISTGLEICH x PLUS i;
+}
+druckzeile(x);
+\end{lstlisting}
+	
+\subsection{Reservierte Schlüsselwörter und Symbole}	
+
+\begin{center}
+  \begin{tabular}{ | c | c | }
+    \hline
+    Schlüsselwort       & Bedeutung\\ \hline \hline
+    ganzzahl            & Deklariert eine Variable vom Typ ganzzahl\\ \hline
+    kette               & Deklariert eine Variable vom Typ kette \\ \hline
+    konstante ganzzahl  & Deklariert eine Konstante\\ \hline
+    druckzeile          & Aufruf der Ausgabefunktion\\ \hline
+    gebzueruck          & Hinter ''gebzueruck'' folgt der \\
+                        & Rückgabewert einer Funktion\\ \hline
+    wenn                & Beginn einer wenn(-sonst)-Aussage\\ \hline
+    sonst               & Beginn des sonst-Teil einer wenn-sonst-Aussage\\ \hline
+    waehrend            & Beginn einer waehrend-Schleife\\ \hline
+    
+  \end{tabular}
+\end{center}
+
+
+\begin{center}
+  \begin{tabular}{ | c | c | }
+    \hline
+    Symbol & Bedeutung\\ \hline \hline
+    ISTGLEICH & Zuweisungsoperator\\ \hline
+    PLUS & Operator für Additionen\\ \hline
+    MINUS & Operator für Subtraktionen\\ \hline
+    MAL & Operator für Multiplikationen\\ \hline
+    DURCH & Operator für Divisionen\\ \hline
+    
+    KLEINER & Vergleichsoperator für kleiner als\\ \hline
+    KLEINERGLEICH & Vergleichsoperator für kleiner gleich\\ \hline
+    GROESSER & Vergleichsoperator für größer als\\ \hline
+    GROESSERGLEICH & Vergleichsoperator für größer gleich\\ \hline    
+    GLEICH & Operator um zwei Werte auf \\
+            & Gleichheit zu überprüfen\\ \hline    
+    
+    UND  & logisches Und \\ \hline    
+    ODER & logisches Oder (inklusiv) \\ \hline    
+    NICHT & logisches Nicht \\ \hline    
+    
+  \end{tabular}
+\end{center}
+  
+\pagebreak
+\section{Aufruf des Deuersprech-Kompilierers}
+Der Deuersprech-Kompilierer benötigt zur Ausführung die Java Runtime Environment.\\
+Um eine Textdatei mit Anweisungen in Deuersprech zu übersetzen, muss folgender Aufruf auf der Kommandozeilenebene erfolgen:
+\begin{lstlisting} [frame=single]
+java -jar dsk.jar quellkodierung.ds 
+\end{lstlisting}
+Die Ausgabedatei deuersprechAusstelle.class kann nun mit Hilfe der JRE ausgeführt werden.
+\begin{lstlisting} [frame=single]
+java deuersprechAusstelle
+\end{lstlisting}
+
+\end{document} 
+

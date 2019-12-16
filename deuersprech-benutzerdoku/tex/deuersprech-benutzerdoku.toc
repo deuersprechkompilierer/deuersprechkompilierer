@@ -1,0 +1,34 @@
+\babel@toc {german}{}
+\babel@toc {german}{}
+\contentsline {section}{\numberline {1}Verwendung von Deuersprech}{3}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Datentypen}{3}{subsection.1.1}% 
+\contentsline {subsubsection}{\numberline {1.1.1}ganzzahl}{3}{subsubsection.1.1.1}% 
+\contentsline {subsubsection}{\numberline {1.1.2}kettte}{3}{subsubsection.1.1.2}% 
+\contentsline {subsection}{\numberline {1.2}Bezeichner}{3}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.3}Literale}{3}{subsection.1.3}% 
+\contentsline {subsubsection}{\numberline {1.3.1}ganzzahl-Literale}{3}{subsubsection.1.3.1}% 
+\contentsline {subsubsection}{\numberline {1.3.2}kette-Literale}{4}{subsubsection.1.3.2}% 
+\contentsline {subsection}{\numberline {1.4}Besondere Formatierungszeichen}{4}{subsection.1.4}% 
+\contentsline {subsection}{\numberline {1.5}Aussagen}{4}{subsection.1.5}% 
+\contentsline {subsection}{\numberline {1.6}Variablen}{4}{subsection.1.6}% 
+\contentsline {subsubsection}{\numberline {1.6.1}Deklaration}{4}{subsubsection.1.6.1}% 
+\contentsline {subsubsection}{\numberline {1.6.2}Definition}{5}{subsubsection.1.6.2}% 
+\contentsline {subsubsection}{\numberline {1.6.3}Aufruf}{5}{subsubsection.1.6.3}% 
+\contentsline {subsection}{\numberline {1.7}Konstanten}{6}{subsection.1.7}% 
+\contentsline {subsubsection}{\numberline {1.7.1}Deklaration}{6}{subsubsection.1.7.1}% 
+\contentsline {subsubsection}{\numberline {1.7.2}Definition}{6}{subsubsection.1.7.2}% 
+\contentsline {subsubsection}{\numberline {1.7.3}Ergebnisausgabe}{6}{subsubsection.1.7.3}% 
+\contentsline {subsection}{\numberline {1.8}Funktionen}{6}{subsection.1.8}% 
+\contentsline {subsubsection}{\numberline {1.8.1}Deklaration}{6}{subsubsection.1.8.1}% 
+\contentsline {subsubsection}{\numberline {1.8.2}Aufruf}{7}{subsubsection.1.8.2}% 
+\contentsline {subsubsection}{\numberline {1.8.3}G\IeC {\"u}ltigkeitsbereiche}{7}{subsubsection.1.8.3}% 
+\contentsline {subsubsection}{\numberline {1.8.4}\IeC {\"U}berladen}{8}{subsubsection.1.8.4}% 
+\contentsline {subsection}{\numberline {1.9}Arithmetik}{8}{subsection.1.9}% 
+\contentsline {subsubsection}{\numberline {1.9.1}Operationen}{8}{subsubsection.1.9.1}% 
+\contentsline {subsubsection}{\numberline {1.9.2}Operanden}{9}{subsubsection.1.9.2}% 
+\contentsline {subsubsection}{\numberline {1.9.3}Klammerung}{9}{subsubsection.1.9.3}% 
+\contentsline {subsection}{\numberline {1.10}Aussagenlogik}{9}{subsection.1.10}% 
+\contentsline {subsection}{\numberline {1.11}Bedingte Verzweigungen}{10}{subsection.1.11}% 
+\contentsline {subsection}{\numberline {1.12}Schleifen}{10}{subsection.1.12}% 
+\contentsline {subsection}{\numberline {1.13}Reservierte Schl\IeC {\"u}sselw\IeC {\"o}rter und Symbole}{11}{subsection.1.13}% 
+\contentsline {section}{\numberline {2}Aufruf des Deuersprech-Kompilierers}{12}{section.2}% 

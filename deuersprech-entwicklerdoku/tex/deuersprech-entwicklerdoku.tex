@@ -1,0 +1,102 @@
+\documentclass[a4paper]{article}
+
+\usepackage[top=2.5cm, right=2cm, left=2cm, bottom=2cm]{geometry}
+\usepackage{hyperref}
+
+\begin{document}
+    \begin{center}
+        \LARGE
+        Deuersprech-Kompilierer \\
+        Dokumentation für Entwickler \\
+    \end{center}
+    
+    \section{Projekt Bauen}
+    Um das Projekt zu bauen, ist folgendes notwendig:
+    \begin{itemize}
+        \item JDK installiert und in Path Variable
+        \item maven installiert und in Path Variable
+        \item im Verzeichnis \texttt{deuersprech-maven/deuersprech-x.y/} den Befehl\\
+        \\
+         \texttt{\$ mvn clean compile assembly:single} \\
+        \\
+         ausführen
+    \end{itemize}
+    Danach sollte der Kompilierer als \texttt{.jar}-Datei im Verzeichnis \texttt{deuersprech-x.y/target} zum Ausführen bereit sein. \\
+    Der Aufruf des Kompilierers erfolgt mit \\
+    \\
+    \texttt{\$ java -jar deuersprech-kompilierer.jar <Dateipfad zu Textdatei mit gültigem deuersprech>} \\
+
+    \noindent
+    Das Kompilat kann mit der JRE ausgeführt werden:\\
+    \\
+    \texttt{\$ java deuersprechAusstelle}
+
+    \section{Projekt testen}
+    Um die Testfälle auszuführen, ist folgendes notwendig
+    \begin{itemize}
+        \item JDK und maven installiert sowie in Path Variable 
+        \item im Verzeichnis \texttt{deuersprech-maven/deuersprech-x.y/} den Befehl\\
+        \\
+         \texttt{\$ mvn test} \\
+        \\   
+    \end{itemize}
+    Die Konsolenausgabe gibt Aufschluss darüber, wie die Tests verlaufen sind. 
+    Ein detaillierteres Testprotokoll wird von TestNG in HTML generiert und ins Verzeichnis \texttt{deuersprech-maven/deuersprech-0.1/target/surefire-reports} kopiert.
+
+    \section{Verwendete Bibliotheken/ Drittprogramme}
+    \begin{itemize}
+        \item \href{https://www.antlr.org/}{https://www.antlr.org} \\
+            ANTLR wird genutzt, um Lexer und Parser aus der Grammatik zu generieren. 
+        \item \href{http://jasmin.sourceforge.net/}{http://jasmin.sourceforge.net} \\
+            Jasmin wird genutzt, um die JVM über eine Art Assembler-Sprache anzusprechen. Die Sprache, zu die der Deuersprech-Kompilierer zunächst übersetzt, ist der Befehlssatz von Jasmin. 
+            Jasmin erstellt die ausführbare \texttt{.class}-Datei.
+        \item \href{https://testng.org/doc/}{https://testng.org} \\
+            TestNG wird als Testframework verwendet.
+        \item \href{https://maven.apache.org/}{https://maven.apache.org} \\
+            Maven wird als Build-Managent-Tool verwendet.
+        \item \href{http://www.doxygen.nl/}{http://www.doxygen.nl} \\
+            Doxygen wird genutzt, um mittels speziellen Kommentaren eine Dokumentation der Quelldateien zu generieren.
+    \end{itemize}
+
+    \section{Wichtige Komponenten}
+    \subsection{Kontextfreie Grammatik}
+    Die Grundlage des Kompilierers ist die kontextfreie Grammatik in 
+    \texttt{deuersprech-maven/deuersprech-x.y/grammar}. In \texttt{Arithmetic.g4} wird die Syntax eines gültigen Deuersprech-Programmes definiert.
+    Das Tool ANTLR generiert auf Grundlage der Grammatik Java-Code, welcher den Lexer sowie Teile des Parsers implementiert. Der Aufruf hierfür \\
+    \\
+    \texttt{\$ java -jar ../antlr-4.7.2-complete.jar -package de.deuersprech.parser \\ -o ../src/main/java/de/deuersprech/parser/ -no-listener -visitor ./Arithmetic.g4} \\
+    \\
+    ist im Verzeichnis \texttt{deuersprech-maven/deuersprech-x.y/grammar} auszuführen. Nach erfolgreichem Abschluss befinden sich die generierten Quelldateien im Verzeichnis \texttt{/deuersprech-x.y/src/main/java/de/deuersprech/parser}.
+
+    \subsection{Ablauf des Deuersprech-Kompilieres}
+    \noindent
+    Die Main-Funktion des Deuersprech-Kompilierers erwartet einen Pfad zu einer Textdatei mit einem Deuersprech-Programm als Kommandozeilenargument.
+    Die Main-Funktion startet Lexer und Parser und übergibt diesen die Deuersprech-Quelldatei. Der Parser gibt als Ergebnis einen abstrakten Syntaxbaum (intern: ParseTree) zurück. \\
+    
+    \noindent
+    Die Klasse \texttt{de.deuersprech.compiler.MyArithmeticVisitor} implementiert einen Visitor, der den ParseTree im top-down-Prinzip rekursiv durchläuft und für jeden Knoten im Baum entsprechende Anweisungen für Jasmin generiert. Für jede Regel in der Grammtik muss eine visit-Methode implementiert werden.\\
+
+    \subsection{Jasmin}
+    \noindent
+    Wurden alle Anweisungen zusammengetragen, wird schließlich Jasmin aufgerufen. 
+    Jasmin generiert aus den Anweisungen eine \texttt{.class}-Datei, die ins aktuelle Verzeichnis geschrieben wird. \\
+    Diese \texttt{.class}-Datei stellt das Kompilat des Deuersprech-Kompilierers da.
+
+    
+    \section{Doxygen}
+    Die Java-Quelldateien sind mit Doxygen-Kommentaren versehen. Der Aufruf \\
+    \\
+    \texttt{\$ doxygen docyconfig} \\
+    \\
+    im Verzeichnis \texttt{deuersprech-maven/deuersprech-x.y/} generiert sowohl ein navigierbares HTML-Dokument als auch ein LaTeX-Dokument im Verzeichnis \texttt{deuersprech-maven/deuersprech-x.y/doxygen}. \\
+    Damit kann leicht ein Überblick über die vorhandenen Klassen und Methoden geschaffen werden. \\
+
+    \noindent
+    Oben genanntes ist nur möglich, wenn doxygen installiert ist. \\
+
+
+
+    \pagebreak
+    \section{Implementierung des Deuersprech-Kompilierers}
+    Hier folgt irgendwann mal eine detaillierte Schilderung, wie zulässige Deuersprech-Aussagen übersetzt werden. \\
+\end{document}
